@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Секреты и окружение (в репозиторий попадает только шаблон)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+config.local.*
+
+# Резервные копии, временные файлы, логи
+*.bak
+*.bak-*
+*.tmp
+*.log
+~$*
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Тяжёлые модели: держим локально, при необходимости — Git LFS (см. README)
+/docs/案例归档/案例3_真实工程模型/某博物馆管井5.ifc
+/docs/案例归档/案例3_真实工程模型/某博物馆管井5.1.ifc
+
+# Устаревшие дубликаты в корне: рабочие версии лежат в engine/ и data/
+/cn_standards_final.json
+/ru_standards.json
+/evaluate.py
+/llm_report.py

@@ -1,0 +1,5 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+# 可选：企业微信/公众号推送 SDK（如采用 docs/07 的 wechatpy 路线则安装）
+# wechatpy>=1.8

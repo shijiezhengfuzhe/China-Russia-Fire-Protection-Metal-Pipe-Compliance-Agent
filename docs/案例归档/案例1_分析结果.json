@@ -1,0 +1,1373 @@
+{
+ "model": {
+  "file": "pass_all_example_全部达标.ifc",
+  "schema": "IFC4",
+  "unit": "m",
+  "unit_scale_mm": 1000.0,
+  "project": "全部达标示例 DN15热镀锌钢管",
+  "storeys": [
+   "管井层 F1"
+  ]
+ },
+ "totals": {
+  "elements": 6,
+  "specs": 1,
+  "judged_specs": 1,
+  "unknown_specs": 0,
+  "by_kind": {
+   "segment": 6
+  },
+  "spec_color": {
+   "pass": 6
+  },
+  "excluded": {},
+  "excluded_total": 0,
+  "cn": {
+   "passed": 19,
+   "failed": 0,
+   "na": 0,
+   "coverage": 1.0
+  },
+  "ru": {
+   "passed": 9,
+   "failed": 0,
+   "na": 0,
+   "coverage": 1.0
+  }
+ },
+ "specs": [
+  {
+   "key": "S01",
+   "signature": [
+    "低压流体输送用焊接钢管(镀锌/黑管)",
+    "Q235B",
+    "Ст3кп/пс/сп",
+    15.0,
+    21.3,
+    2.8,
+    null,
+    true,
+    true
+   ],
+   "label": "Q235B DN15 Ø21.3×2.8 镀锌",
+   "count": 6,
+   "kinds": [
+    "segment"
+   ],
+   "kind_group": "pipe",
+   "product": {
+    "type": "低压流体输送用焊接钢管(镀锌/黑管)",
+    "dn_mm": 15.0,
+    "od_mm": 21.3,
+    "id_mm": 15.7,
+    "wall_thickness_mm": 2.8,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "Q235B",
+    "material_grade_ru": "Ст3кп/пс/сп",
+    "galvanized": true,
+    "threaded": true,
+    "medium": null,
+    "intended_use": "湿式消防系统",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接",
+    "delivery_group": null,
+    "type_source": "explicit",
+    "model": "Q235B DN15 Ø21.3×2.8 镀锌",
+    "manufacturer": "",
+    "properties": {
+     "rm_mpa": 410.0,
+     "re_mpa": 245.0,
+     "a_pct": 35.0,
+     "chemical": {
+      "C": 0.1,
+      "Si": 0.2,
+      "Mn": 0.4,
+      "P": 0.025,
+      "S": 0.02
+     },
+     "hydrostatic_test_mpa": 3.0,
+     "bending": "pass",
+     "flattening": "pass",
+     "zinc_coat_g_m2": 350.0,
+     "od_meas_mm": 21.3,
+     "wt_meas_mm": 2.8,
+     "straight_meas_mm_m": 1.0
+    }
+   },
+   "result": {
+    "product": {
+     "type": "低压流体输送用焊接钢管(镀锌/黑管)",
+     "dn_mm": 15.0,
+     "od_mm": 21.3,
+     "id_mm": 15.7,
+     "wall_thickness_mm": 2.8,
+     "length_m": 6.0,
+     "working_pressure_mpa": null,
+     "material_grade_cn": "Q235B",
+     "material_grade_ru": "Ст3кп/пс/сп",
+     "galvanized": true,
+     "threaded": true,
+     "medium": null,
+     "intended_use": "湿式消防系统",
+     "segment_spec": "热镀锌钢管 - default",
+     "connection_type": "螺纹连接",
+     "delivery_group": null,
+     "type_source": "explicit",
+     "model": "Q235B DN15 Ø21.3×2.8 镀锌",
+     "manufacturer": "",
+     "properties": {
+      "rm_mpa": 410.0,
+      "re_mpa": 245.0,
+      "a_pct": 35.0,
+      "chemical": {
+       "C": 0.1,
+       "Si": 0.2,
+       "Mn": 0.4,
+       "P": 0.025,
+       "S": 0.02
+      },
+      "hydrostatic_test_mpa": 3.0,
+      "bending": "pass",
+      "flattening": "pass",
+      "zinc_coat_g_m2": 350.0,
+      "od_meas_mm": 21.3,
+      "wt_meas_mm": 2.8,
+      "straight_meas_mm_m": 1.0
+     }
+    },
+    "cn_results": [
+     {
+      "standard": "GB/T 3091-2015",
+      "name_zh": "低压流体输送用焊接钢管",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "3091.GRADE",
+        "indicator_zh": "牌号体系",
+        "category": "牌号体系",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          "Q195",
+          "Q215A",
+          "Q215B",
+          "Q235A",
+          "Q235B",
+          "Q275A",
+          "Q275B",
+          "Q355B"
+         ]
+        },
+        "clause": "5.1.1 表1",
+        "test_method": "-",
+        "product_value": "Q235B",
+        "verdict": "pass",
+        "detail": "取值 Q235B ∈ ['Q195', 'Q215A', 'Q215B', 'Q235A', 'Q235B', 'Q275A', 'Q275B', 'Q355B']"
+       },
+       {
+        "indicator_id": "3091.CHEM.C",
+        "indicator_zh": "碳含量上限（熔炼）",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.22
+        },
+        "clause": "5.1.2 表2",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.1,
+        "verdict": "pass",
+        "detail": "0.1 ≤ 0.22"
+       },
+       {
+        "indicator_id": "3091.CHEM.SI",
+        "indicator_zh": "硅含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.35
+        },
+        "clause": "5.1.2 表2",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.2,
+        "verdict": "pass",
+        "detail": "0.2 ≤ 0.35"
+       },
+       {
+        "indicator_id": "3091.CHEM.MN",
+        "indicator_zh": "锰含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 1.4
+        },
+        "clause": "5.1.2 表2",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.4,
+        "verdict": "pass",
+        "detail": "0.4 ≤ 1.4"
+       },
+       {
+        "indicator_id": "3091.CHEM.P",
+        "indicator_zh": "磷含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.04
+        },
+        "clause": "5.1.2 表2",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.025,
+        "verdict": "pass",
+        "detail": "0.025 ≤ 0.04"
+       },
+       {
+        "indicator_id": "3091.CHEM.S",
+        "indicator_zh": "硫含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.04
+        },
+        "clause": "5.1.2 表2",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.02,
+        "verdict": "pass",
+        "detail": "0.02 ≤ 0.04"
+       },
+       {
+        "indicator_id": "3091.Rm",
+        "indicator_zh": "抗拉强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 370
+        },
+        "clause": "5.4 表4",
+        "test_method": "GB/T 228.1",
+        "product_value": 410.0,
+        "verdict": "pass",
+        "detail": "410.0 ≥ 370"
+       },
+       {
+        "indicator_id": "3091.ReL",
+        "indicator_zh": "下屈服强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 235
+        },
+        "clause": "5.4 表4",
+        "test_method": "GB/T 228.1",
+        "product_value": 245.0,
+        "verdict": "pass",
+        "detail": "245.0 ≥ 235"
+       },
+       {
+        "indicator_id": "3091.A",
+        "indicator_zh": "断后伸长率",
+        "category": "力学性能",
+        "unit": "%",
+        "requirement": {
+         "min": 26
+        },
+        "clause": "5.4 表4",
+        "test_method": "GB/T 228.1",
+        "product_value": 35.0,
+        "verdict": "pass",
+        "detail": "35.0 ≥ 26"
+       },
+       {
+        "indicator_id": "3091.HYD",
+        "indicator_zh": "液压试验压力",
+        "category": "工艺试验",
+        "unit": "MPa",
+        "requirement": {
+         "min": 2.5
+        },
+        "clause": "5.6（液压试验）",
+        "test_method": "GB/T 241（水压）；GB/T 7735（涡流）；GB/T 11345（超声）；GB/T 12606（漏磁）",
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.5 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "3091.BEND",
+        "indicator_zh": "弯曲试验",
+        "category": "工艺试验",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          "pass"
+         ]
+        },
+        "clause": "6.6.1（弯曲）",
+        "test_method": "GB/T 244",
+        "product_value": "pass",
+        "verdict": "pass",
+        "detail": "取值 pass ∈ ['pass']"
+       },
+       {
+        "indicator_id": "3091.FLATTEN",
+        "indicator_zh": "压扁试验",
+        "category": "工艺试验",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          "pass"
+         ]
+        },
+        "clause": "6.6.2（压扁）",
+        "test_method": "GB/T 246",
+        "product_value": "pass",
+        "verdict": "pass",
+        "detail": "取值 pass ∈ ['pass']"
+       },
+       {
+        "indicator_id": "3091.ZINC",
+        "indicator_zh": "镀锌层重量",
+        "category": "工艺试验（镀锌）",
+        "unit": "g/m²",
+        "requirement": {
+         "min": 300
+        },
+        "clause": "5.9（镀锌层）/ 表7",
+        "test_method": "化学溶解法（重量法）；均匀性/附着力试验",
+        "product_value": 350.0,
+        "verdict": "pass",
+        "detail": "350.0 ≥ 300"
+       },
+       {
+        "indicator_id": "3091.THREAD",
+        "indicator_zh": "管端螺纹（螺纹连接）",
+        "category": "连接",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          true
+         ]
+        },
+        "clause": "5.8（管端螺纹）/ GB/T 7306.1、7306.2",
+        "test_method": "GB/T 7306.1 / GB/T 7306.2（55°密封管螺纹）",
+        "product_value": true,
+        "verdict": "pass",
+        "detail": "取值 True ∈ [True]"
+       }
+      ]
+     },
+     {
+      "standard": "GB/T 17395-2024",
+      "name_zh": "钢管尺寸、外形、重量及允许偏差",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "17395.OD",
+        "indicator_zh": "外径系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "max": 1.0
+        },
+        "clause": "尺寸与偏差相关条款及表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径实测 21.3 mm vs 名义 21.3 mm，偏差 0.0% ≤ ±1.0% → ✅"
+       },
+       {
+        "indicator_id": "17395.WT",
+        "indicator_zh": "壁厚系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "min": -10.0,
+         "max": 12.5
+        },
+        "clause": "壁厚系列及允许偏差表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "壁厚实测 2.8 mm vs 名义 2.8 mm，偏差 0.0% 在 -10%/+12.5% 内 → ✅"
+       },
+       {
+        "indicator_id": "17395.LEN",
+        "indicator_zh": "长度及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "range": [
+          3.0,
+          12.0
+         ]
+        },
+        "clause": "长度允许偏差条款",
+        "test_method": "GB/T 2102",
+        "product_value": 6.0,
+        "verdict": "pass",
+        "detail": "3.0 ≤ 6.0 ≤ 12.0"
+       },
+       {
+        "indicator_id": "17395.STR",
+        "indicator_zh": "弯曲度（直线度）",
+        "category": "外形",
+        "unit": "mm/m",
+        "requirement": {
+         "max": 1.5
+        },
+        "clause": "外形条款",
+        "test_method": "GB/T 2102",
+        "product_value": 1.0,
+        "verdict": "pass",
+        "detail": "弯曲度实测 1.0 mm/m ≤ 1.5 → ✅"
+       },
+       {
+        "indicator_id": "17395.WGT",
+        "indicator_zh": "单位长度重量及允许偏差",
+        "category": "重量",
+        "unit": "kg/m",
+        "requirement": {
+         "min": 0
+        },
+        "clause": "重量及允许偏差条款",
+        "test_method": "称重/计算",
+        "product_value": 1.277,
+        "verdict": "pass",
+        "detail": "1.277 ≥ 0"
+       }
+      ]
+     }
+    ],
+    "ru_results": [
+     {
+      "standard": "ГОСТ 3262-75",
+      "name_zh": "水气钢管（焊接水煤气管）技术条件",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "3262.DN",
+        "indicator_zh": "公称通径",
+        "category": "尺寸",
+        "unit": "мм",
+        "requirement": {
+         "range": [
+          6,
+          150
+         ],
+         "series": [
+          6,
+          8,
+          10,
+          15,
+          20,
+          25,
+          32,
+          40,
+          50,
+          65,
+          80,
+          90,
+          100,
+          125,
+          150
+         ]
+        },
+        "clause": "Таблица 1",
+        "test_method": null,
+        "product_value": 15.0,
+        "verdict": "pass",
+        "detail": "取值 15.0 ∈ [6, 8, 10, 15, 20, 25, 32, 40, 50, 65, 80, 90, 100, 125, 150]"
+       },
+       {
+        "indicator_id": "3262.OD",
+        "indicator_zh": "外径",
+        "category": "尺寸",
+        "unit": "мм",
+        "requirement": {
+         "range": [
+          10.2,
+          165
+         ],
+         "series": [
+          10.2,
+          13.5,
+          17.0,
+          21.3,
+          26.8,
+          33.5,
+          42.3,
+          48.0,
+          60.0,
+          75.5,
+          88.5,
+          101.3,
+          114.0,
+          140.0,
+          165.0
+         ]
+        },
+        "clause": "Таблица 1",
+        "test_method": null,
+        "product_value": 21.3,
+        "verdict": "pass",
+        "detail": "取值 21.3 ∈ [10.2, 13.5, 17.0, 21.3, 26.8, 33.5, 42.3, 48.0, 60.0, 75.5, 88.5, 101.3, 114.0, 140.0, 165.0]"
+       },
+       {
+        "indicator_id": "3262.WALL",
+        "indicator_zh": "壁厚（轻型/普通型/加强型）",
+        "category": "尺寸",
+        "unit": "мм",
+        "requirement": {
+         "min": 2.8
+        },
+        "clause": "Таблица 1",
+        "test_method": null,
+        "product_value": 2.8,
+        "verdict": "pass",
+        "detail": "按 壁厚（轻型/普通型/加强型）（普通型）最小壁厚需≥2.8 mm，产品=2.8 mm → ✅"
+       },
+       {
+        "indicator_id": "3262.RM",
+        "indicator_zh": "抗拉强度",
+        "category": "力学性能",
+        "unit": "МПа",
+        "requirement": {
+         "min": 373
+        },
+        "clause": "п. 2.6",
+        "test_method": null,
+        "product_value": 410.0,
+        "verdict": "pass",
+        "detail": "410.0 ≥ 373"
+       },
+       {
+        "indicator_id": "3262.EL",
+        "indicator_zh": "断后伸长率",
+        "category": "力学性能",
+        "unit": "%",
+        "requirement": {
+         "min": 23
+        },
+        "clause": "п. 2.6",
+        "test_method": null,
+        "product_value": 35.0,
+        "verdict": "pass",
+        "detail": "35.0 ≥ 23"
+       },
+       {
+        "indicator_id": "3262.HYDRO",
+        "indicator_zh": "水压试验压力",
+        "category": "检验",
+        "unit": "МПа",
+        "requirement": {
+         "min": 2.4
+        },
+        "clause": "п. 2.8",
+        "test_method": null,
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按 ГОСТ 3262-75 管壁等级（普通型）水压试验需≥2.4 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "3262.THREAD",
+        "indicator_zh": "管螺纹",
+        "category": "连接",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          true
+         ]
+        },
+        "clause": "п. 2.5 / ГОСТ 6357-81",
+        "test_method": "ГОСТ 6357-81（管螺纹 cилиндрическая）",
+        "product_value": true,
+        "verdict": "pass",
+        "detail": "取值 True ∈ [True]"
+       },
+       {
+        "indicator_id": "3262.ZINC",
+        "indicator_zh": "镀锌层",
+        "category": "耐蚀",
+        "unit": "мкм",
+        "requirement": {
+         "min": 30
+        },
+        "clause": "п. 2.7",
+        "test_method": null,
+        "product_value": 49.0,
+        "verdict": "pass",
+        "detail": "49.0 ≥ 30"
+       },
+       {
+        "indicator_id": "3262.LENGTH",
+        "indicator_zh": "长度（非定尺）",
+        "category": "尺寸",
+        "unit": "м",
+        "requirement": {
+         "range": [
+          4,
+          12
+         ]
+        },
+        "clause": "п. 1.10",
+        "test_method": null,
+        "product_value": 6.0,
+        "verdict": "pass",
+        "detail": "4 ≤ 6.0 ≤ 12"
+       }
+      ]
+     }
+    ],
+    "skipped_cn": [],
+    "skipped_ru": [],
+    "tr_cu_032": {
+     "in_scope": null,
+     "category": null,
+     "pdn": null,
+     "route": null,
+     "table": null,
+     "note": "缺少工作压力或公称通径，无法判定"
+    },
+    "tr_eaeu_043": {
+     "applies": true,
+     "route": "обязательная сертификация(强制认证)",
+     "basis": "ТР ЕАЭС 043/2017 附录(Перечень) 第 IX 节：自动(水/泡沫)灭火装置组成的技术设备，方案 1с/3с/4с；ст.38-41 技术要求",
+     "schemes": [
+      "1с",
+      "3с",
+      "4с"
+     ],
+     "tests": [
+      "огнестойкость(耐火性)",
+      "прочность/герметичность под давлением в условиях пожара(火灾工况承压与密封)",
+      "работоспособность(功能可靠性)"
+     ],
+     "note": "金属管材作为水/泡沫自动灭火系统元件时按 ТР ЕАЭС 043/2017 强制认证（归入 Перечень 第 IX 节）；注意：Перечень 未单列'трубы'，普通建筑用 ВГП 管作为独立产品不属 043 范围，仅当作为灭火系统专用元件申报时认证。若同时满足 ТР ТС 032/2013 适用范围则两者均需满足——两者判定原理不同：032 看 P/DN/介质（超压风险），043 看用途与材料（消防安全）。消防给水/喷淋管道本身按 СП 10.13130.2020 / СП 485.1311500.2020 确定管材、壁厚、压力与连接，管材材料性能按 ГОСТ 3262-75/10705-80/8731-87 验收（见知识库'СП 10.13130.2020 / СП 485.1311500.2020'条目）。"
+    },
+    "index": {
+     "cn": {
+      "ci": 1.0,
+      "passed": 19,
+      "failed": 0,
+      "na": 0,
+      "coverage": 1.0,
+      "grade": "A"
+     },
+     "ru": {
+      "ci": 1.0,
+      "passed": 9,
+      "failed": 0,
+      "na": 0,
+      "coverage": 1.0,
+      "grade": "A"
+     }
+    },
+    "overall": {
+     "cn_compliant": true,
+     "ru_compliant": true,
+     "tr_cu_032_route": null,
+     "tr_eaeu_043_route": "обязательная сертификация(强制认证)",
+     "summary": "中国侧：合规（评级 A，可评 19 项中通过 19 项）；俄罗斯侧：合规（评级 A，可评 9 项中通过 9 项）；ТР ТС 032/2013：вне области；ТР ЕАЭС 043/2017：适用 → обязательная сертификация(强制认证)"
+    }
+   },
+   "color": "pass",
+   "type_source": "explicit",
+   "note": null,
+   "elements": [
+    165,
+    180,
+    195,
+    210,
+    225,
+    240
+   ],
+   "evidence": {
+    "dn_mm": "15 mmø",
+    "od_mm": "0.0213",
+    "id_mm": "0.0157",
+    "wall_thickness_mm": "0.0028",
+    "material_grade_cn": "Q235B",
+    "length_m": "6.0",
+    "intended_use": "湿式消防系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接"
+   },
+   "material": "Q235B",
+   "type_name": "管道类型:自动喷淋管"
+  }
+ ],
+ "elements": [
+  {
+   "id": 165,
+   "guid": "2Lk8UIGZXEahM5T9hNPa0G",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "喷淋管 1",
+   "object_type": null,
+   "tag": "TAG165",
+   "type_id": 152,
+   "type_name": "管道类型:自动喷淋管",
+   "material": "Q235B",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     0.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     0.0,
+     0.0,
+     6000.0
+    ],
+    "r": 10.65
+   },
+   "params": {
+    "type": "低压流体输送用焊接钢管(镀锌/黑管)",
+    "dn_mm": 15.0,
+    "od_mm": 21.3,
+    "id_mm": 15.7,
+    "wall_thickness_mm": 2.8,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "Q235B",
+    "material_grade_ru": "Ст3кп/пс/сп",
+    "galvanized": true,
+    "threaded": true,
+    "medium": null,
+    "intended_use": "湿式消防系统",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接",
+    "delivery_group": null,
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.0213,
+    "内径": 0.0157,
+    "尺寸": "15 mmø",
+    "长度": 6.0,
+    "系统分类": "湿式消防系统",
+    "系统类型": "ASS",
+    "系统名称": "喷淋管 1",
+    "系统缩写": "喷淋管",
+    "管段": "热镀锌钢管 - default",
+    "直径": 0.015,
+    "连接类型": "螺纹连接",
+    "抗拉强度": 410.0,
+    "下屈服强度": 245.0,
+    "断后伸长率": 35.0,
+    "碳含量": 0.1,
+    "硅含量": 0.2,
+    "锰含量": 0.4,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "水压试验压力": 3.0,
+    "弯曲试验": "pass",
+    "压扁试验": "pass",
+    "镀锌层重量": 350.0,
+    "材质牌号": "Q235B",
+    "实测外径": 0.0213,
+    "实测壁厚": 0.0028,
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 410.0,
+    "re_mpa": 245.0,
+    "a_pct": 35.0,
+    "chemical": {
+     "C": 0.1,
+     "Si": 0.2,
+     "Mn": 0.4,
+     "P": 0.025,
+     "S": 0.02
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "bending": "pass",
+    "flattening": "pass",
+    "zinc_coat_g_m2": 350.0,
+    "od_meas_mm": 21.3,
+    "wt_meas_mm": 2.8,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "15 mmø",
+    "od_mm": "0.0213",
+    "id_mm": "0.0157",
+    "wall_thickness_mm": "0.0028",
+    "material_grade_cn": "Q235B",
+    "length_m": "6.0",
+    "intended_use": "湿式消防系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接"
+   },
+   "spec": "S01",
+   "color": "pass"
+  },
+  {
+   "id": 180,
+   "guid": "11xomFbbv2K9lN1GFwjev6",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "喷淋管 2",
+   "object_type": null,
+   "tag": "TAG180",
+   "type_id": 152,
+   "type_name": "管道类型:自动喷淋管",
+   "material": "Q235B",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     300.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     300.0,
+     0.0,
+     6000.0
+    ],
+    "r": 10.65
+   },
+   "params": {
+    "type": "低压流体输送用焊接钢管(镀锌/黑管)",
+    "dn_mm": 15.0,
+    "od_mm": 21.3,
+    "id_mm": 15.7,
+    "wall_thickness_mm": 2.8,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "Q235B",
+    "material_grade_ru": "Ст3кп/пс/сп",
+    "galvanized": true,
+    "threaded": true,
+    "medium": null,
+    "intended_use": "湿式消防系统",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接",
+    "delivery_group": null,
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.0213,
+    "内径": 0.0157,
+    "尺寸": "15 mmø",
+    "长度": 6.0,
+    "系统分类": "湿式消防系统",
+    "系统类型": "ASS",
+    "系统名称": "喷淋管 1",
+    "系统缩写": "喷淋管",
+    "管段": "热镀锌钢管 - default",
+    "直径": 0.015,
+    "连接类型": "螺纹连接",
+    "抗拉强度": 410.0,
+    "下屈服强度": 245.0,
+    "断后伸长率": 35.0,
+    "碳含量": 0.1,
+    "硅含量": 0.2,
+    "锰含量": 0.4,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "水压试验压力": 3.0,
+    "弯曲试验": "pass",
+    "压扁试验": "pass",
+    "镀锌层重量": 350.0,
+    "材质牌号": "Q235B",
+    "实测外径": 0.0213,
+    "实测壁厚": 0.0028,
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 410.0,
+    "re_mpa": 245.0,
+    "a_pct": 35.0,
+    "chemical": {
+     "C": 0.1,
+     "Si": 0.2,
+     "Mn": 0.4,
+     "P": 0.025,
+     "S": 0.02
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "bending": "pass",
+    "flattening": "pass",
+    "zinc_coat_g_m2": 350.0,
+    "od_meas_mm": 21.3,
+    "wt_meas_mm": 2.8,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "15 mmø",
+    "od_mm": "0.0213",
+    "id_mm": "0.0157",
+    "wall_thickness_mm": "0.0028",
+    "material_grade_cn": "Q235B",
+    "length_m": "6.0",
+    "intended_use": "湿式消防系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接"
+   },
+   "spec": "S01",
+   "color": "pass"
+  },
+  {
+   "id": 195,
+   "guid": "3UkF7fOVb6sxM2iyTtm$XE",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "喷淋管 3",
+   "object_type": null,
+   "tag": "TAG195",
+   "type_id": 152,
+   "type_name": "管道类型:自动喷淋管",
+   "material": "Q235B",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     600.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     600.0,
+     0.0,
+     6000.0
+    ],
+    "r": 10.65
+   },
+   "params": {
+    "type": "低压流体输送用焊接钢管(镀锌/黑管)",
+    "dn_mm": 15.0,
+    "od_mm": 21.3,
+    "id_mm": 15.7,
+    "wall_thickness_mm": 2.8,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "Q235B",
+    "material_grade_ru": "Ст3кп/пс/сп",
+    "galvanized": true,
+    "threaded": true,
+    "medium": null,
+    "intended_use": "湿式消防系统",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接",
+    "delivery_group": null,
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.0213,
+    "内径": 0.0157,
+    "尺寸": "15 mmø",
+    "长度": 6.0,
+    "系统分类": "湿式消防系统",
+    "系统类型": "ASS",
+    "系统名称": "喷淋管 1",
+    "系统缩写": "喷淋管",
+    "管段": "热镀锌钢管 - default",
+    "直径": 0.015,
+    "连接类型": "螺纹连接",
+    "抗拉强度": 410.0,
+    "下屈服强度": 245.0,
+    "断后伸长率": 35.0,
+    "碳含量": 0.1,
+    "硅含量": 0.2,
+    "锰含量": 0.4,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "水压试验压力": 3.0,
+    "弯曲试验": "pass",
+    "压扁试验": "pass",
+    "镀锌层重量": 350.0,
+    "材质牌号": "Q235B",
+    "实测外径": 0.0213,
+    "实测壁厚": 0.0028,
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 410.0,
+    "re_mpa": 245.0,
+    "a_pct": 35.0,
+    "chemical": {
+     "C": 0.1,
+     "Si": 0.2,
+     "Mn": 0.4,
+     "P": 0.025,
+     "S": 0.02
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "bending": "pass",
+    "flattening": "pass",
+    "zinc_coat_g_m2": 350.0,
+    "od_meas_mm": 21.3,
+    "wt_meas_mm": 2.8,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "15 mmø",
+    "od_mm": "0.0213",
+    "id_mm": "0.0157",
+    "wall_thickness_mm": "0.0028",
+    "material_grade_cn": "Q235B",
+    "length_m": "6.0",
+    "intended_use": "湿式消防系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接"
+   },
+   "spec": "S01",
+   "color": "pass"
+  },
+  {
+   "id": 210,
+   "guid": "3uU195$zD75RIc2uMaamfd",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "喷淋管 4",
+   "object_type": null,
+   "tag": "TAG210",
+   "type_id": 152,
+   "type_name": "管道类型:自动喷淋管",
+   "material": "Q235B",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     900.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     900.0,
+     0.0,
+     6000.0
+    ],
+    "r": 10.65
+   },
+   "params": {
+    "type": "低压流体输送用焊接钢管(镀锌/黑管)",
+    "dn_mm": 15.0,
+    "od_mm": 21.3,
+    "id_mm": 15.7,
+    "wall_thickness_mm": 2.8,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "Q235B",
+    "material_grade_ru": "Ст3кп/пс/сп",
+    "galvanized": true,
+    "threaded": true,
+    "medium": null,
+    "intended_use": "湿式消防系统",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接",
+    "delivery_group": null,
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.0213,
+    "内径": 0.0157,
+    "尺寸": "15 mmø",
+    "长度": 6.0,
+    "系统分类": "湿式消防系统",
+    "系统类型": "ASS",
+    "系统名称": "喷淋管 1",
+    "系统缩写": "喷淋管",
+    "管段": "热镀锌钢管 - default",
+    "直径": 0.015,
+    "连接类型": "螺纹连接",
+    "抗拉强度": 410.0,
+    "下屈服强度": 245.0,
+    "断后伸长率": 35.0,
+    "碳含量": 0.1,
+    "硅含量": 0.2,
+    "锰含量": 0.4,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "水压试验压力": 3.0,
+    "弯曲试验": "pass",
+    "压扁试验": "pass",
+    "镀锌层重量": 350.0,
+    "材质牌号": "Q235B",
+    "实测外径": 0.0213,
+    "实测壁厚": 0.0028,
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 410.0,
+    "re_mpa": 245.0,
+    "a_pct": 35.0,
+    "chemical": {
+     "C": 0.1,
+     "Si": 0.2,
+     "Mn": 0.4,
+     "P": 0.025,
+     "S": 0.02
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "bending": "pass",
+    "flattening": "pass",
+    "zinc_coat_g_m2": 350.0,
+    "od_meas_mm": 21.3,
+    "wt_meas_mm": 2.8,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "15 mmø",
+    "od_mm": "0.0213",
+    "id_mm": "0.0157",
+    "wall_thickness_mm": "0.0028",
+    "material_grade_cn": "Q235B",
+    "length_m": "6.0",
+    "intended_use": "湿式消防系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接"
+   },
+   "spec": "S01",
+   "color": "pass"
+  },
+  {
+   "id": 225,
+   "guid": "2w_4jPIfzAYRj6kI_PNzP1",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "喷淋管 5",
+   "object_type": null,
+   "tag": "TAG225",
+   "type_id": 152,
+   "type_name": "管道类型:自动喷淋管",
+   "material": "Q235B",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     1200.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     1200.0,
+     0.0,
+     6000.0
+    ],
+    "r": 10.65
+   },
+   "params": {
+    "type": "低压流体输送用焊接钢管(镀锌/黑管)",
+    "dn_mm": 15.0,
+    "od_mm": 21.3,
+    "id_mm": 15.7,
+    "wall_thickness_mm": 2.8,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "Q235B",
+    "material_grade_ru": "Ст3кп/пс/сп",
+    "galvanized": true,
+    "threaded": true,
+    "medium": null,
+    "intended_use": "湿式消防系统",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接",
+    "delivery_group": null,
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.0213,
+    "内径": 0.0157,
+    "尺寸": "15 mmø",
+    "长度": 6.0,
+    "系统分类": "湿式消防系统",
+    "系统类型": "ASS",
+    "系统名称": "喷淋管 1",
+    "系统缩写": "喷淋管",
+    "管段": "热镀锌钢管 - default",
+    "直径": 0.015,
+    "连接类型": "螺纹连接",
+    "抗拉强度": 410.0,
+    "下屈服强度": 245.0,
+    "断后伸长率": 35.0,
+    "碳含量": 0.1,
+    "硅含量": 0.2,
+    "锰含量": 0.4,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "水压试验压力": 3.0,
+    "弯曲试验": "pass",
+    "压扁试验": "pass",
+    "镀锌层重量": 350.0,
+    "材质牌号": "Q235B",
+    "实测外径": 0.0213,
+    "实测壁厚": 0.0028,
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 410.0,
+    "re_mpa": 245.0,
+    "a_pct": 35.0,
+    "chemical": {
+     "C": 0.1,
+     "Si": 0.2,
+     "Mn": 0.4,
+     "P": 0.025,
+     "S": 0.02
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "bending": "pass",
+    "flattening": "pass",
+    "zinc_coat_g_m2": 350.0,
+    "od_meas_mm": 21.3,
+    "wt_meas_mm": 2.8,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "15 mmø",
+    "od_mm": "0.0213",
+    "id_mm": "0.0157",
+    "wall_thickness_mm": "0.0028",
+    "material_grade_cn": "Q235B",
+    "length_m": "6.0",
+    "intended_use": "湿式消防系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接"
+   },
+   "spec": "S01",
+   "color": "pass"
+  },
+  {
+   "id": 240,
+   "guid": "0C1che5iH2Eu6QgKS8hR$x",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "喷淋管 6",
+   "object_type": null,
+   "tag": "TAG240",
+   "type_id": 152,
+   "type_name": "管道类型:自动喷淋管",
+   "material": "Q235B",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     1500.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     1500.0,
+     0.0,
+     6000.0
+    ],
+    "r": 10.65
+   },
+   "params": {
+    "type": "低压流体输送用焊接钢管(镀锌/黑管)",
+    "dn_mm": 15.0,
+    "od_mm": 21.3,
+    "id_mm": 15.7,
+    "wall_thickness_mm": 2.8,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "Q235B",
+    "material_grade_ru": "Ст3кп/пс/сп",
+    "galvanized": true,
+    "threaded": true,
+    "medium": null,
+    "intended_use": "湿式消防系统",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接",
+    "delivery_group": null,
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.0213,
+    "内径": 0.0157,
+    "尺寸": "15 mmø",
+    "长度": 6.0,
+    "系统分类": "湿式消防系统",
+    "系统类型": "ASS",
+    "系统名称": "喷淋管 1",
+    "系统缩写": "喷淋管",
+    "管段": "热镀锌钢管 - default",
+    "直径": 0.015,
+    "连接类型": "螺纹连接",
+    "抗拉强度": 410.0,
+    "下屈服强度": 245.0,
+    "断后伸长率": 35.0,
+    "碳含量": 0.1,
+    "硅含量": 0.2,
+    "锰含量": 0.4,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "水压试验压力": 3.0,
+    "弯曲试验": "pass",
+    "压扁试验": "pass",
+    "镀锌层重量": 350.0,
+    "材质牌号": "Q235B",
+    "实测外径": 0.0213,
+    "实测壁厚": 0.0028,
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 410.0,
+    "re_mpa": 245.0,
+    "a_pct": 35.0,
+    "chemical": {
+     "C": 0.1,
+     "Si": 0.2,
+     "Mn": 0.4,
+     "P": 0.025,
+     "S": 0.02
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "bending": "pass",
+    "flattening": "pass",
+    "zinc_coat_g_m2": 350.0,
+    "od_meas_mm": 21.3,
+    "wt_meas_mm": 2.8,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "15 mmø",
+    "od_mm": "0.0213",
+    "id_mm": "0.0157",
+    "wall_thickness_mm": "0.0028",
+    "material_grade_cn": "Q235B",
+    "length_m": "6.0",
+    "intended_use": "湿式消防系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "热镀锌钢管 - default",
+    "connection_type": "螺纹连接"
+   },
+   "spec": "S01",
+   "color": "pass"
+  }
+ ]
+}

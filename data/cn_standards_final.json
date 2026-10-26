@@ -1,0 +1,2504 @@
+{
+  "meta": {
+    "version": "2.0-final",
+    "generated_by": "钢铁产品标准研究任务（最终整理版）",
+    "purpose": "中国金属管材/钢材产品标准性能指标机读知识库",
+    "unit_convention": "SI单位：MPa、mm、g/m²、%、J",
+    "structure": "standards[].indicators[]，values 采用 {min,max}/{min}/{set}/{desc} 结构化；clause 为条款号；test_method 为试验方法标准号",
+    "disclaimer": "数值基于公开检索资料（全国标准信息公共服务平台、消防规范大全、行业协会、钢厂技术资料）与标准专业知识整理；标注[待核]的项需以标准正式文本核验。",
+    "key_corrections": [
+      "GB/T 8163-2018 牌号体系为 10/20/Q345D/Q390D/Q420D/Q460D，无 Q355B（Q355B 为 GB/T 1591-2018 钢种）",
+      "GB 1499.2-2024 为强制性国家标准（非 GB/T），2024-09-25 实施",
+      "GB/T 17395-2024 名称为《钢管尺寸、外形、重量及允许偏差》（覆盖无缝+焊接钢管）",
+      "GB/T 3091-2025 新版已发布（2025年发布，代替2015版）"
+    ]
+  },
+  "standards": [
+    {
+      "id": "GB/T 17395-2024",
+      "name_zh": "钢管尺寸、外形、重量及允许偏差",
+      "name_en": "Dimensions, shapes, weights and tolerances of steel tubes",
+      "year": 2024,
+      "status": "现行（2024年发布，公告实施；代替GB/T 17395-2008）",
+      "scope_zh": "规定钢管（无缝及焊接）的尺寸（外径、壁厚、长度）系列、外形（弯曲度、不圆度）、单位长度重量及允许偏差；钢管订货与验收的尺寸基础标准。",
+      "applicability_note": "对消防金属管材：基础尺寸/公差标准，不含强度指标；用于确定外径/壁厚/长度/重量允许偏差；力学与密封性能须由产品标准（GB/T 8163、GB/T 3091、GB/T 13793）规定。",
+      "indicators": [
+        {
+          "id": "17395.OD",
+          "name_zh": "外径系列及允许偏差",
+          "name_en": "Outside diameter series and tolerance",
+          "unit": "mm",
+          "category": "尺寸偏差",
+          "grade_conditioned": false,
+          "values": {
+            "table": [
+              {
+                "od_grade": "普通级",
+                "od_upper_mm": 219.1,
+                "tolerance_pct": 1.0
+              },
+              {
+                "od_grade": "较高级",
+                "od_upper_mm": 219.1,
+                "tolerance_pct": 0.75
+              },
+              {
+                "od_grade": "高级",
+                "od_upper_mm": 219.1,
+                "tolerance_pct": 0.5
+              }
+            ]
+          },
+          "clause": "尺寸与偏差相关条款及表",
+          "test_method": "GB/T 2102",
+          "notes": "GB/T 17395：外径允许偏差分普通级/较高级/高级。D≤219.1mm 普通级±1.0%、较高级±0.75%、高级±0.5%（分级与口径对应以原文表为准，此处按行业通行值；判定需实测外径）。"
+        },
+        {
+          "id": "17395.WT",
+          "name_zh": "壁厚系列及允许偏差",
+          "name_en": "Wall thickness series and tolerance",
+          "unit": "mm",
+          "category": "尺寸偏差",
+          "grade_conditioned": false,
+          "values": {
+            "table": [
+              {
+                "wt_grade": "普通级",
+                "plus_pct": 12.5,
+                "minus_pct": -10.0
+              },
+              {
+                "wt_grade": "较高级",
+                "plus_pct": 10.0,
+                "minus_pct": -7.5
+              },
+              {
+                "wt_grade": "高级",
+                "plus_pct": 7.5,
+                "minus_pct": -5.0
+              }
+            ]
+          },
+          "clause": "壁厚系列及允许偏差表",
+          "test_method": "GB/T 2102",
+          "notes": "GB/T 17395：壁厚允许偏差：普通级+12.5%/-10%、较高级+10%/-7.5%、高级+7.5%/-5%（分级以原文表为准，按行业通行值；判定需实测壁厚）。"
+        },
+        {
+          "id": "17395.LEN",
+          "name_zh": "长度及允许偏差",
+          "name_en": "Length and length tolerance",
+          "unit": "mm",
+          "category": "尺寸偏差",
+          "grade_conditioned": false,
+          "values": {
+            "range": [
+              3.0,
+              12.0
+            ]
+          },
+          "clause": "长度允许偏差条款",
+          "test_method": "GB/T 2102",
+          "notes": "长度按定尺/倍尺允许偏差（定尺通常0~+20mm）；此处按非定尺 3~12m 范围判定，产品所填长度须在此内。"
+        },
+        {
+          "id": "17395.STR",
+          "name_zh": "弯曲度（直线度）",
+          "name_en": "Straightness",
+          "unit": "mm/m",
+          "category": "外形",
+          "grade_conditioned": false,
+          "values": {
+            "max": 1.5,
+            "max_total_pct": 0.15,
+            "unit_note": "mm/m（每米）"
+          },
+          "clause": "外形条款",
+          "test_method": "GB/T 2102",
+          "notes": "GB/T 17395：弯曲度普通级每米≤1.5mm、全长≤0.15%L（需实测弯曲度）。"
+        },
+        {
+          "id": "17395.WGT",
+          "name_zh": "单位长度重量及允许偏差",
+          "name_en": "Mass per unit length and tolerance",
+          "unit": "kg/m",
+          "category": "重量",
+          "grade_conditioned": false,
+          "values": {
+            "min": 0
+          },
+          "clause": "重量及允许偏差条款",
+          "test_method": "称重/计算",
+          "notes": "理论重量 W=0.0246615×S×(D−S)，由外径/壁厚计算；单根重量允许偏差约±7.5%~±10%（需实测核对）。此处判定计算值是否合理。"
+        }
+      ]
+    },
+    {
+      "id": "GB/T 8163-2018",
+      "name_zh": "输送流体用无缝钢管",
+      "name_en": "Seamless steel tubes for liquid service",
+      "year": 2018,
+      "status": "现行",
+      "scope_zh": "输送流体（水、油、气等）用一般用途无缝钢管；不适用于锅炉、过热器等高温高压用途（由GB/T 5310等规定）。",
+      "applicability_note": "对消防管材非常适用：消防给水/喷淋系统无缝钢管常用（20钢/10钢/Q345D等），力学、液压、无损检测可直接合规判定。",
+      "indicators": [
+        {
+          "id": "8163.GRADE",
+          "name_zh": "牌号体系",
+          "name_en": "Steel grade system",
+          "unit": "-",
+          "category": "牌号体系",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "10",
+              "20",
+              "Q345D",
+              "Q390D",
+              "Q420D",
+              "Q460D"
+            ]
+          },
+          "clause": "5.1 表3",
+          "test_method": "-",
+          "notes": "2018版以D级牌号替代2008版Q345/Q390/Q420/Q460；⚠️ 无Q355B（Q355B为GB/T 1591-2018钢种）"
+        },
+        {
+          "id": "8163.CHEM.C",
+          "name_zh": "碳含量（熔炼）",
+          "name_en": "Carbon content",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "10": {
+              "min": 0.07,
+              "max": 0.13
+            },
+            "20": {
+              "min": 0.17,
+              "max": 0.23
+            },
+            "Q345D": {
+              "max": 0.18
+            },
+            "Q390D": {
+              "max": 0.2
+            },
+            "Q420D": {
+              "max": 0.2
+            },
+            "Q460D": {
+              "max": 0.2
+            }
+          },
+          "clause": "5.1 表3/表4",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "8163.CHEM.SI",
+          "name_zh": "硅含量",
+          "name_en": "Silicon content",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "10": {
+              "min": 0.17,
+              "max": 0.37
+            },
+            "20": {
+              "min": 0.17,
+              "max": 0.37
+            },
+            "Q345D": {
+              "max": 0.5
+            },
+            "Q390D": {
+              "max": 0.5
+            },
+            "Q420D": {
+              "max": 0.5
+            },
+            "Q460D": {
+              "max": 0.5
+            }
+          },
+          "clause": "5.1 表3/表4",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "8163.CHEM.MN",
+          "name_zh": "锰含量",
+          "name_en": "Manganese content",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "10": {
+              "min": 0.35,
+              "max": 0.65
+            },
+            "20": {
+              "min": 0.35,
+              "max": 0.65
+            },
+            "Q345D": {
+              "max": 1.7
+            },
+            "Q390D": {
+              "max": 1.7
+            },
+            "Q420D": {
+              "max": 1.7
+            },
+            "Q460D": {
+              "max": 1.7
+            }
+          },
+          "clause": "5.1 表3/表4",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "8163.CHEM.P",
+          "name_zh": "磷含量上限",
+          "name_en": "Phosphorus content max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "10": {
+              "max": 0.03
+            },
+            "20": {
+              "max": 0.03
+            },
+            "Q345D": {
+              "max": 0.03
+            },
+            "Q390D": {
+              "max": 0.03
+            },
+            "Q420D": {
+              "max": 0.03
+            },
+            "Q460D": {
+              "max": 0.03
+            }
+          },
+          "clause": "5.1 表3/表4",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "8163.CHEM.S",
+          "name_zh": "硫含量上限",
+          "name_en": "Sulfur content max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "10": {
+              "max": 0.03
+            },
+            "20": {
+              "max": 0.03
+            },
+            "Q345D": {
+              "max": 0.025
+            },
+            "Q390D": {
+              "max": 0.025
+            },
+            "Q420D": {
+              "max": 0.025
+            },
+            "Q460D": {
+              "max": 0.025
+            }
+          },
+          "clause": "5.1 表3/表4",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "8163.Rm",
+          "name_zh": "抗拉强度",
+          "name_en": "Tensile strength",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "10": {
+              "min": 335,
+              "max": 475
+            },
+            "20": {
+              "min": 410,
+              "max": 550
+            },
+            "Q345D": {
+              "min": 490,
+              "max": 665
+            },
+            "Q390D": {
+              "min": 490,
+              "max": 665
+            },
+            "Q420D": {
+              "min": 520,
+              "max": 680
+            },
+            "Q460D": {
+              "min": 520,
+              "max": 720
+            }
+          },
+          "clause": "5.4.1 表5（纵向）",
+          "test_method": "GB/T 228.1",
+          "notes": "行业通行值；Q390D～Q460D上限以原文表5为准[待核]"
+        },
+        {
+          "id": "8163.ReL",
+          "name_zh": "下屈服强度",
+          "name_en": "Lower yield strength",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "10": {
+              "min": 195
+            },
+            "20": {
+              "min": 245
+            },
+            "Q345D": {
+              "min": 345
+            },
+            "Q390D": {
+              "min": 390
+            },
+            "Q420D": {
+              "min": 420
+            },
+            "Q460D": {
+              "min": 460
+            }
+          },
+          "clause": "5.4.1 表5（纵向）",
+          "test_method": "GB/T 228.1",
+          "notes": "与壁厚分组有关（t≤16mm档）[待核]"
+        },
+        {
+          "id": "8163.A",
+          "name_zh": "断后伸长率",
+          "name_en": "Percentage elongation after fracture",
+          "unit": "%",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "10": {
+              "min": 24
+            },
+            "20": {
+              "min": 22
+            },
+            "Q345D": {
+              "min": 22
+            },
+            "Q390D": {
+              "min": 20
+            },
+            "Q420D": {
+              "min": 19
+            },
+            "Q460D": {
+              "min": 17
+            }
+          },
+          "clause": "5.4.1 表5（纵向，L0=5.65√S0）",
+          "test_method": "GB/T 228.1",
+          "notes": "20钢部分资料引为A≥25%（t≤16mm热轧），此处取22%[待核]"
+        },
+        {
+          "id": "8163.KV2",
+          "name_zh": "冲击吸收能量（纵向）",
+          "name_en": "Charpy impact energy KV2",
+          "unit": "J",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "10": {
+              "desc": "一般不作规定（或按协议）"
+            },
+            "20": {
+              "desc": "一般不作规定（或按协议）"
+            },
+            "Q345D": {
+              "min": 34
+            },
+            "Q390D": {
+              "min": 34
+            },
+            "Q420D": {
+              "min": 34
+            },
+            "Q460D": {
+              "min": 34
+            }
+          },
+          "clause": "5.4.2 表6",
+          "test_method": "GB/T 229",
+          "notes": "[待核]D级牌号冲击试验温度（0℃或-20℃）以原文表6为准"
+        },
+        {
+          "id": "8163.HYD",
+          "name_zh": "液压试验压力",
+          "name_en": "Hydrostatic test pressure",
+          "unit": "MPa",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "P=2SR/D（S壁厚、R允许应力、D外径）；可无损检测替代；保压≥5s无渗漏"
+          },
+          "clause": "5.6",
+          "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777",
+          "notes": "R取值（如0.6~0.8×屈服强度）以原文为准"
+        },
+        {
+          "id": "8163.NDT",
+          "name_zh": "无损检测",
+          "name_en": "Non-destructive testing",
+          "unit": "-",
+          "category": "无损检测",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "液压与无损检测（涡流/超声/漏磁）任选或按订货"
+          },
+          "clause": "5.6/5.7",
+          "test_method": "GB/T 7735 / GB/T 5777 / GB/T 12606",
+          "notes": ""
+        },
+        {
+          "id": "8163.DIM",
+          "name_zh": "尺寸与允许偏差",
+          "name_en": "Dimensions and tolerances",
+          "unit": "mm",
+          "category": "尺寸偏差",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "外径/壁厚按GB/T 17395；长度、弯曲度、不圆度按5.3（热轧与冷拔管分别规定）"
+          },
+          "clause": "5.3",
+          "test_method": "GB/T 2102",
+          "notes": "外径常用6～630mm"
+        }
+      ]
+    },
+    {
+      "id": "GB/T 3091-2015",
+      "name_zh": "低压流体输送用焊接钢管",
+      "name_en": "Welded steel pipes for low pressure liquid service",
+      "year": 2015,
+      "status": "现行（⚠️ GB/T 3091-2025新版已发布，2025年发布并代替2015版[待核实施日期]）",
+      "scope_zh": "低压流体（水、煤气、空气、采暖蒸汽等）输送用直缝高频电阻焊（ERW）、螺旋缝埋弧焊（SAWH）及热浸镀锌焊接钢管。",
+      "applicability_note": "对消防管材非常适用：消防镀锌钢管/焊接钢管（喷淋、消火栓系统）广泛按此标准生产与验收。",
+      "indicators": [
+        {
+          "id": "3091.GRADE",
+          "name_zh": "牌号体系",
+          "name_en": "Steel grade system",
+          "unit": "-",
+          "category": "牌号体系",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "Q195",
+              "Q215A",
+              "Q215B",
+              "Q235A",
+              "Q235B",
+              "Q275A",
+              "Q275B",
+              "Q355B"
+            ]
+          },
+          "clause": "5.1.1 表1",
+          "test_method": "-",
+          "notes": "2015版以Q355B替代旧版Q345系列"
+        },
+        {
+          "id": "3091.CHEM.C",
+          "name_zh": "碳含量上限（熔炼）",
+          "name_en": "Carbon content max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.12
+            },
+            "Q215A": {
+              "max": 0.15
+            },
+            "Q215B": {
+              "max": 0.15
+            },
+            "Q235A": {
+              "max": 0.22
+            },
+            "Q235B": {
+              "max": 0.22
+            },
+            "Q275A": {
+              "max": 0.24
+            },
+            "Q275B": {
+              "max": 0.24
+            },
+            "Q355B": {
+              "max": 0.24
+            }
+          },
+          "clause": "5.1.2 表2",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "3091.CHEM.SI",
+          "name_zh": "硅含量上限",
+          "name_en": "Silicon content max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.3
+            },
+            "Q215A": {
+              "max": 0.35
+            },
+            "Q215B": {
+              "max": 0.35
+            },
+            "Q235A": {
+              "max": 0.35
+            },
+            "Q235B": {
+              "max": 0.35
+            },
+            "Q275A": {
+              "max": 0.35
+            },
+            "Q275B": {
+              "max": 0.35
+            },
+            "Q355B": {
+              "max": 0.55
+            }
+          },
+          "clause": "5.1.2 表2",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "3091.CHEM.MN",
+          "name_zh": "锰含量上限",
+          "name_en": "Manganese content max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.5
+            },
+            "Q215A": {
+              "max": 1.2
+            },
+            "Q215B": {
+              "max": 1.2
+            },
+            "Q235A": {
+              "max": 1.4
+            },
+            "Q235B": {
+              "max": 1.4
+            },
+            "Q275A": {
+              "max": 1.5
+            },
+            "Q275B": {
+              "max": 1.5
+            },
+            "Q355B": {
+              "max": 1.6
+            }
+          },
+          "clause": "5.1.2 表2",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "3091.CHEM.P",
+          "name_zh": "磷含量上限",
+          "name_en": "Phosphorus content max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.035
+            },
+            "Q215A": {
+              "max": 0.045
+            },
+            "Q215B": {
+              "max": 0.04
+            },
+            "Q235A": {
+              "max": 0.045
+            },
+            "Q235B": {
+              "max": 0.04
+            },
+            "Q275A": {
+              "max": 0.045
+            },
+            "Q275B": {
+              "max": 0.04
+            },
+            "Q355B": {
+              "max": 0.035
+            }
+          },
+          "clause": "5.1.2 表2",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "3091.CHEM.S",
+          "name_zh": "硫含量上限",
+          "name_en": "Sulfur content max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.035
+            },
+            "Q215A": {
+              "max": 0.05
+            },
+            "Q215B": {
+              "max": 0.04
+            },
+            "Q235A": {
+              "max": 0.05
+            },
+            "Q235B": {
+              "max": 0.04
+            },
+            "Q275A": {
+              "max": 0.05
+            },
+            "Q275B": {
+              "max": 0.04
+            },
+            "Q355B": {
+              "max": 0.035
+            }
+          },
+          "clause": "5.1.2 表2",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "3091.Rm",
+          "name_zh": "抗拉强度",
+          "name_en": "Tensile strength",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "min": 315
+            },
+            "Q215A": {
+              "min": 335
+            },
+            "Q215B": {
+              "min": 335
+            },
+            "Q235A": {
+              "min": 370
+            },
+            "Q235B": {
+              "min": 370
+            },
+            "Q275A": {
+              "min": 410
+            },
+            "Q275B": {
+              "min": 410
+            },
+            "Q355B": {
+              "min": 470
+            }
+          },
+          "clause": "5.4 表4",
+          "test_method": "GB/T 228.1",
+          "notes": "Q195～Q275按GB/T 700-2006；Q355B按GB/T 1591-2018"
+        },
+        {
+          "id": "3091.ReL",
+          "name_zh": "下屈服强度",
+          "name_en": "Lower yield strength",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "min": 195
+            },
+            "Q215A": {
+              "min": 215
+            },
+            "Q215B": {
+              "min": 215
+            },
+            "Q235A": {
+              "min": 235
+            },
+            "Q235B": {
+              "min": 235
+            },
+            "Q275A": {
+              "min": 275
+            },
+            "Q275B": {
+              "min": 275
+            },
+            "Q355B": {
+              "min": 355
+            }
+          },
+          "clause": "5.4 表4",
+          "test_method": "GB/T 228.1",
+          "notes": "t≤16mm档"
+        },
+        {
+          "id": "3091.A",
+          "name_zh": "断后伸长率",
+          "name_en": "Percentage elongation after fracture",
+          "unit": "%",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "min": 33
+            },
+            "Q215A": {
+              "min": 31
+            },
+            "Q215B": {
+              "min": 31
+            },
+            "Q235A": {
+              "min": 26
+            },
+            "Q235B": {
+              "min": 26
+            },
+            "Q275A": {
+              "min": 22
+            },
+            "Q275B": {
+              "min": 22
+            },
+            "Q355B": {
+              "min": 22
+            }
+          },
+          "clause": "5.4 表4",
+          "test_method": "GB/T 228.1",
+          "notes": "外径≥219.1mm取横向试样（5.4.2.2）"
+        },
+        {
+          "id": "3091.HYD",
+          "name_zh": "液压试验压力",
+          "name_en": "Hydrostatic test pressure",
+          "unit": "MPa",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "P=2SR/D（S壁厚、R允许应力、D外径），试验压力按式(1)计算且不应低于规定值；每根逐根试验，保压≥5s无渗漏；可采用涡流/超声/漏磁探伤替代"
+          },
+          "clause": "5.6（液压试验）",
+          "test_method": "GB/T 241（水压）；GB/T 7735（涡流）；GB/T 11345（超声）；GB/T 12606（漏磁）",
+          "notes": "[待核]按外径分档的最小试验压力值（行业资料常引2.5~5.0 MPa级）以原文表为准"
+        },
+        {
+          "id": "3091.BEND",
+          "name_zh": "弯曲试验",
+          "name_en": "Bend test",
+          "unit": "-",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "pass"
+            ]
+          },
+          "clause": "6.6.1（弯曲）",
+          "test_method": "GB/T 244",
+          "notes": "GB/T 3091-2025：外径≤60.3mm做弯曲，弯后无裂纹→结果=pass"
+        },
+        {
+          "id": "3091.FLATTEN",
+          "name_zh": "压扁试验",
+          "name_en": "Flattening test",
+          "unit": "-",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "pass"
+            ]
+          },
+          "clause": "6.6.2（压扁）",
+          "test_method": "GB/T 246",
+          "notes": "GB/T 3091-2025：外径>60.3mm做压扁（压至外径2/3处），无裂纹→结果=pass"
+        },
+        {
+          "id": "3091.ZINC",
+          "name_zh": "镀锌层重量",
+          "name_en": "Mass of zinc coating",
+          "unit": "g/m²",
+          "category": "工艺试验（镀锌）",
+          "grade_conditioned": false,
+          "values": {
+            "table": [
+              {
+                "d_range": "DN≤168.3",
+                "min_g_m2": 300
+              },
+              {
+                "d_range": "DN>168.3",
+                "min_g_m2": 500
+              }
+            ]
+          },
+          "clause": "5.9（镀锌层）/ 表7",
+          "test_method": "化学溶解法（重量法）；均匀性/附着力试验",
+          "notes": "GB/T 3091-2015 5.9：热浸镀锌钢管镀锌层平均重量——公称外径≤168.3mm ≥300 g/m²；公称外径>168.3mm ≥500 g/m²。已按原文分档核验，替换原单一300值。"
+        },
+        {
+          "id": "3091.THREAD",
+          "name_zh": "管端螺纹（螺纹连接）",
+          "name_en": "Pipe end thread (screwed joint)",
+          "unit": "-",
+          "category": "连接",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              true
+            ]
+          },
+          "clause": "5.8（管端螺纹）/ GB/T 7306.1、7306.2",
+          "test_method": "GB/T 7306.1 / GB/T 7306.2（55°密封管螺纹）",
+          "notes": "GB/T 3091-2015 5.8：公称通径≤DN150 采用螺纹连接的钢管，管端螺纹应符合 GB/T 7306.1（55°密封管螺纹圆锥外螺纹）或 GB/T 7306.2（圆锥内螺纹）的要求；无缝/不锈钢管一般无螺纹连接要求。"
+        }
+      ]
+    },
+    {
+      "id": "GB/T 5223-2025",
+      "name_zh": "预应力混凝土用钢丝",
+      "name_en": "Steel wires for prestressed concrete",
+      "year": 2025,
+      "status": "2025年版（已发布；代替GB/T 5223-2014；具体发布/实施日期以国标委公告为准[待核]）",
+      "scope_zh": "预应力混凝土结构用冷拉钢丝、消除应力钢丝（光圆、螺旋肋、刻痕）等圆截面钢丝。",
+      "applicability_note": "对消防金属管材不适用/仅间接相关：为混凝土预应力用钢丝（线材），不是管材产品标准；消防管材合规判定不应引用本标准。",
+      "indicators": [
+        {
+          "id": "5223.TYPE",
+          "name_zh": "品种体系",
+          "name_en": "Wire type system",
+          "unit": "-",
+          "category": "牌号体系",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "冷拉钢丝（WCD）",
+              "消除应力光圆钢丝（WLR低松弛/WNR普通松弛）",
+              "螺旋肋钢丝（WHR）",
+              "三面刻痕钢丝（WCR）"
+            ]
+          },
+          "clause": "4 分类（2014版参照）",
+          "test_method": "-",
+          "notes": "[待核]2025版品种差异以原文为准"
+        },
+        {
+          "id": "5223.D",
+          "name_zh": "公称直径范围",
+          "name_en": "Nominal diameter range",
+          "unit": "mm",
+          "category": "尺寸",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "公称直径约3.0～12.0mm（按品种分系列）"
+          },
+          "clause": "尺寸条款",
+          "test_method": "千分尺/卡尺",
+          "notes": "[待核]2025版系列以原文为准"
+        },
+        {
+          "id": "5223.Rm",
+          "name_zh": "抗拉强度等级",
+          "name_en": "Tensile strength grade",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "desc": "公称抗拉强度等级：1470、1570、1670、1770、1860、1960（2014版；2025版可能调整）"
+          },
+          "clause": "力学性能表",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]2025版强度等级以原文为准"
+        },
+        {
+          "id": "5223.Rp02",
+          "name_zh": "规定非比例延伸强度",
+          "name_en": "Proof strength Rp0.2",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "desc": "Rp0.2一般≥0.80～0.85×Rm"
+          },
+          "clause": "力学性能表",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]"
+        },
+        {
+          "id": "5223.Agt",
+          "name_zh": "最大力总延伸率",
+          "name_en": "Total elongation at maximum force Agt",
+          "unit": "%",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "desc": "Agt≥3.5%（消除应力钢丝，标距100mm）"
+          },
+          "clause": "力学性能表",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]2025版以原文为准"
+        },
+        {
+          "id": "5223.BEND",
+          "name_zh": "反复弯曲次数",
+          "name_en": "Reverse bend count",
+          "unit": "次",
+          "category": "工艺性能",
+          "grade_conditioned": true,
+          "values": {
+            "desc": "反复弯曲（弯曲半径按直径），次数不少于规定值（3～4次级）"
+          },
+          "clause": "工艺性能条款",
+          "test_method": "GB/T 238",
+          "notes": "[待核]"
+        },
+        {
+          "id": "5223.RELX",
+          "name_zh": "应力松弛（1000h松弛率）",
+          "name_en": "Stress relaxation (1000h)",
+          "unit": "%",
+          "category": "工艺性能",
+          "grade_conditioned": true,
+          "values": {
+            "desc": "1000h松弛率：低松弛≤2.5%，普通松弛≤4.5%（初始应力0.7×F）；可用10h推算"
+          },
+          "clause": "松弛性能条款",
+          "test_method": "GB/T 10120",
+          "notes": "[待核]2025版限值以原文为准"
+        }
+      ]
+    },
+    {
+      "id": "GB 1499.2-2024",
+      "name_zh": "钢筋混凝土用钢 第2部分：热轧带肋钢筋",
+      "name_en": "Steel for reinforcement of concrete - Part 2: Hot-rolled ribbed bars",
+      "year": 2024,
+      "status": "强制性国家标准（2024-06-25发布，2024-09-25实施；代替GB/T 1499.2-2018，推荐性改为强制性）",
+      "scope_zh": "钢筋混凝土用热轧带肋钢筋（含抗震钢筋，公称直径6～50mm）。",
+      "applicability_note": "对消防金属管材不适用：为混凝土用钢筋（棒材），不是管材标准；消防管材合规判定不应引用本标准。",
+      "indicators": [
+        {
+          "id": "1499.GRADE",
+          "name_zh": "牌号体系",
+          "name_en": "Grade system",
+          "unit": "-",
+          "category": "牌号体系",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "HRB400",
+              "HRB400E",
+              "HRB500",
+              "HRB500E"
+            ]
+          },
+          "clause": "5 表1/表2",
+          "test_method": "-",
+          "notes": "2018版已含HRB600（供需协议）；2024版是否保留以正式文本为准[待核]"
+        },
+        {
+          "id": "1499.CHEM",
+          "name_zh": "化学成分（熔炼）",
+          "name_en": "Chemical composition",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "HRB400": {
+              "desc": "C≤0.25、Si≤0.80、Mn≤1.60、P≤0.045、S≤0.045（2018版参照；2024版微合金/碳当量更严[待核]）"
+            },
+            "HRB400E": {
+              "desc": "同HRB400级并满足碳当量/焊接要求"
+            },
+            "HRB500": {
+              "desc": "C≤0.25、Si≤0.80、Mn≤1.60、P≤0.045、S≤0.045（参照）"
+            },
+            "HRB500E": {
+              "desc": "同HRB500级并满足抗震附加要求"
+            }
+          },
+          "clause": "表2",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": "2024版强化V/Nb/Ti微合金与金相组织要求[待核]"
+        },
+        {
+          "id": "1499.ReL",
+          "name_zh": "下屈服强度（特征值）",
+          "name_en": "Lower yield strength ReL",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "HRB400": {
+              "min": 400
+            },
+            "HRB400E": {
+              "min": 400
+            },
+            "HRB500": {
+              "min": 500
+            },
+            "HRB500E": {
+              "min": 500
+            }
+          },
+          "clause": "表7",
+          "test_method": "GB/T 228.1",
+          "notes": ""
+        },
+        {
+          "id": "1499.Rm",
+          "name_zh": "抗拉强度（特征值）",
+          "name_en": "Tensile strength Rm",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "HRB400": {
+              "min": 540
+            },
+            "HRB400E": {
+              "min": 540
+            },
+            "HRB500": {
+              "min": 630
+            },
+            "HRB500E": {
+              "min": 630
+            }
+          },
+          "clause": "表7",
+          "test_method": "GB/T 228.1",
+          "notes": ""
+        },
+        {
+          "id": "1499.A",
+          "name_zh": "断后伸长率",
+          "name_en": "Percentage elongation A",
+          "unit": "%",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "HRB400": {
+              "min": 16
+            },
+            "HRB400E": {
+              "min": 16
+            },
+            "HRB500": {
+              "min": 15
+            },
+            "HRB500E": {
+              "min": 15
+            }
+          },
+          "clause": "表7",
+          "test_method": "GB/T 228.1",
+          "notes": "d≤25mm档"
+        },
+        {
+          "id": "1499.Agt",
+          "name_zh": "最大力总延伸率",
+          "name_en": "Total elongation at maximum force Agt",
+          "unit": "%",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "HRB400": {
+              "min": 7.5
+            },
+            "HRB400E": {
+              "min": 9.0
+            },
+            "HRB500": {
+              "min": 7.5
+            },
+            "HRB500E": {
+              "min": 9.0
+            }
+          },
+          "clause": "表7",
+          "test_method": "GB/T 228.1",
+          "notes": "E级Agt≥9.0%（2018版规定）"
+        },
+        {
+          "id": "1499.RATIO",
+          "name_zh": "强屈比与屈屈比（抗震）",
+          "name_en": "Rm/ReL and ReL ratio",
+          "unit": "-",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "HRB400E": {
+              "desc": "实测抗拉/实测屈服≥1.25；实测屈服/特征屈服≤1.30"
+            },
+            "HRB500E": {
+              "desc": "实测抗拉/实测屈服≥1.25；实测屈服/特征屈服≤1.30"
+            }
+          },
+          "clause": "表7",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]2024版调整以原文为准"
+        },
+        {
+          "id": "1499.BEND",
+          "name_zh": "弯曲与反向弯曲",
+          "name_en": "Bend and reverse bend",
+          "unit": "-",
+          "category": "工艺性能",
+          "grade_conditioned": true,
+          "values": {
+            "desc": "弯曲180°（弯心按牌号/直径）；E级反向弯曲；无裂纹"
+          },
+          "clause": "弯曲条款",
+          "test_method": "GB/T 232 及附录",
+          "notes": ""
+        },
+        {
+          "id": "1499.FAT",
+          "name_zh": "疲劳性能",
+          "name_en": "Fatigue performance",
+          "unit": "-",
+          "category": "工艺性能",
+          "grade_conditioned": true,
+          "values": {
+            "desc": "按需方/协议；2024版可能强化[待核]"
+          },
+          "clause": "检验条款",
+          "test_method": "GB/T 1499.2",
+          "notes": "[待核]"
+        },
+        {
+          "id": "1499.DIM",
+          "name_zh": "尺寸、外形与允许偏差",
+          "name_en": "Dimensions and tolerances",
+          "unit": "mm",
+          "category": "尺寸偏差",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "公称直径6～50mm；内径/横肋/肋间距/截面面积/理论重量及允许偏差按表（重量偏差±4%～±7%档）"
+          },
+          "clause": "尺寸条款",
+          "test_method": "附录/称重",
+          "notes": "[待核]2024版尺寸偏差可能收紧"
+        }
+      ]
+    },
+    {
+      "id": "GB/T 13793-2016",
+      "name_zh": "直缝电焊钢管",
+      "name_en": "Longitudinally electric welded steel pipes",
+      "year": 2016,
+      "status": "现行（代替GB/T 13793-2008）",
+      "scope_zh": "外径5mm～630mm的直缝电焊（电阻焊）钢管，用于一般结构、机械、输送流体等用途。",
+      "applicability_note": "对消防管材部分适用：可用于消防支架、套管等一般用途；承压输送管更常采用GB/T 3091或GB/T 8163（13793液压试验为协议项）。",
+      "indicators": [
+        {
+          "id": "13793.GRADE",
+          "name_zh": "牌号体系",
+          "name_en": "Grade system",
+          "unit": "-",
+          "category": "牌号体系",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "Q195",
+              "Q215A",
+              "Q215B",
+              "Q235A",
+              "Q235B",
+              "Q275A",
+              "Q275B",
+              "Q345A",
+              "Q345B",
+              "Q345C",
+              "Q345D"
+            ]
+          },
+          "clause": "表1",
+          "test_method": "-",
+          "notes": "[待核]2016版牌号范围以原文为准"
+        },
+        {
+          "id": "13793.CHEM.C",
+          "name_zh": "碳含量上限（熔炼）",
+          "name_en": "Chemical C",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.12
+            },
+            "Q215A": {
+              "max": 0.15
+            },
+            "Q215B": {
+              "max": 0.15
+            },
+            "Q235A": {
+              "max": 0.22
+            },
+            "Q235B": {
+              "max": 0.22
+            },
+            "Q275A": {
+              "max": 0.24
+            },
+            "Q275B": {
+              "max": 0.24
+            },
+            "Q345A": {
+              "max": 0.2
+            },
+            "Q345B": {
+              "max": 0.2
+            },
+            "Q345C": {
+              "max": 0.2
+            },
+            "Q345D": {
+              "max": 0.2
+            }
+          },
+          "clause": "引用GB/T 700-2006（Q195~Q275）及GB/T 1591（Q345系列）",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": "按牌号引用值"
+        },
+        {
+          "id": "13793.CHEM.SI",
+          "name_zh": "硅含量上限",
+          "name_en": "Chemical Si",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.3
+            },
+            "Q215A": {
+              "max": 0.35
+            },
+            "Q215B": {
+              "max": 0.35
+            },
+            "Q235A": {
+              "max": 0.35
+            },
+            "Q235B": {
+              "max": 0.35
+            },
+            "Q275A": {
+              "max": 0.35
+            },
+            "Q275B": {
+              "max": 0.35
+            },
+            "Q345A": {
+              "max": 0.5
+            },
+            "Q345B": {
+              "max": 0.5
+            },
+            "Q345C": {
+              "max": 0.5
+            },
+            "Q345D": {
+              "max": 0.5
+            }
+          },
+          "clause": "引用GB/T 700-2006（Q195~Q275）及GB/T 1591（Q345系列）",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": "按牌号引用值"
+        },
+        {
+          "id": "13793.CHEM.MN",
+          "name_zh": "锰含量上限",
+          "name_en": "Chemical Mn",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.5
+            },
+            "Q215A": {
+              "max": 1.2
+            },
+            "Q215B": {
+              "max": 1.2
+            },
+            "Q235A": {
+              "max": 1.4
+            },
+            "Q235B": {
+              "max": 1.4
+            },
+            "Q275A": {
+              "max": 1.5
+            },
+            "Q275B": {
+              "max": 1.5
+            },
+            "Q345A": {
+              "max": 1.6
+            },
+            "Q345B": {
+              "max": 1.6
+            },
+            "Q345C": {
+              "max": 1.6
+            },
+            "Q345D": {
+              "max": 1.6
+            }
+          },
+          "clause": "引用GB/T 700-2006（Q195~Q275）及GB/T 1591（Q345系列）",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": "按牌号引用值"
+        },
+        {
+          "id": "13793.CHEM.P",
+          "name_zh": "磷含量上限",
+          "name_en": "Chemical P",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.035
+            },
+            "Q215A": {
+              "max": 0.045
+            },
+            "Q215B": {
+              "max": 0.04
+            },
+            "Q235A": {
+              "max": 0.045
+            },
+            "Q235B": {
+              "max": 0.04
+            },
+            "Q275A": {
+              "max": 0.045
+            },
+            "Q275B": {
+              "max": 0.04
+            },
+            "Q345A": {
+              "max": 0.035
+            },
+            "Q345B": {
+              "max": 0.035
+            },
+            "Q345C": {
+              "max": 0.03
+            },
+            "Q345D": {
+              "max": 0.03
+            }
+          },
+          "clause": "引用GB/T 700-2006（Q195~Q275）及GB/T 1591（Q345系列）",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": "按牌号引用值"
+        },
+        {
+          "id": "13793.CHEM.S",
+          "name_zh": "硫含量上限",
+          "name_en": "Chemical S",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "max": 0.035
+            },
+            "Q215A": {
+              "max": 0.05
+            },
+            "Q215B": {
+              "max": 0.04
+            },
+            "Q235A": {
+              "max": 0.05
+            },
+            "Q235B": {
+              "max": 0.04
+            },
+            "Q275A": {
+              "max": 0.05
+            },
+            "Q275B": {
+              "max": 0.04
+            },
+            "Q345A": {
+              "max": 0.035
+            },
+            "Q345B": {
+              "max": 0.035
+            },
+            "Q345C": {
+              "max": 0.03
+            },
+            "Q345D": {
+              "max": 0.03
+            }
+          },
+          "clause": "引用GB/T 700-2006（Q195~Q275）及GB/T 1591（Q345系列）",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": "按牌号引用值"
+        },
+        {
+          "id": "13793.Rm",
+          "name_zh": "抗拉强度",
+          "name_en": "Tensile strength",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "min": 315
+            },
+            "Q215": {
+              "min": 335
+            },
+            "Q235": {
+              "min": 370
+            },
+            "Q275": {
+              "min": 410
+            },
+            "Q345": {
+              "min": 470
+            }
+          },
+          "clause": "力学性能条款",
+          "test_method": "GB/T 228.1",
+          "notes": "按GB/T 700/GB/T 1591相应牌号"
+        },
+        {
+          "id": "13793.ReL",
+          "name_zh": "下屈服强度",
+          "name_en": "Lower yield strength",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "min": 195
+            },
+            "Q215": {
+              "min": 215
+            },
+            "Q235": {
+              "min": 235
+            },
+            "Q275": {
+              "min": 275
+            },
+            "Q345": {
+              "min": 345
+            }
+          },
+          "clause": "力学性能条款",
+          "test_method": "GB/T 228.1",
+          "notes": ""
+        },
+        {
+          "id": "13793.A",
+          "name_zh": "断后伸长率",
+          "name_en": "Percentage elongation A",
+          "unit": "%",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "Q195": {
+              "min": 33
+            },
+            "Q215": {
+              "min": 31
+            },
+            "Q235": {
+              "min": 26
+            },
+            "Q275": {
+              "min": 22
+            },
+            "Q345": {
+              "min": 21
+            }
+          },
+          "clause": "力学性能条款",
+          "test_method": "GB/T 228.1",
+          "notes": ""
+        },
+        {
+          "id": "13793.BEND",
+          "name_zh": "弯曲试验",
+          "name_en": "Bend test",
+          "unit": "-",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "pass"
+            ]
+          },
+          "clause": "工艺性能条款",
+          "test_method": "GB/T 244",
+          "notes": "外径≤60.3mm级做弯曲，弯后无裂纹→结果=pass"
+        },
+        {
+          "id": "13793.FLATTEN",
+          "name_zh": "压扁试验",
+          "name_en": "Flattening test",
+          "unit": "-",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "pass"
+            ]
+          },
+          "clause": "工艺性能条款",
+          "test_method": "GB/T 246",
+          "notes": "压至规定间距无裂纹→结果=pass"
+        },
+        {
+          "id": "13793.HYD",
+          "name_zh": "液压试验（协议项）",
+          "name_en": "Hydrostatic test (by agreement)",
+          "unit": "MPa",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "需方要求时P=2SR/D或协议；可探伤替代"
+          },
+          "clause": "检验规则（协议项）",
+          "test_method": "GB/T 241 / GB/T 7735 / GB/T 12606",
+          "notes": "非强制项"
+        },
+        {
+          "id": "13793.NDT",
+          "name_zh": "无损检测（焊缝）",
+          "name_en": "NDT of weld",
+          "unit": "-",
+          "category": "无损检测",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "涡流/漏磁探伤，验收等级按标准（如GB/T 7735等级A/B）"
+          },
+          "clause": "无损检测条款",
+          "test_method": "GB/T 7735 / GB/T 12606",
+          "notes": "[待核]"
+        },
+        {
+          "id": "13793.DIM",
+          "name_zh": "尺寸及允许偏差",
+          "name_en": "Dimensions and tolerances",
+          "unit": "mm",
+          "category": "尺寸偏差",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "外径5～630mm；外径/壁厚偏差按普通级/较高级分级（外径±0.5%～±1%级、壁厚±10%S级）"
+          },
+          "clause": "尺寸条款",
+          "test_method": "GB/T 2102",
+          "notes": "[待核]"
+        }
+      ]
+    },
+    {
+      "id": "GB/T 5135.20-2010",
+      "name_zh": "自动喷水灭火系统 第20部分：涂覆钢管",
+      "name_en": "Automatic sprinkler systems - Part 20: Coated steel pipes",
+      "year": 2010,
+      "status": "现行",
+      "scope_zh": "自动喷水灭火系统专用的内外涂覆（防腐涂层）钢管，用于消防给水/喷淋管网；规定涂覆钢管的口径、基管、涂层材料与厚度、涂层性能（附着力、针孔、耐盐雾、耐温）及管材水压与连接要求。",
+      "applicability_note": "对消防金属管材【核心适用】——这是中国消防喷淋用涂覆钢管的专用标准；判定'消防管是否合格'应同时引用本标准和基管标准（GB/T 3091 / GB/T 17395）。",
+      "indicators": [
+        {
+          "id": "5135.20.DN",
+          "name_zh": "公称直径范围",
+          "name_en": "Nominal diameter",
+          "unit": "mm",
+          "category": "尺寸偏差",
+          "grade_conditioned": false,
+          "values": {
+            "max": 300
+          },
+          "clause": "1 范围",
+          "test_method": "-",
+          "notes": "GB/T 5135.20-2010：适用于公称通径不大于300mm的内涂覆材料为环氧树脂的涂覆钢管。已按官方文本核验。"
+        },
+        {
+          "id": "5135.20.BASE",
+          "name_zh": "基管标准",
+          "name_en": "Base pipe standard",
+          "unit": "-",
+          "category": "牌号体系",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "GB/T 3091-2015",
+              "GB/T 17395-2024",
+              "GB/T 8163-2018"
+            ]
+          },
+          "clause": "基管要求",
+          "test_method": "-",
+          "notes": "基管按 GB/T 3091 / GB/T 17395（焊接/无缝）；须先满足基管的力学与液压指标"
+        },
+        {
+          "id": "5135.20.COAT_TYPE",
+          "name_zh": "涂层类型",
+          "name_en": "Coating type",
+          "unit": "-",
+          "category": "涂覆层",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "内涂环氧/聚乙烯",
+              "外涂环氧/聚乙烯/聚氨酯"
+            ]
+          },
+          "clause": "涂层要求",
+          "test_method": "-",
+          "notes": "常见为内涂+外涂双涂层；涂层材料按用途（防腐/耐磨/耐温）选择"
+        },
+        {
+          "id": "5135.20.COAT_THK",
+          "name_zh": "涂层厚度（表1，按公称通径分档）",
+          "name_en": "Coating thickness (Table 1, by DN)",
+          "unit": "mm",
+          "category": "涂覆层",
+          "grade_conditioned": false,
+          "values": {
+            "table": [
+              {
+                "dn": "DN≤65",
+                "min_mm": 0.3
+              },
+              {
+                "dn": "DN≥80",
+                "min_mm": 0.35
+              }
+            ]
+          },
+          "clause": "5.4 表1",
+          "test_method": "测厚仪（磁性/涡流法）",
+          "notes": "GB/T 5135.20-2010 表1：公称通径 DN≤65 涂层厚度>0.30mm；DN≥80 >0.35mm（原文单位 mm，非 μm）。已按官方文本核验。"
+        },
+        {
+          "id": "5135.20.COAT_ADH",
+          "name_zh": "涂层附着力（级）",
+          "name_en": "Coating adhesion grade",
+          "unit": "级",
+          "category": "涂覆层",
+          "grade_conditioned": false,
+          "values": {
+            "min": 1,
+            "max": 3
+          },
+          "clause": "5.6",
+          "test_method": "附着力试验",
+          "notes": "GB/T 5135.20-2010 5.6：涂层附着力应为 (1~3) 级。已按官方文本核验。"
+        },
+        {
+          "id": "5135.20.COAT_PINHOLE",
+          "name_zh": "涂层针孔（电火花检测）",
+          "name_en": "Coating pinhole (holiday detection)",
+          "unit": "-",
+          "category": "涂覆层",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "涂层厚度≤0.4mm 试验电压1500V，>0.4mm 2000V；检查无电火花产生（6.3 针孔试验）"
+          },
+          "clause": "5.5 / 6.3",
+          "test_method": "电火花检测仪",
+          "notes": "GB/T 5135.20-2010 5.5/6.3：无电火花（电压按涂层厚度分档）。已按官方文本核验。"
+        },
+        {
+          "id": "5135.20.COAT_AGING",
+          "name_zh": "涂层耐温水老化 / 高温性能",
+          "name_en": "Coating water-aging / high-temperature resistance",
+          "unit": "-",
+          "category": "涂覆层",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "高温试验：涂层无脱落、隆起、开裂、剥离、损坏（5.10/6.9）；耐温水老化后涂层厚度仍满足 5.4 表1 规定"
+          },
+          "clause": "5.10 / 5.14 及 6.9",
+          "test_method": "高温试验 / 温水老化试验",
+          "notes": "GB/T 5135.20-2010 用耐温水老化与高温试验，而非耐盐雾；原'耐盐雾'条目为初编误差，已按官方文本更正。"
+        },
+        {
+          "id": "5135.20.HYD",
+          "name_zh": "液压试验压力",
+          "name_en": "Hydrostatic test pressure",
+          "unit": "MPa",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "P=2SR/D，逐根试验，保压≥5s无渗漏；可无损检测替代"
+          },
+          "clause": "水压试验条款",
+          "test_method": "GB/T 241 / GB/T 7735",
+          "notes": "与基管（GB/T 3091）水压要求一致"
+        },
+        {
+          "id": "5135.20.CONN",
+          "name_zh": "连接方式",
+          "name_en": "Connection method",
+          "unit": "-",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "沟槽连接",
+              "螺纹连接",
+              "法兰连接",
+              "焊接"
+            ]
+          },
+          "clause": "连接要求",
+          "test_method": "-",
+          "notes": "消防喷淋管网常见沟槽/螺纹连接；连接件密封与承压按 GB 50084 / GB 50261"
+        },
+        {
+          "id": "5135.20.CODE",
+          "name_zh": "设计与验收要求（引 GB 50084 / GB 50261）",
+          "name_en": "Design & acceptance (GB 50084 / GB 50261)",
+          "unit": "-",
+          "category": "设计规范",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "喷淋系统管网管材与壁厚、连接、工作压力按 GB 50084 设计及 GB 50261 施工验收规定；不同类型管材适用不同壁厚与连接方式"
+          },
+          "clause": "GB 50084 / GB 50261 相关条款",
+          "test_method": "-",
+          "notes": "设计/验收规范条款，需工程复核"
+        }
+      ]
+    },
+    {
+      "id": "GB/T 14976-2012",
+      "name_zh": "流体输送用不锈钢无缝钢管",
+      "name_en": "Seamless stainless steel tubes for fluid transport",
+      "year": 2012,
+      "status": "现行",
+      "scope_zh": "流体输送用不锈钢无缝钢管（耐蚀钢，热处理/固溶态交货，外径6～830mm）。",
+      "applicability_note": "对消防管材：适用——消防给水/喷淋系统不锈钢无缝管常用（06Cr19Ni10=304、06Cr17Ni12Mo2=316 等），耐腐蚀免维护；判定逻辑与碳钢无缝管（GB/T 8163）一致，牌号与阈值不同。",
+      "indicators": [
+        {
+          "id": "14976.GRADE",
+          "name_zh": "牌号体系",
+          "name_en": "Grade system",
+          "unit": "-",
+          "category": "牌号体系",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "06Cr19Ni10",
+              "022Cr19Ni10",
+              "06Cr17Ni12Mo2",
+              "022Cr17Ni12Mo2",
+              "06Cr18Ni11Ti"
+            ]
+          },
+          "clause": "表1",
+          "test_method": "-",
+          "notes": "常用奥氏体牌号；完整牌号表以原文为准"
+        },
+        {
+          "id": "14976.CHEM.C",
+          "name_zh": "碳含量上限（熔炼）",
+          "name_en": "Carbon max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 0.08
+            },
+            "022Cr19Ni10": {
+              "max": 0.03
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 0.08
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 0.03
+            },
+            "06Cr18Ni11Ti": {
+              "max": 0.08
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "14976.CHEM.SI",
+          "name_zh": "硅含量上限",
+          "name_en": "Silicon max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 1.0
+            },
+            "022Cr19Ni10": {
+              "max": 1.0
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 1.0
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 1.0
+            },
+            "06Cr18Ni11Ti": {
+              "max": 1.0
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "14976.CHEM.MN",
+          "name_zh": "锰含量上限",
+          "name_en": "Manganese max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 2.0
+            },
+            "022Cr19Ni10": {
+              "max": 2.0
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 2.0
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 2.0
+            },
+            "06Cr18Ni11Ti": {
+              "max": 2.0
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "14976.CHEM.P",
+          "name_zh": "磷含量上限",
+          "name_en": "Phosphorus max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 0.035
+            },
+            "022Cr19Ni10": {
+              "max": 0.035
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 0.035
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 0.035
+            },
+            "06Cr18Ni11Ti": {
+              "max": 0.035
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "14976.CHEM.S",
+          "name_zh": "硫含量上限",
+          "name_en": "Sulfur max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 0.03
+            },
+            "022Cr19Ni10": {
+              "max": 0.03
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 0.03
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 0.03
+            },
+            "06Cr18Ni11Ti": {
+              "max": 0.03
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "14976.CHEM.CR",
+          "name_zh": "铬含量",
+          "name_en": "Chromium",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "min": 18.0,
+              "max": 20.0
+            },
+            "022Cr19Ni10": {
+              "min": 18.0,
+              "max": 20.0
+            },
+            "06Cr17Ni12Mo2": {
+              "min": 16.0,
+              "max": 18.0
+            },
+            "022Cr17Ni12Mo2": {
+              "min": 16.0,
+              "max": 18.0
+            },
+            "06Cr18Ni11Ti": {
+              "min": 17.0,
+              "max": 19.0
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "14976.CHEM.NI",
+          "name_zh": "镍含量",
+          "name_en": "Nickel",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "min": 8.0,
+              "max": 11.0
+            },
+            "022Cr19Ni10": {
+              "min": 8.0,
+              "max": 12.0
+            },
+            "06Cr17Ni12Mo2": {
+              "min": 10.0,
+              "max": 14.0
+            },
+            "022Cr17Ni12Mo2": {
+              "min": 10.0,
+              "max": 14.0
+            },
+            "06Cr18Ni11Ti": {
+              "min": 9.0,
+              "max": 12.0
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "14976.Rm",
+          "name_zh": "抗拉强度",
+          "name_en": "Tensile strength",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "min": 520
+            },
+            "022Cr19Ni10": {
+              "min": 480
+            },
+            "06Cr17Ni12Mo2": {
+              "min": 520
+            },
+            "022Cr17Ni12Mo2": {
+              "min": 480
+            },
+            "06Cr18Ni11Ti": {
+              "min": 520
+            }
+          },
+          "clause": "表5（纵向）",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]数值取自 GB/T 14976-2012 表5（固溶/热处理态），以原文为准"
+        },
+        {
+          "id": "14976.Rp02",
+          "name_zh": "规定非比例延伸强度 Rp0.2",
+          "name_en": "Proof strength Rp0.2",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "min": 205
+            },
+            "022Cr19Ni10": {
+              "min": 180
+            },
+            "06Cr17Ni12Mo2": {
+              "min": 205
+            },
+            "022Cr17Ni12Mo2": {
+              "min": 180
+            },
+            "06Cr18Ni11Ti": {
+              "min": 205
+            }
+          },
+          "clause": "表5（纵向）",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]以原文表5为准"
+        },
+        {
+          "id": "14976.A",
+          "name_zh": "断后伸长率",
+          "name_en": "Elongation A",
+          "unit": "%",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "min": 35
+            },
+            "022Cr19Ni10": {
+              "min": 40
+            },
+            "06Cr17Ni12Mo2": {
+              "min": 40
+            },
+            "022Cr17Ni12Mo2": {
+              "min": 40
+            },
+            "06Cr18Ni11Ti": {
+              "min": 40
+            }
+          },
+          "clause": "表5（纵向，L0=5.65√S0）",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]06Cr19Ni10 断后伸长率行业通行≥35%（部分规格≥40%），以原文表5为准"
+        },
+        {
+          "id": "14976.HYD",
+          "name_zh": "液压试验压力",
+          "name_en": "Hydrostatic test pressure",
+          "unit": "MPa",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "P=2SR/D（S壁厚、R允许应力、D外径），或采用涡流/超声无损检测替代；保压≥5s无渗漏"
+          },
+          "clause": "液压试验条款",
+          "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777",
+          "notes": "R取值：碳钢按 ReL、不锈钢按 Rp0.2（无屈服点），取 0.6×强度计算。以原文为准"
+        },
+        {
+          "id": "14976.FLAT",
+          "name_zh": "压扁试验",
+          "name_en": "Flattening test",
+          "unit": "-",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "set": ["pass"]
+          },
+          "clause": "工艺性能条款",
+          "test_method": "GB/T 246 / GB/T 242",
+          "notes": "[待核]以原文为准"
+        },
+        {
+          "id": "14976.DIM",
+          "name_zh": "尺寸与允许偏差",
+          "name_en": "Dimensions and tolerances",
+          "unit": "mm",
+          "category": "尺寸偏差",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "外径6～830mm；外径/壁厚偏差按GB/T 17395（普通级/较高级/高级）"
+          },
+          "clause": "尺寸条款",
+          "test_method": "GB/T 2102",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "GB/T 12771-2019",
+      "name_zh": "流体输送用不锈钢焊接钢管",
+      "name_en": "Welded stainless steel tubes for fluid transport",
+      "year": 2019,
+      "status": "现行",
+      "scope_zh": "流体输送用不锈钢焊接钢管（直缝，外径6～630mm，固溶处理态交货）。",
+      "applicability_note": "对消防管材：适用——消防喷淋/给水不锈钢焊管常用；与 GB/T 14976 牌号一致，判定逻辑同构，注意焊管另需焊缝相关检验。",
+      "indicators": [
+        {
+          "id": "12771.GRADE",
+          "name_zh": "牌号体系",
+          "name_en": "Grade system",
+          "unit": "-",
+          "category": "牌号体系",
+          "grade_conditioned": false,
+          "values": {
+            "set": [
+              "06Cr19Ni10",
+              "022Cr19Ni10",
+              "06Cr17Ni12Mo2",
+              "022Cr17Ni12Mo2",
+              "06Cr18Ni11Ti"
+            ]
+          },
+          "clause": "表1",
+          "test_method": "-",
+          "notes": ""
+        },
+        {
+          "id": "12771.CHEM.C",
+          "name_zh": "碳含量上限（熔炼）",
+          "name_en": "Carbon max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 0.08
+            },
+            "022Cr19Ni10": {
+              "max": 0.03
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 0.08
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 0.03
+            },
+            "06Cr18Ni11Ti": {
+              "max": 0.08
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "12771.CHEM.SI",
+          "name_zh": "硅含量上限",
+          "name_en": "Silicon max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 1.0
+            },
+            "022Cr19Ni10": {
+              "max": 1.0
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 1.0
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 1.0
+            },
+            "06Cr18Ni11Ti": {
+              "max": 1.0
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "12771.CHEM.MN",
+          "name_zh": "锰含量上限",
+          "name_en": "Manganese max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 2.0
+            },
+            "022Cr19Ni10": {
+              "max": 2.0
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 2.0
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 2.0
+            },
+            "06Cr18Ni11Ti": {
+              "max": 2.0
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "12771.CHEM.P",
+          "name_zh": "磷含量上限",
+          "name_en": "Phosphorus max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 0.035
+            },
+            "022Cr19Ni10": {
+              "max": 0.035
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 0.035
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 0.035
+            },
+            "06Cr18Ni11Ti": {
+              "max": 0.035
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "12771.CHEM.S",
+          "name_zh": "硫含量上限",
+          "name_en": "Sulfur max",
+          "unit": "%",
+          "category": "化学成分",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "max": 0.03
+            },
+            "022Cr19Ni10": {
+              "max": 0.03
+            },
+            "06Cr17Ni12Mo2": {
+              "max": 0.03
+            },
+            "022Cr17Ni12Mo2": {
+              "max": 0.03
+            },
+            "06Cr18Ni11Ti": {
+              "max": 0.03
+            }
+          },
+          "clause": "表1",
+          "test_method": "GB/T 223 / GB/T 4336",
+          "notes": ""
+        },
+        {
+          "id": "12771.Rm",
+          "name_zh": "抗拉强度",
+          "name_en": "Tensile strength",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "min": 520
+            },
+            "022Cr19Ni10": {
+              "min": 480
+            },
+            "06Cr17Ni12Mo2": {
+              "min": 520
+            },
+            "022Cr17Ni12Mo2": {
+              "min": 480
+            },
+            "06Cr18Ni11Ti": {
+              "min": 520
+            }
+          },
+          "clause": "表5（纵向）",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]取自 GB/T 12771-2019 表5，以原文为准"
+        },
+        {
+          "id": "12771.Rp02",
+          "name_zh": "规定非比例延伸强度 Rp0.2",
+          "name_en": "Proof strength Rp0.2",
+          "unit": "MPa",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "min": 205
+            },
+            "022Cr19Ni10": {
+              "min": 180
+            },
+            "06Cr17Ni12Mo2": {
+              "min": 205
+            },
+            "022Cr17Ni12Mo2": {
+              "min": 180
+            },
+            "06Cr18Ni11Ti": {
+              "min": 205
+            }
+          },
+          "clause": "表5（纵向）",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]以原文表5为准"
+        },
+        {
+          "id": "12771.A",
+          "name_zh": "断后伸长率",
+          "name_en": "Elongation A",
+          "unit": "%",
+          "category": "力学性能",
+          "grade_conditioned": true,
+          "values": {
+            "06Cr19Ni10": {
+              "min": 35
+            },
+            "022Cr19Ni10": {
+              "min": 40
+            },
+            "06Cr17Ni12Mo2": {
+              "min": 40
+            },
+            "022Cr17Ni12Mo2": {
+              "min": 40
+            },
+            "06Cr18Ni11Ti": {
+              "min": 40
+            }
+          },
+          "clause": "表5（纵向）",
+          "test_method": "GB/T 228.1",
+          "notes": "[待核]以原文为准"
+        },
+        {
+          "id": "12771.HYD",
+          "name_zh": "液压试验压力",
+          "name_en": "Hydrostatic test pressure",
+          "unit": "MPa",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "P=2SR/D，或涡流/超声/液压检测替代；保压≥5s无渗漏；焊管可加做焊缝无损检测"
+          },
+          "clause": "液压试验条款",
+          "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777",
+          "notes": ""
+        },
+        {
+          "id": "12771.FLAT",
+          "name_zh": "压扁/扩口试验",
+          "name_en": "Flattening / expanding test",
+          "unit": "-",
+          "category": "工艺试验",
+          "grade_conditioned": false,
+          "values": {
+            "set": ["pass"]
+          },
+          "clause": "工艺性能条款",
+          "test_method": "GB/T 246 / GB/T 242 / GB/T 245 / GB/T 232",
+          "notes": "[待核]以原文为准"
+        },
+        {
+          "id": "12771.DIM",
+          "name_zh": "尺寸与允许偏差",
+          "name_en": "Dimensions and tolerances",
+          "unit": "mm",
+          "category": "尺寸偏差",
+          "grade_conditioned": false,
+          "values": {
+            "desc": "外径6～630mm；外径/壁厚偏差按GB/T 17395分级"
+          },
+          "clause": "尺寸条款",
+          "test_method": "GB/T 2102",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

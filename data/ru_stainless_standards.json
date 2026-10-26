@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title_zh": "俄罗斯不锈钢消防管材标准补充知识库（机读）",
+    "generated": "2025-06",
+    "purpose": "补充消防管材常用不锈钢标准：无缝热变形管（ГОСТ 9940-81）、电焊管（ГОСТ 11068-81）",
+    "units_zh": "统一SI单位：МПа（MPa）、мм（mm）、%、г/м²",
+    "merge_note": "本文件为标准数组，可直接并入 data/ru_standards.json 的 standards 数组；或运行 scripts/merge_stainless.py 自动合并。ГОСТ 数值取自长期稳定的苏联标准文本及钢管厂资料，标注[待核]项以正式文本为准。"
+  },
+  "standards": [
+    {
+      "id": "ГОСТ 9940-81",
+      "name_ru": "Трубы бесшовные горячедеформированные из коррозионностойкой стали. Технические условия",
+      "name_zh": "不锈钢无缝热变形管（热轧）技术条件",
+      "year": 1981,
+      "status": "现行（独联体沿用）",
+      "scope_zh": "耐蚀（不锈钢）无缝热变形管，外径57～325mm，用于流体输送及消防给水等。",
+      "applicability_note": "对消防管材：适用——俄罗斯消防给水/喷淋系统不锈钢无缝管按此验收（12Х18Н10Т 等奥氏体牌号）；判定逻辑与 ГОСТ 8731（碳钢无缝管）同构，牌号与阈值不同。",
+      "indicators": [
+        {"id": "9940.GRADE", "name_ru": "Марки стали", "name_zh": "牌号体系", "name_en": "Grade system", "unit": "-", "category": "牌号体系", "grade_conditioned": false, "values": {"set": ["12Х18Н10Т", "08Х18Н10", "08Х18Н10Т", "17Х18Н9", "08Х17Н15М3Т"]}, "clause": "п.1.1", "test_method": "-", "notes": "常用奥氏体不锈钢牌号[待核]"},
+        {"id": "9940.CHEM.C", "name_ru": "Углерод (C)", "name_zh": "碳含量上限", "name_en": "Carbon max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"max": 0.12}, "08Х18Н10": {"max": 0.08}, "08Х18Н10Т": {"max": 0.08}, "17Х18Н9": {"max": 0.17}, "08Х17Н15М3Т": {"max": 0.08}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12344（化学分析）", "notes": "化学成分按 ГОСТ 5632-72 相应牌号[待核]"},
+        {"id": "9940.CHEM.SI", "name_ru": "Кремний (Si)", "name_zh": "硅含量上限", "name_en": "Silicon max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"max": 0.80}, "08Х18Н10": {"max": 0.80}, "08Х18Н10Т": {"max": 0.80}, "17Х18Н9": {"max": 0.80}, "08Х17Н15М3Т": {"max": 0.80}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12345", "notes": "[待核]"},
+        {"id": "9940.CHEM.MN", "name_ru": "Марганец (Mn)", "name_zh": "锰含量上限", "name_en": "Manganese max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"max": 2.00}, "08Х18Н10": {"max": 2.00}, "08Х18Н10Т": {"max": 2.00}, "17Х18Н9": {"max": 2.00}, "08Х17Н15М3Т": {"max": 2.00}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12346", "notes": "[待核]"},
+        {"id": "9940.CHEM.CR", "name_ru": "Хром (Cr)", "name_zh": "铬含量", "name_en": "Chromium", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"min": 17.0, "max": 19.0}, "08Х18Н10": {"min": 17.0, "max": 19.0}, "17Х18Н9": {"min": 17.0, "max": 19.0}, "08Х17Н15М3Т": {"min": 16.0, "max": 18.0}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12354", "notes": "[待核]"},
+        {"id": "9940.CHEM.NI", "name_ru": "Никель (Ni)", "name_zh": "镍含量", "name_en": "Nickel", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"min": 9.0, "max": 11.0}, "08Х18Н10": {"min": 9.0, "max": 11.0}, "17Х18Н9": {"min": 8.0, "max": 10.0}, "08Х17Н15М3Т": {"min": 14.0, "max": 16.0}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12355", "notes": "[待核]"},
+        {"id": "9940.Rm", "name_ru": "Временное сопротивление σв", "name_zh": "抗拉强度", "name_en": "Tensile strength", "unit": "MPa", "category": "力学性能", "grade_conditioned": true, "values": {"12Х18Н10Т": {"min": 540}, "08Х18Н10": {"min": 510}, "08Х18Н10Т": {"min": 510}, "17Х18Н9": {"min": 540}, "08Х17Н15М3Т": {"min": 540}}, "clause": "п.1.6（таблица）", "test_method": "ГОСТ 1497", "notes": "[待核]12Х18Н10Т 热轧态 σв 常见≥540 МПа，以原文为准"},
+        {"id": "9940.A", "name_ru": "Относительное удлинение δ5", "name_zh": "断后伸长率", "name_en": "Elongation δ5", "unit": "%", "category": "力学性能", "grade_conditioned": true, "values": {"12Х18Н10Т": {"min": 35}, "08Х18Н10": {"min": 35}, "08Х18Н10Т": {"min": 35}, "17Х18Н9": {"min": 30}, "08Х17Н15М3Т": {"min": 35}}, "clause": "п.1.6（таблица）", "test_method": "ГОСТ 1497", "notes": "[待核]以原文为准"},
+        {"id": "9940.HYD", "name_ru": "Гидравлическое испытание", "name_zh": "液压试验压力", "name_en": "Hydrostatic test pressure", "unit": "MPa", "category": "工艺试验", "grade_conditioned": false, "values": {"desc": "P=2SR/D 或按 ГОСТ 3845-75 计算；可用超声/涡流检测替代；保压无渗漏"}, "clause": "п.2.6", "test_method": "ГОСТ 3845-75 / ГОСТ 17410（УЗК）", "notes": ""},
+        {"id": "9940.FLAT", "name_ru": "Испытание на сплющивание", "name_zh": "压扁试验", "name_en": "Flattening test", "unit": "-", "category": "工艺试验", "grade_conditioned": false, "values": {"set": ["pass"]}, "clause": "п.2.7", "test_method": "ГОСТ 8695-75", "notes": "[待核]"},
+        {"id": "9940.DIM", "name_ru": "Размеры и допуски", "name_zh": "尺寸与允许偏差", "name_en": "Dimensions and tolerances", "unit": "mm", "category": "尺寸偏差", "grade_conditioned": false, "values": {"desc": "外径57～325mm；外径/壁厚偏差按 ГОСТ 9940 尺寸表（普通精度/较高精度）"}, "clause": "尺寸条款", "test_method": "ГОСТ 9940 尺寸表 / 测量", "notes": "[待核]"}
+      ]
+    },
+    {
+      "id": "ГОСТ 11068-81",
+      "name_ru": "Трубы электросварные из коррозионностойкой стали. Технические условия",
+      "name_zh": "不锈钢电焊管（直缝）技术条件",
+      "year": 1981,
+      "status": "现行（独联体沿用）",
+      "scope_zh": "耐蚀（不锈钢）直缝电焊管，外径5～480mm，用于流体输送及消防给水等。",
+      "applicability_note": "对消防管材：适用——俄罗斯消防喷淋/给水不锈钢焊管按此验收（12Х18Н10Т 等）；与 ГОСТ 10705（碳钢电焊管）同构，注意焊缝检验。",
+      "indicators": [
+        {"id": "11068.GRADE", "name_ru": "Марки стали", "name_zh": "牌号体系", "name_en": "Grade system", "unit": "-", "category": "牌号体系", "grade_conditioned": false, "values": {"set": ["12Х18Н10Т", "08Х18Н10Т", "08Х18Н10", "10Х17Н13М2Т", "08Х17Н15М3Т"]}, "clause": "п.1.1", "test_method": "-", "notes": "常用奥氏体牌号[待核]"},
+        {"id": "11068.CHEM.C", "name_ru": "Углерод (C)", "name_zh": "碳含量上限", "name_en": "Carbon max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"max": 0.12}, "08Х18Н10Т": {"max": 0.08}, "08Х18Н10": {"max": 0.08}, "10Х17Н13М2Т": {"max": 0.10}, "08Х17Н15М3Т": {"max": 0.08}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12344", "notes": "按 ГОСТ 5632-72 相应牌号[待核]"},
+        {"id": "11068.CHEM.SI", "name_ru": "Кремний (Si)", "name_zh": "硅含量上限", "name_en": "Silicon max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"max": 0.80}, "08Х18Н10Т": {"max": 0.80}, "08Х18Н10": {"max": 0.80}, "10Х17Н13М2Т": {"max": 0.80}, "08Х17Н15М3Т": {"max": 0.80}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12345", "notes": "[待核]"},
+        {"id": "11068.CHEM.MN", "name_ru": "Марганец (Mn)", "name_zh": "锰含量上限", "name_en": "Manganese max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"max": 2.00}, "08Х18Н10Т": {"max": 2.00}, "08Х18Н10": {"max": 2.00}, "10Х17Н13М2Т": {"max": 2.00}, "08Х17Н15М3Т": {"max": 2.00}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12346", "notes": "[待核]"},
+        {"id": "11068.CHEM.CR", "name_ru": "Хром (Cr)", "name_zh": "铬含量", "name_en": "Chromium", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"min": 17.0, "max": 19.0}, "08Х18Н10Т": {"min": 17.0, "max": 19.0}, "08Х18Н10": {"min": 17.0, "max": 19.0}, "10Х17Н13М2Т": {"min": 16.0, "max": 18.0}, "08Х17Н15М3Т": {"min": 16.0, "max": 18.0}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12354", "notes": "[待核]"},
+        {"id": "11068.CHEM.NI", "name_ru": "Никель (Ni)", "name_zh": "镍含量", "name_en": "Nickel", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"12Х18Н10Т": {"min": 9.0, "max": 11.0}, "08Х18Н10Т": {"min": 9.0, "max": 11.0}, "08Х18Н10": {"min": 9.0, "max": 11.0}, "10Х17Н13М2Т": {"min": 12.0, "max": 14.0}, "08Х17Н15М3Т": {"min": 14.0, "max": 16.0}}, "clause": "п.1.2（引用ГОСТ 5632）", "test_method": "ГОСТ 12355", "notes": "[待核]"},
+        {"id": "11068.Rm", "name_ru": "Временное сопротивление σв", "name_zh": "抗拉强度", "name_en": "Tensile strength", "unit": "MPa", "category": "力学性能", "grade_conditioned": true, "values": {"12Х18Н10Т": {"min": 540}, "08Х18Н10Т": {"min": 510}, "08Х18Н10": {"min": 510}, "10Х17Н13М2Т": {"min": 540}, "08Х17Н15М3Т": {"min": 540}}, "clause": "п.1.6（таблица）", "test_method": "ГОСТ 1497", "notes": "[待核]以原文为准"},
+        {"id": "11068.A", "name_ru": "Относительное удлинение δ5", "name_zh": "断后伸长率", "name_en": "Elongation δ5", "unit": "%", "category": "力学性能", "grade_conditioned": true, "values": {"12Х18Н10Т": {"min": 35}, "08Х18Н10Т": {"min": 35}, "08Х18Н10": {"min": 35}, "10Х17Н13М2Т": {"min": 30}, "08Х17Н15М3Т": {"min": 35}}, "clause": "п.1.6（таблица）", "test_method": "ГОСТ 1497", "notes": "[待核]以原文为准"},
+        {"id": "11068.HYD", "name_ru": "Гидравлическое испытание", "name_zh": "液压试验压力", "name_en": "Hydrostatic test pressure", "unit": "MPa", "category": "工艺试验", "grade_conditioned": false, "values": {"desc": "P=2SR/D 或按 ГОСТ 3845-75；可用涡流/超声替代；保压无渗漏；焊缝另做无损检测"}, "clause": "п.2.6", "test_method": "ГОСТ 3845-75 / ГОСТ 17410（УЗК）", "notes": ""},
+        {"id": "11068.FLAT", "name_ru": "Испытание на сплющивание", "name_zh": "压扁试验", "name_en": "Flattening test", "unit": "-", "category": "工艺试验", "grade_conditioned": false, "values": {"set": ["pass"]}, "clause": "п.2.7", "test_method": "ГОСТ 8695-75", "notes": "[待核]"},
+        {"id": "11068.DIM", "name_ru": "Размеры и допуски", "name_zh": "尺寸与允许偏差", "name_en": "Dimensions and tolerances", "unit": "mm", "category": "尺寸偏差", "grade_conditioned": false, "values": {"desc": "外径5～480mm；外径/壁厚偏差按 ГОСТ 11068 尺寸表分级"}, "clause": "尺寸条款", "test_method": "ГОСТ 11068 尺寸表 / 测量", "notes": "[待核]"}
+      ]
+    }
+  ]
+}

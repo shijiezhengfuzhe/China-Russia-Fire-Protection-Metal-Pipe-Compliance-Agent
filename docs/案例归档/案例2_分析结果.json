@@ -1,0 +1,4132 @@
+{
+ "model": {
+  "file": "管井案例模型_无缝钢管DN50-200.ifc",
+  "schema": "IFC4",
+  "unit": "m",
+  "unit_scale_mm": 1000.0,
+  "project": "管井管材合规案例模型（无缝钢管 DN50~DN200）",
+  "storeys": [
+   "管井层 F1"
+  ]
+ },
+ "totals": {
+  "elements": 10,
+  "specs": 5,
+  "judged_specs": 5,
+  "unknown_specs": 0,
+  "by_kind": {
+   "segment": 10
+  },
+  "spec_color": {
+   "pass": 10
+  },
+  "excluded": {},
+  "excluded_total": 0,
+  "cn": {
+   "passed": 80,
+   "failed": 0,
+   "na": 10,
+   "coverage": 0.8889
+  },
+  "ru": {
+   "passed": 20,
+   "failed": 0,
+   "na": 5,
+   "coverage": 0.8
+  }
+ },
+ "specs": [
+  {
+   "key": "S01",
+   "signature": [
+    "无缝钢管",
+    "20",
+    "20",
+    50.0,
+    57.0,
+    3.5,
+    null,
+    false,
+    false
+   ],
+   "label": "20 DN50 Ø57×3.5",
+   "count": 2,
+   "kinds": [
+    "segment"
+   ],
+   "kind_group": "pipe",
+   "product": {
+    "type": "无缝钢管",
+    "dn_mm": 50.0,
+    "od_mm": 57.0,
+    "id_mm": 50.0,
+    "wall_thickness_mm": 3.5,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit",
+    "model": "20 DN50 Ø57×3.5",
+    "manufacturer": "",
+    "properties": {
+     "rm_mpa": 450.0,
+     "re_mpa": 260.0,
+     "a_pct": 26.0,
+     "chemical": {
+      "C": 0.17,
+      "Si": 0.25,
+      "Mn": 0.45,
+      "P": 0.025,
+      "S": 0.02,
+      "Cr": 0.15,
+      "Ni": 0.15,
+      "Cu": 0.15
+     },
+     "hydrostatic_test_mpa": 3.0,
+     "od_meas_mm": 57.0,
+     "wt_meas_mm": 3.5,
+     "straight_meas_mm_m": 1.0
+    }
+   },
+   "result": {
+    "product": {
+     "type": "无缝钢管",
+     "dn_mm": 50.0,
+     "od_mm": 57.0,
+     "id_mm": 50.0,
+     "wall_thickness_mm": 3.5,
+     "length_m": 6.0,
+     "working_pressure_mpa": null,
+     "material_grade_cn": "20",
+     "material_grade_ru": "20",
+     "galvanized": false,
+     "threaded": false,
+     "medium": null,
+     "intended_use": "给水系统",
+     "segment_spec": "无缝钢管 - default",
+     "connection_type": "焊接",
+     "delivery_group": "В",
+     "type_source": "explicit",
+     "model": "20 DN50 Ø57×3.5",
+     "manufacturer": "",
+     "properties": {
+      "rm_mpa": 450.0,
+      "re_mpa": 260.0,
+      "a_pct": 26.0,
+      "chemical": {
+       "C": 0.17,
+       "Si": 0.25,
+       "Mn": 0.45,
+       "P": 0.025,
+       "S": 0.02,
+       "Cr": 0.15,
+       "Ni": 0.15,
+       "Cu": 0.15
+      },
+      "hydrostatic_test_mpa": 3.0,
+      "od_meas_mm": 57.0,
+      "wt_meas_mm": 3.5,
+      "straight_meas_mm_m": 1.0
+     }
+    },
+    "cn_results": [
+     {
+      "standard": "GB/T 8163-2018",
+      "name_zh": "输送流体用无缝钢管",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8163.GRADE",
+        "indicator_zh": "牌号体系",
+        "category": "牌号体系",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          "10",
+          "20",
+          "Q345D",
+          "Q390D",
+          "Q420D",
+          "Q460D"
+         ]
+        },
+        "clause": "5.1 表3",
+        "test_method": "-",
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', 'Q345D', 'Q390D', 'Q420D', 'Q460D']"
+       },
+       {
+        "indicator_id": "8163.CHEM.C",
+        "indicator_zh": "碳含量（熔炼）",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.23
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.17,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.17 ≤ 0.23"
+       },
+       {
+        "indicator_id": "8163.CHEM.SI",
+        "indicator_zh": "硅含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.37
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.25,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.25 ≤ 0.37"
+       },
+       {
+        "indicator_id": "8163.CHEM.MN",
+        "indicator_zh": "锰含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.35,
+         "max": 0.65
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.45,
+        "verdict": "pass",
+        "detail": "0.35 ≤ 0.45 ≤ 0.65"
+       },
+       {
+        "indicator_id": "8163.CHEM.P",
+        "indicator_zh": "磷含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.025,
+        "verdict": "pass",
+        "detail": "0.025 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.CHEM.S",
+        "indicator_zh": "硫含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.02,
+        "verdict": "pass",
+        "detail": "0.02 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.Rm",
+        "indicator_zh": "抗拉强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 410,
+         "max": 550
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 450.0,
+        "verdict": "pass",
+        "detail": "410 ≤ 450.0 ≤ 550"
+       },
+       {
+        "indicator_id": "8163.ReL",
+        "indicator_zh": "下屈服强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 245
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 260.0,
+        "verdict": "pass",
+        "detail": "260.0 ≥ 245"
+       },
+       {
+        "indicator_id": "8163.A",
+        "indicator_zh": "断后伸长率",
+        "category": "力学性能",
+        "unit": "%",
+        "requirement": {
+         "min": 22
+        },
+        "clause": "5.4.1 表5（纵向，L0=5.65√S0）",
+        "test_method": "GB/T 228.1",
+        "product_value": 26.0,
+        "verdict": "pass",
+        "detail": "26.0 ≥ 22"
+       },
+       {
+        "indicator_id": "8163.KV2",
+        "indicator_zh": "冲击吸收能量（纵向）",
+        "category": "力学性能",
+        "unit": "J",
+        "requirement": {
+         "desc": "一般不作规定（或按协议）"
+        },
+        "clause": "5.4.2 表6",
+        "test_method": "GB/T 229",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "描述性要求：一般不作规定（或按协议）（需认证机构/LLM辅助判定）｜✋ 无法判定：产品未提供「冲击吸收能量（纵向）」的输入值（J）。📖 评价依据：5.4.2 表6。标准以文字描述要求（一般不作规定（或按协议）），且需按订货协议/工程校核。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.HYD",
+        "indicator_zh": "液压试验压力",
+        "category": "工艺试验",
+        "unit": "MPa",
+        "requirement": {
+         "min": 2.5
+        },
+        "clause": "5.6",
+        "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777",
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.5 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8163.NDT",
+        "indicator_zh": "无损检测",
+        "category": "无损检测",
+        "unit": "-",
+        "requirement": {
+         "desc": "液压与无损检测（涡流/超声/漏磁）任选或按订货"
+        },
+        "clause": "5.6/5.7",
+        "test_method": "GB/T 7735 / GB/T 5777 / GB/T 12606",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "✋ 可选/按协议项（非强制）：无损检测为可选/按协议项，未提供检测结果。📖 评价依据：5.6/5.7。标准以文字描述要求（液压与无损检测（涡流/超声/漏磁）任选或按订货），且需认证机构/人工判定。💡 参考：无损检测为可选/按协议项；未做即为可选未提供，不据此判不达标。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.DIM",
+        "indicator_zh": "尺寸与允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "desc": "尺寸与允许偏差（符合 外径±1%、壁厚−10%~+12.5%）"
+        },
+        "clause": "5.3",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径偏差 0.0%（限±1.0% → ✅）；壁厚偏差 0.0%（限−10~+12.5% → ✅）（实测）"
+       }
+      ]
+     },
+     {
+      "standard": "GB/T 17395-2024",
+      "name_zh": "钢管尺寸、外形、重量及允许偏差",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "17395.OD",
+        "indicator_zh": "外径系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "max": 1.0
+        },
+        "clause": "尺寸与偏差相关条款及表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径实测 57.0 mm vs 名义 57.0 mm，偏差 0.0% ≤ ±1.0% → ✅"
+       },
+       {
+        "indicator_id": "17395.WT",
+        "indicator_zh": "壁厚系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "min": -10.0,
+         "max": 12.5
+        },
+        "clause": "壁厚系列及允许偏差表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "壁厚实测 3.5 mm vs 名义 3.5 mm，偏差 0.0% 在 -10%/+12.5% 内 → ✅"
+       },
+       {
+        "indicator_id": "17395.LEN",
+        "indicator_zh": "长度及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "range": [
+          3.0,
+          12.0
+         ]
+        },
+        "clause": "长度允许偏差条款",
+        "test_method": "GB/T 2102",
+        "product_value": 6.0,
+        "verdict": "pass",
+        "detail": "3.0 ≤ 6.0 ≤ 12.0"
+       },
+       {
+        "indicator_id": "17395.STR",
+        "indicator_zh": "弯曲度（直线度）",
+        "category": "外形",
+        "unit": "mm/m",
+        "requirement": {
+         "max": 1.5
+        },
+        "clause": "外形条款",
+        "test_method": "GB/T 2102",
+        "product_value": 1.0,
+        "verdict": "pass",
+        "detail": "弯曲度实测 1.0 mm/m ≤ 1.5 → ✅"
+       },
+       {
+        "indicator_id": "17395.WGT",
+        "indicator_zh": "单位长度重量及允许偏差",
+        "category": "重量",
+        "unit": "kg/m",
+        "requirement": {
+         "min": 0
+        },
+        "clause": "重量及允许偏差条款",
+        "test_method": "称重/计算",
+        "product_value": 4.618,
+        "verdict": "pass",
+        "detail": "4.618 ≥ 0"
+       }
+      ]
+     }
+    ],
+    "ru_results": [
+     {
+      "standard": "ГОСТ 8731-87",
+      "name_zh": "无缝热变形钢管技术条件",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8731.GROUP",
+        "indicator_zh": "交货分组",
+        "category": "分类",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "А": "нормируются механические свойства",
+          "Б": "нормируется химический состав",
+          "В": "нормируются механические свойства и химсостав"
+         }
+        },
+        "clause": "п. 1.1",
+        "test_method": null,
+        "product_value": "В",
+        "verdict": "pass",
+        "detail": "交货分组 В（依 ГОСТ п. 1.1）：力学性能+化学成分 均保证。此分组决定本次验收范围，被排除的类别见对应项'该分组不保证'"
+       },
+       {
+        "indicator_id": "8731.STEEL",
+        "indicator_zh": "钢号",
+        "category": "化学成分",
+        "unit": "-",
+        "requirement": {
+         "series": [
+          "10",
+          "20",
+          "35",
+          "45",
+          "40Х",
+          "09Г2С",
+          "15ГС",
+          "17Г1С",
+          "30ХМА"
+         ]
+        },
+        "clause": "Таблица 1/2",
+        "test_method": null,
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', '35', '45', '40Х', '09Г2С', '15ГС', '17Г1С', '30ХМА']"
+       },
+       {
+        "indicator_id": "8731.MECH",
+        "indicator_zh": "力学性能（最小值）",
+        "category": "力学性能",
+        "unit": "МПа / % / Дж/см²",
+        "requirement": {
+         "table": [
+          {
+           "сталь": "10",
+           "σв": 333,
+           "σт": 206,
+           "δ5": 31,
+           "KCU": null
+          },
+          {
+           "сталь": "20",
+           "σв": 412,
+           "σт": 245,
+           "δ5": 25,
+           "KCU": 49
+          },
+          {
+           "сталь": "35",
+           "σв": 490,
+           "σт": 294,
+           "δ5": 19,
+           "KCU": null
+          },
+          {
+           "сталь": "45",
+           "σв": 588,
+           "σт": 343,
+           "δ5": 17,
+           "KCU": null
+          },
+          {
+           "сталь": "40Х",
+           "σв": 637,
+           "σт": 392,
+           "δ5": 15,
+           "KCU": null
+          },
+          {
+           "сталь": "09Г2С",
+           "σв": 470,
+           "σт": 314,
+           "δ5": 21,
+           "KCU": 49
+          }
+         ]
+        },
+        "clause": "Таблица 5",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "pass",
+        "detail": "σв=450.0 vs ≥412（✅）；σт=260.0 vs ≥245（✅）；δ5=26.0 vs ≥25（✅）（按钢号分档，逐属性比较）"
+       },
+       {
+        "indicator_id": "8731.HYDRO",
+        "indicator_zh": "水压试验",
+        "category": "检验",
+        "unit": "МПа",
+        "requirement": {
+         "min": 2.4
+        },
+        "clause": "п. 2.10",
+        "test_method": null,
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.4 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8731.TECH",
+        "indicator_zh": "工艺试验（压扁/扩口/卷边/弯曲）",
+        "category": "检验",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "сплющивание": "ГОСТ 8695",
+          "раздача": "ГОСТ 8694",
+          "отбортовка": "ГОСТ 8693",
+          "загиб": "ГОСТ 3728"
+         }
+        },
+        "clause": "п. 2.11–2.15",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "na",
+        "detail": "枚举型要求（如分组 А/Б/В），需按产品交付分组判定：{'сплющивание': 'ГОСТ 8695', 'раздача': 'ГОСТ 8694', 'отбортовка': 'ГОСТ 8693', 'загиб': 'ГОСТ 3728'}｜✋ 无法判定：产品未提供「工艺试验（压扁/扩口/卷边/弯曲）」的输入值（-）。📖 评价依据：п. 2.11–2.15。标准为枚举型分组（['сплющивание', 'раздача', 'отбортовка', 'загиб']），需按产品交付分组确认。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       }
+      ]
+     }
+    ],
+    "skipped_cn": [],
+    "skipped_ru": [],
+    "tr_cu_032": {
+     "in_scope": null,
+     "category": null,
+     "pdn": null,
+     "route": null,
+     "table": null,
+     "note": "缺少工作压力或公称通径，无法判定"
+    },
+    "tr_eaeu_043": {
+     "applies": false,
+     "route": null,
+     "note": "产品用途未涉及消防系统，ТР ЕАЭС 043/2017 不适用"
+    },
+    "index": {
+     "cn": {
+      "ci": 1.0,
+      "passed": 16,
+      "failed": 0,
+      "na": 2,
+      "coverage": 0.8888888888888888,
+      "grade": "A"
+     },
+     "ru": {
+      "ci": 1.0,
+      "passed": 4,
+      "failed": 0,
+      "na": 1,
+      "coverage": 0.8,
+      "grade": "A"
+     }
+    },
+    "overall": {
+     "cn_compliant": true,
+     "ru_compliant": true,
+     "tr_cu_032_route": null,
+     "tr_eaeu_043_route": "不适用",
+     "summary": "中国侧：合规（评级 A，可评 16 项中通过 16 项）；俄罗斯侧：合规（评级 A，可评 4 项中通过 4 项）；ТР ТС 032/2013：вне области；ТР ЕАЭС 043/2017：不适用"
+    }
+   },
+   "color": "pass",
+   "type_source": "explicit",
+   "note": null,
+   "elements": [
+    165,
+    182
+   ],
+   "evidence": {
+    "dn_mm": "50 mmø",
+    "od_mm": "0.057",
+    "id_mm": "0.05",
+    "wall_thickness_mm": "0.0035",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "material": "20",
+   "type_name": "管道类型:无缝钢管 DN50"
+  },
+  {
+   "key": "S02",
+   "signature": [
+    "无缝钢管",
+    "20",
+    "20",
+    80.0,
+    89.0,
+    4.0,
+    null,
+    false,
+    false
+   ],
+   "label": "20 DN80 Ø89×4",
+   "count": 2,
+   "kinds": [
+    "segment"
+   ],
+   "kind_group": "pipe",
+   "product": {
+    "type": "无缝钢管",
+    "dn_mm": 80.0,
+    "od_mm": 89.0,
+    "id_mm": 81.0,
+    "wall_thickness_mm": 4.0,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit",
+    "model": "20 DN80 Ø89×4",
+    "manufacturer": "",
+    "properties": {
+     "rm_mpa": 450.0,
+     "re_mpa": 260.0,
+     "a_pct": 26.0,
+     "chemical": {
+      "C": 0.17,
+      "Si": 0.25,
+      "Mn": 0.45,
+      "P": 0.025,
+      "S": 0.02,
+      "Cr": 0.15,
+      "Ni": 0.15,
+      "Cu": 0.15
+     },
+     "hydrostatic_test_mpa": 3.0,
+     "od_meas_mm": 89.0,
+     "wt_meas_mm": 4.0,
+     "straight_meas_mm_m": 1.0
+    }
+   },
+   "result": {
+    "product": {
+     "type": "无缝钢管",
+     "dn_mm": 80.0,
+     "od_mm": 89.0,
+     "id_mm": 81.0,
+     "wall_thickness_mm": 4.0,
+     "length_m": 6.0,
+     "working_pressure_mpa": null,
+     "material_grade_cn": "20",
+     "material_grade_ru": "20",
+     "galvanized": false,
+     "threaded": false,
+     "medium": null,
+     "intended_use": "给水系统",
+     "segment_spec": "无缝钢管 - default",
+     "connection_type": "焊接",
+     "delivery_group": "В",
+     "type_source": "explicit",
+     "model": "20 DN80 Ø89×4",
+     "manufacturer": "",
+     "properties": {
+      "rm_mpa": 450.0,
+      "re_mpa": 260.0,
+      "a_pct": 26.0,
+      "chemical": {
+       "C": 0.17,
+       "Si": 0.25,
+       "Mn": 0.45,
+       "P": 0.025,
+       "S": 0.02,
+       "Cr": 0.15,
+       "Ni": 0.15,
+       "Cu": 0.15
+      },
+      "hydrostatic_test_mpa": 3.0,
+      "od_meas_mm": 89.0,
+      "wt_meas_mm": 4.0,
+      "straight_meas_mm_m": 1.0
+     }
+    },
+    "cn_results": [
+     {
+      "standard": "GB/T 8163-2018",
+      "name_zh": "输送流体用无缝钢管",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8163.GRADE",
+        "indicator_zh": "牌号体系",
+        "category": "牌号体系",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          "10",
+          "20",
+          "Q345D",
+          "Q390D",
+          "Q420D",
+          "Q460D"
+         ]
+        },
+        "clause": "5.1 表3",
+        "test_method": "-",
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', 'Q345D', 'Q390D', 'Q420D', 'Q460D']"
+       },
+       {
+        "indicator_id": "8163.CHEM.C",
+        "indicator_zh": "碳含量（熔炼）",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.23
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.17,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.17 ≤ 0.23"
+       },
+       {
+        "indicator_id": "8163.CHEM.SI",
+        "indicator_zh": "硅含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.37
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.25,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.25 ≤ 0.37"
+       },
+       {
+        "indicator_id": "8163.CHEM.MN",
+        "indicator_zh": "锰含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.35,
+         "max": 0.65
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.45,
+        "verdict": "pass",
+        "detail": "0.35 ≤ 0.45 ≤ 0.65"
+       },
+       {
+        "indicator_id": "8163.CHEM.P",
+        "indicator_zh": "磷含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.025,
+        "verdict": "pass",
+        "detail": "0.025 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.CHEM.S",
+        "indicator_zh": "硫含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.02,
+        "verdict": "pass",
+        "detail": "0.02 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.Rm",
+        "indicator_zh": "抗拉强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 410,
+         "max": 550
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 450.0,
+        "verdict": "pass",
+        "detail": "410 ≤ 450.0 ≤ 550"
+       },
+       {
+        "indicator_id": "8163.ReL",
+        "indicator_zh": "下屈服强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 245
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 260.0,
+        "verdict": "pass",
+        "detail": "260.0 ≥ 245"
+       },
+       {
+        "indicator_id": "8163.A",
+        "indicator_zh": "断后伸长率",
+        "category": "力学性能",
+        "unit": "%",
+        "requirement": {
+         "min": 22
+        },
+        "clause": "5.4.1 表5（纵向，L0=5.65√S0）",
+        "test_method": "GB/T 228.1",
+        "product_value": 26.0,
+        "verdict": "pass",
+        "detail": "26.0 ≥ 22"
+       },
+       {
+        "indicator_id": "8163.KV2",
+        "indicator_zh": "冲击吸收能量（纵向）",
+        "category": "力学性能",
+        "unit": "J",
+        "requirement": {
+         "desc": "一般不作规定（或按协议）"
+        },
+        "clause": "5.4.2 表6",
+        "test_method": "GB/T 229",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "描述性要求：一般不作规定（或按协议）（需认证机构/LLM辅助判定）｜✋ 无法判定：产品未提供「冲击吸收能量（纵向）」的输入值（J）。📖 评价依据：5.4.2 表6。标准以文字描述要求（一般不作规定（或按协议）），且需按订货协议/工程校核。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.HYD",
+        "indicator_zh": "液压试验压力",
+        "category": "工艺试验",
+        "unit": "MPa",
+        "requirement": {
+         "min": 2.5
+        },
+        "clause": "5.6",
+        "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777",
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.5 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8163.NDT",
+        "indicator_zh": "无损检测",
+        "category": "无损检测",
+        "unit": "-",
+        "requirement": {
+         "desc": "液压与无损检测（涡流/超声/漏磁）任选或按订货"
+        },
+        "clause": "5.6/5.7",
+        "test_method": "GB/T 7735 / GB/T 5777 / GB/T 12606",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "✋ 可选/按协议项（非强制）：无损检测为可选/按协议项，未提供检测结果。📖 评价依据：5.6/5.7。标准以文字描述要求（液压与无损检测（涡流/超声/漏磁）任选或按订货），且需认证机构/人工判定。💡 参考：无损检测为可选/按协议项；未做即为可选未提供，不据此判不达标。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.DIM",
+        "indicator_zh": "尺寸与允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "desc": "尺寸与允许偏差（符合 外径±1%、壁厚−10%~+12.5%）"
+        },
+        "clause": "5.3",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径偏差 0.0%（限±1.0% → ✅）；壁厚偏差 0.0%（限−10~+12.5% → ✅）（实测）"
+       }
+      ]
+     },
+     {
+      "standard": "GB/T 17395-2024",
+      "name_zh": "钢管尺寸、外形、重量及允许偏差",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "17395.OD",
+        "indicator_zh": "外径系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "max": 1.0
+        },
+        "clause": "尺寸与偏差相关条款及表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径实测 89.0 mm vs 名义 89.0 mm，偏差 0.0% ≤ ±1.0% → ✅"
+       },
+       {
+        "indicator_id": "17395.WT",
+        "indicator_zh": "壁厚系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "min": -10.0,
+         "max": 12.5
+        },
+        "clause": "壁厚系列及允许偏差表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "壁厚实测 4.0 mm vs 名义 4.0 mm，偏差 0.0% 在 -10%/+12.5% 内 → ✅"
+       },
+       {
+        "indicator_id": "17395.LEN",
+        "indicator_zh": "长度及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "range": [
+          3.0,
+          12.0
+         ]
+        },
+        "clause": "长度允许偏差条款",
+        "test_method": "GB/T 2102",
+        "product_value": 6.0,
+        "verdict": "pass",
+        "detail": "3.0 ≤ 6.0 ≤ 12.0"
+       },
+       {
+        "indicator_id": "17395.STR",
+        "indicator_zh": "弯曲度（直线度）",
+        "category": "外形",
+        "unit": "mm/m",
+        "requirement": {
+         "max": 1.5
+        },
+        "clause": "外形条款",
+        "test_method": "GB/T 2102",
+        "product_value": 1.0,
+        "verdict": "pass",
+        "detail": "弯曲度实测 1.0 mm/m ≤ 1.5 → ✅"
+       },
+       {
+        "indicator_id": "17395.WGT",
+        "indicator_zh": "单位长度重量及允许偏差",
+        "category": "重量",
+        "unit": "kg/m",
+        "requirement": {
+         "min": 0
+        },
+        "clause": "重量及允许偏差条款",
+        "test_method": "称重/计算",
+        "product_value": 8.385,
+        "verdict": "pass",
+        "detail": "8.385 ≥ 0"
+       }
+      ]
+     }
+    ],
+    "ru_results": [
+     {
+      "standard": "ГОСТ 8731-87",
+      "name_zh": "无缝热变形钢管技术条件",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8731.GROUP",
+        "indicator_zh": "交货分组",
+        "category": "分类",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "А": "нормируются механические свойства",
+          "Б": "нормируется химический состав",
+          "В": "нормируются механические свойства и химсостав"
+         }
+        },
+        "clause": "п. 1.1",
+        "test_method": null,
+        "product_value": "В",
+        "verdict": "pass",
+        "detail": "交货分组 В（依 ГОСТ п. 1.1）：力学性能+化学成分 均保证。此分组决定本次验收范围，被排除的类别见对应项'该分组不保证'"
+       },
+       {
+        "indicator_id": "8731.STEEL",
+        "indicator_zh": "钢号",
+        "category": "化学成分",
+        "unit": "-",
+        "requirement": {
+         "series": [
+          "10",
+          "20",
+          "35",
+          "45",
+          "40Х",
+          "09Г2С",
+          "15ГС",
+          "17Г1С",
+          "30ХМА"
+         ]
+        },
+        "clause": "Таблица 1/2",
+        "test_method": null,
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', '35', '45', '40Х', '09Г2С', '15ГС', '17Г1С', '30ХМА']"
+       },
+       {
+        "indicator_id": "8731.MECH",
+        "indicator_zh": "力学性能（最小值）",
+        "category": "力学性能",
+        "unit": "МПа / % / Дж/см²",
+        "requirement": {
+         "table": [
+          {
+           "сталь": "10",
+           "σв": 333,
+           "σт": 206,
+           "δ5": 31,
+           "KCU": null
+          },
+          {
+           "сталь": "20",
+           "σв": 412,
+           "σт": 245,
+           "δ5": 25,
+           "KCU": 49
+          },
+          {
+           "сталь": "35",
+           "σв": 490,
+           "σт": 294,
+           "δ5": 19,
+           "KCU": null
+          },
+          {
+           "сталь": "45",
+           "σв": 588,
+           "σт": 343,
+           "δ5": 17,
+           "KCU": null
+          },
+          {
+           "сталь": "40Х",
+           "σв": 637,
+           "σт": 392,
+           "δ5": 15,
+           "KCU": null
+          },
+          {
+           "сталь": "09Г2С",
+           "σв": 470,
+           "σт": 314,
+           "δ5": 21,
+           "KCU": 49
+          }
+         ]
+        },
+        "clause": "Таблица 5",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "pass",
+        "detail": "σв=450.0 vs ≥412（✅）；σт=260.0 vs ≥245（✅）；δ5=26.0 vs ≥25（✅）（按钢号分档，逐属性比较）"
+       },
+       {
+        "indicator_id": "8731.HYDRO",
+        "indicator_zh": "水压试验",
+        "category": "检验",
+        "unit": "МПа",
+        "requirement": {
+         "min": 2.4
+        },
+        "clause": "п. 2.10",
+        "test_method": null,
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.4 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8731.TECH",
+        "indicator_zh": "工艺试验（压扁/扩口/卷边/弯曲）",
+        "category": "检验",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "сплющивание": "ГОСТ 8695",
+          "раздача": "ГОСТ 8694",
+          "отбортовка": "ГОСТ 8693",
+          "загиб": "ГОСТ 3728"
+         }
+        },
+        "clause": "п. 2.11–2.15",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "na",
+        "detail": "枚举型要求（如分组 А/Б/В），需按产品交付分组判定：{'сплющивание': 'ГОСТ 8695', 'раздача': 'ГОСТ 8694', 'отбортовка': 'ГОСТ 8693', 'загиб': 'ГОСТ 3728'}｜✋ 无法判定：产品未提供「工艺试验（压扁/扩口/卷边/弯曲）」的输入值（-）。📖 评价依据：п. 2.11–2.15。标准为枚举型分组（['сплющивание', 'раздача', 'отбортовка', 'загиб']），需按产品交付分组确认。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       }
+      ]
+     }
+    ],
+    "skipped_cn": [],
+    "skipped_ru": [],
+    "tr_cu_032": {
+     "in_scope": null,
+     "category": null,
+     "pdn": null,
+     "route": null,
+     "table": null,
+     "note": "缺少工作压力或公称通径，无法判定"
+    },
+    "tr_eaeu_043": {
+     "applies": false,
+     "route": null,
+     "note": "产品用途未涉及消防系统，ТР ЕАЭС 043/2017 不适用"
+    },
+    "index": {
+     "cn": {
+      "ci": 1.0,
+      "passed": 16,
+      "failed": 0,
+      "na": 2,
+      "coverage": 0.8888888888888888,
+      "grade": "A"
+     },
+     "ru": {
+      "ci": 1.0,
+      "passed": 4,
+      "failed": 0,
+      "na": 1,
+      "coverage": 0.8,
+      "grade": "A"
+     }
+    },
+    "overall": {
+     "cn_compliant": true,
+     "ru_compliant": true,
+     "tr_cu_032_route": null,
+     "tr_eaeu_043_route": "不适用",
+     "summary": "中国侧：合规（评级 A，可评 16 项中通过 16 项）；俄罗斯侧：合规（评级 A，可评 4 项中通过 4 项）；ТР ТС 032/2013：вне области；ТР ЕАЭС 043/2017：不适用"
+    }
+   },
+   "color": "pass",
+   "type_source": "explicit",
+   "note": null,
+   "elements": [
+    211,
+    228
+   ],
+   "evidence": {
+    "dn_mm": "80 mmø",
+    "od_mm": "0.089",
+    "id_mm": "0.081",
+    "wall_thickness_mm": "0.004",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "material": "20",
+   "type_name": "管道类型:无缝钢管 DN80"
+  },
+  {
+   "key": "S03",
+   "signature": [
+    "无缝钢管",
+    "20",
+    "20",
+    100.0,
+    108.0,
+    4.0,
+    null,
+    false,
+    false
+   ],
+   "label": "20 DN100 Ø108×4",
+   "count": 2,
+   "kinds": [
+    "segment"
+   ],
+   "kind_group": "pipe",
+   "product": {
+    "type": "无缝钢管",
+    "dn_mm": 100.0,
+    "od_mm": 108.0,
+    "id_mm": 100.0,
+    "wall_thickness_mm": 4.0,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit",
+    "model": "20 DN100 Ø108×4",
+    "manufacturer": "",
+    "properties": {
+     "rm_mpa": 450.0,
+     "re_mpa": 260.0,
+     "a_pct": 26.0,
+     "chemical": {
+      "C": 0.17,
+      "Si": 0.25,
+      "Mn": 0.45,
+      "P": 0.025,
+      "S": 0.02,
+      "Cr": 0.15,
+      "Ni": 0.15,
+      "Cu": 0.15
+     },
+     "hydrostatic_test_mpa": 3.0,
+     "od_meas_mm": 108.0,
+     "wt_meas_mm": 4.0,
+     "straight_meas_mm_m": 1.0
+    }
+   },
+   "result": {
+    "product": {
+     "type": "无缝钢管",
+     "dn_mm": 100.0,
+     "od_mm": 108.0,
+     "id_mm": 100.0,
+     "wall_thickness_mm": 4.0,
+     "length_m": 6.0,
+     "working_pressure_mpa": null,
+     "material_grade_cn": "20",
+     "material_grade_ru": "20",
+     "galvanized": false,
+     "threaded": false,
+     "medium": null,
+     "intended_use": "给水系统",
+     "segment_spec": "无缝钢管 - default",
+     "connection_type": "焊接",
+     "delivery_group": "В",
+     "type_source": "explicit",
+     "model": "20 DN100 Ø108×4",
+     "manufacturer": "",
+     "properties": {
+      "rm_mpa": 450.0,
+      "re_mpa": 260.0,
+      "a_pct": 26.0,
+      "chemical": {
+       "C": 0.17,
+       "Si": 0.25,
+       "Mn": 0.45,
+       "P": 0.025,
+       "S": 0.02,
+       "Cr": 0.15,
+       "Ni": 0.15,
+       "Cu": 0.15
+      },
+      "hydrostatic_test_mpa": 3.0,
+      "od_meas_mm": 108.0,
+      "wt_meas_mm": 4.0,
+      "straight_meas_mm_m": 1.0
+     }
+    },
+    "cn_results": [
+     {
+      "standard": "GB/T 8163-2018",
+      "name_zh": "输送流体用无缝钢管",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8163.GRADE",
+        "indicator_zh": "牌号体系",
+        "category": "牌号体系",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          "10",
+          "20",
+          "Q345D",
+          "Q390D",
+          "Q420D",
+          "Q460D"
+         ]
+        },
+        "clause": "5.1 表3",
+        "test_method": "-",
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', 'Q345D', 'Q390D', 'Q420D', 'Q460D']"
+       },
+       {
+        "indicator_id": "8163.CHEM.C",
+        "indicator_zh": "碳含量（熔炼）",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.23
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.17,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.17 ≤ 0.23"
+       },
+       {
+        "indicator_id": "8163.CHEM.SI",
+        "indicator_zh": "硅含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.37
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.25,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.25 ≤ 0.37"
+       },
+       {
+        "indicator_id": "8163.CHEM.MN",
+        "indicator_zh": "锰含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.35,
+         "max": 0.65
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.45,
+        "verdict": "pass",
+        "detail": "0.35 ≤ 0.45 ≤ 0.65"
+       },
+       {
+        "indicator_id": "8163.CHEM.P",
+        "indicator_zh": "磷含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.025,
+        "verdict": "pass",
+        "detail": "0.025 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.CHEM.S",
+        "indicator_zh": "硫含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.02,
+        "verdict": "pass",
+        "detail": "0.02 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.Rm",
+        "indicator_zh": "抗拉强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 410,
+         "max": 550
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 450.0,
+        "verdict": "pass",
+        "detail": "410 ≤ 450.0 ≤ 550"
+       },
+       {
+        "indicator_id": "8163.ReL",
+        "indicator_zh": "下屈服强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 245
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 260.0,
+        "verdict": "pass",
+        "detail": "260.0 ≥ 245"
+       },
+       {
+        "indicator_id": "8163.A",
+        "indicator_zh": "断后伸长率",
+        "category": "力学性能",
+        "unit": "%",
+        "requirement": {
+         "min": 22
+        },
+        "clause": "5.4.1 表5（纵向，L0=5.65√S0）",
+        "test_method": "GB/T 228.1",
+        "product_value": 26.0,
+        "verdict": "pass",
+        "detail": "26.0 ≥ 22"
+       },
+       {
+        "indicator_id": "8163.KV2",
+        "indicator_zh": "冲击吸收能量（纵向）",
+        "category": "力学性能",
+        "unit": "J",
+        "requirement": {
+         "desc": "一般不作规定（或按协议）"
+        },
+        "clause": "5.4.2 表6",
+        "test_method": "GB/T 229",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "描述性要求：一般不作规定（或按协议）（需认证机构/LLM辅助判定）｜✋ 无法判定：产品未提供「冲击吸收能量（纵向）」的输入值（J）。📖 评价依据：5.4.2 表6。标准以文字描述要求（一般不作规定（或按协议）），且需按订货协议/工程校核。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.HYD",
+        "indicator_zh": "液压试验压力",
+        "category": "工艺试验",
+        "unit": "MPa",
+        "requirement": {
+         "min": 2.5
+        },
+        "clause": "5.6",
+        "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777",
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.5 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8163.NDT",
+        "indicator_zh": "无损检测",
+        "category": "无损检测",
+        "unit": "-",
+        "requirement": {
+         "desc": "液压与无损检测（涡流/超声/漏磁）任选或按订货"
+        },
+        "clause": "5.6/5.7",
+        "test_method": "GB/T 7735 / GB/T 5777 / GB/T 12606",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "✋ 可选/按协议项（非强制）：无损检测为可选/按协议项，未提供检测结果。📖 评价依据：5.6/5.7。标准以文字描述要求（液压与无损检测（涡流/超声/漏磁）任选或按订货），且需认证机构/人工判定。💡 参考：无损检测为可选/按协议项；未做即为可选未提供，不据此判不达标。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.DIM",
+        "indicator_zh": "尺寸与允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "desc": "尺寸与允许偏差（符合 外径±1%、壁厚−10%~+12.5%）"
+        },
+        "clause": "5.3",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径偏差 0.0%（限±1.0% → ✅）；壁厚偏差 0.0%（限−10~+12.5% → ✅）（实测）"
+       }
+      ]
+     },
+     {
+      "standard": "GB/T 17395-2024",
+      "name_zh": "钢管尺寸、外形、重量及允许偏差",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "17395.OD",
+        "indicator_zh": "外径系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "max": 1.0
+        },
+        "clause": "尺寸与偏差相关条款及表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径实测 108.0 mm vs 名义 108.0 mm，偏差 0.0% ≤ ±1.0% → ✅"
+       },
+       {
+        "indicator_id": "17395.WT",
+        "indicator_zh": "壁厚系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "min": -10.0,
+         "max": 12.5
+        },
+        "clause": "壁厚系列及允许偏差表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "壁厚实测 4.0 mm vs 名义 4.0 mm，偏差 0.0% 在 -10%/+12.5% 内 → ✅"
+       },
+       {
+        "indicator_id": "17395.LEN",
+        "indicator_zh": "长度及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "range": [
+          3.0,
+          12.0
+         ]
+        },
+        "clause": "长度允许偏差条款",
+        "test_method": "GB/T 2102",
+        "product_value": 6.0,
+        "verdict": "pass",
+        "detail": "3.0 ≤ 6.0 ≤ 12.0"
+       },
+       {
+        "indicator_id": "17395.STR",
+        "indicator_zh": "弯曲度（直线度）",
+        "category": "外形",
+        "unit": "mm/m",
+        "requirement": {
+         "max": 1.5
+        },
+        "clause": "外形条款",
+        "test_method": "GB/T 2102",
+        "product_value": 1.0,
+        "verdict": "pass",
+        "detail": "弯曲度实测 1.0 mm/m ≤ 1.5 → ✅"
+       },
+       {
+        "indicator_id": "17395.WGT",
+        "indicator_zh": "单位长度重量及允许偏差",
+        "category": "重量",
+        "unit": "kg/m",
+        "requirement": {
+         "min": 0
+        },
+        "clause": "重量及允许偏差条款",
+        "test_method": "称重/计算",
+        "product_value": 10.259,
+        "verdict": "pass",
+        "detail": "10.259 ≥ 0"
+       }
+      ]
+     }
+    ],
+    "ru_results": [
+     {
+      "standard": "ГОСТ 8731-87",
+      "name_zh": "无缝热变形钢管技术条件",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8731.GROUP",
+        "indicator_zh": "交货分组",
+        "category": "分类",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "А": "нормируются механические свойства",
+          "Б": "нормируется химический состав",
+          "В": "нормируются механические свойства и химсостав"
+         }
+        },
+        "clause": "п. 1.1",
+        "test_method": null,
+        "product_value": "В",
+        "verdict": "pass",
+        "detail": "交货分组 В（依 ГОСТ п. 1.1）：力学性能+化学成分 均保证。此分组决定本次验收范围，被排除的类别见对应项'该分组不保证'"
+       },
+       {
+        "indicator_id": "8731.STEEL",
+        "indicator_zh": "钢号",
+        "category": "化学成分",
+        "unit": "-",
+        "requirement": {
+         "series": [
+          "10",
+          "20",
+          "35",
+          "45",
+          "40Х",
+          "09Г2С",
+          "15ГС",
+          "17Г1С",
+          "30ХМА"
+         ]
+        },
+        "clause": "Таблица 1/2",
+        "test_method": null,
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', '35', '45', '40Х', '09Г2С', '15ГС', '17Г1С', '30ХМА']"
+       },
+       {
+        "indicator_id": "8731.MECH",
+        "indicator_zh": "力学性能（最小值）",
+        "category": "力学性能",
+        "unit": "МПа / % / Дж/см²",
+        "requirement": {
+         "table": [
+          {
+           "сталь": "10",
+           "σв": 333,
+           "σт": 206,
+           "δ5": 31,
+           "KCU": null
+          },
+          {
+           "сталь": "20",
+           "σв": 412,
+           "σт": 245,
+           "δ5": 25,
+           "KCU": 49
+          },
+          {
+           "сталь": "35",
+           "σв": 490,
+           "σт": 294,
+           "δ5": 19,
+           "KCU": null
+          },
+          {
+           "сталь": "45",
+           "σв": 588,
+           "σт": 343,
+           "δ5": 17,
+           "KCU": null
+          },
+          {
+           "сталь": "40Х",
+           "σв": 637,
+           "σт": 392,
+           "δ5": 15,
+           "KCU": null
+          },
+          {
+           "сталь": "09Г2С",
+           "σв": 470,
+           "σт": 314,
+           "δ5": 21,
+           "KCU": 49
+          }
+         ]
+        },
+        "clause": "Таблица 5",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "pass",
+        "detail": "σв=450.0 vs ≥412（✅）；σт=260.0 vs ≥245（✅）；δ5=26.0 vs ≥25（✅）（按钢号分档，逐属性比较）"
+       },
+       {
+        "indicator_id": "8731.HYDRO",
+        "indicator_zh": "水压试验",
+        "category": "检验",
+        "unit": "МПа",
+        "requirement": {
+         "min": 2.4
+        },
+        "clause": "п. 2.10",
+        "test_method": null,
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.4 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8731.TECH",
+        "indicator_zh": "工艺试验（压扁/扩口/卷边/弯曲）",
+        "category": "检验",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "сплющивание": "ГОСТ 8695",
+          "раздача": "ГОСТ 8694",
+          "отбортовка": "ГОСТ 8693",
+          "загиб": "ГОСТ 3728"
+         }
+        },
+        "clause": "п. 2.11–2.15",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "na",
+        "detail": "枚举型要求（如分组 А/Б/В），需按产品交付分组判定：{'сплющивание': 'ГОСТ 8695', 'раздача': 'ГОСТ 8694', 'отбортовка': 'ГОСТ 8693', 'загиб': 'ГОСТ 3728'}｜✋ 无法判定：产品未提供「工艺试验（压扁/扩口/卷边/弯曲）」的输入值（-）。📖 评价依据：п. 2.11–2.15。标准为枚举型分组（['сплющивание', 'раздача', 'отбортовка', 'загиб']），需按产品交付分组确认。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       }
+      ]
+     }
+    ],
+    "skipped_cn": [],
+    "skipped_ru": [],
+    "tr_cu_032": {
+     "in_scope": null,
+     "category": null,
+     "pdn": null,
+     "route": null,
+     "table": null,
+     "note": "缺少工作压力或公称通径，无法判定"
+    },
+    "tr_eaeu_043": {
+     "applies": false,
+     "route": null,
+     "note": "产品用途未涉及消防系统，ТР ЕАЭС 043/2017 不适用"
+    },
+    "index": {
+     "cn": {
+      "ci": 1.0,
+      "passed": 16,
+      "failed": 0,
+      "na": 2,
+      "coverage": 0.8888888888888888,
+      "grade": "A"
+     },
+     "ru": {
+      "ci": 1.0,
+      "passed": 4,
+      "failed": 0,
+      "na": 1,
+      "coverage": 0.8,
+      "grade": "A"
+     }
+    },
+    "overall": {
+     "cn_compliant": true,
+     "ru_compliant": true,
+     "tr_cu_032_route": null,
+     "tr_eaeu_043_route": "不适用",
+     "summary": "中国侧：合规（评级 A，可评 16 项中通过 16 项）；俄罗斯侧：合规（评级 A，可评 4 项中通过 4 项）；ТР ТС 032/2013：вне области；ТР ЕАЭС 043/2017：不适用"
+    }
+   },
+   "color": "pass",
+   "type_source": "explicit",
+   "note": null,
+   "elements": [
+    257,
+    274
+   ],
+   "evidence": {
+    "dn_mm": "100 mmø",
+    "od_mm": "0.108",
+    "id_mm": "0.1",
+    "wall_thickness_mm": "0.004",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "material": "20",
+   "type_name": "管道类型:无缝钢管 DN100"
+  },
+  {
+   "key": "S04",
+   "signature": [
+    "无缝钢管",
+    "20",
+    "20",
+    150.0,
+    159.0,
+    4.5,
+    null,
+    false,
+    false
+   ],
+   "label": "20 DN150 Ø159×4.5",
+   "count": 2,
+   "kinds": [
+    "segment"
+   ],
+   "kind_group": "pipe",
+   "product": {
+    "type": "无缝钢管",
+    "dn_mm": 150.0,
+    "od_mm": 159.0,
+    "id_mm": 150.0,
+    "wall_thickness_mm": 4.5,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit",
+    "model": "20 DN150 Ø159×4.5",
+    "manufacturer": "",
+    "properties": {
+     "rm_mpa": 450.0,
+     "re_mpa": 260.0,
+     "a_pct": 26.0,
+     "chemical": {
+      "C": 0.17,
+      "Si": 0.25,
+      "Mn": 0.45,
+      "P": 0.025,
+      "S": 0.02,
+      "Cr": 0.15,
+      "Ni": 0.15,
+      "Cu": 0.15
+     },
+     "hydrostatic_test_mpa": 3.0,
+     "od_meas_mm": 159.0,
+     "wt_meas_mm": 4.5,
+     "straight_meas_mm_m": 1.0
+    }
+   },
+   "result": {
+    "product": {
+     "type": "无缝钢管",
+     "dn_mm": 150.0,
+     "od_mm": 159.0,
+     "id_mm": 150.0,
+     "wall_thickness_mm": 4.5,
+     "length_m": 6.0,
+     "working_pressure_mpa": null,
+     "material_grade_cn": "20",
+     "material_grade_ru": "20",
+     "galvanized": false,
+     "threaded": false,
+     "medium": null,
+     "intended_use": "给水系统",
+     "segment_spec": "无缝钢管 - default",
+     "connection_type": "焊接",
+     "delivery_group": "В",
+     "type_source": "explicit",
+     "model": "20 DN150 Ø159×4.5",
+     "manufacturer": "",
+     "properties": {
+      "rm_mpa": 450.0,
+      "re_mpa": 260.0,
+      "a_pct": 26.0,
+      "chemical": {
+       "C": 0.17,
+       "Si": 0.25,
+       "Mn": 0.45,
+       "P": 0.025,
+       "S": 0.02,
+       "Cr": 0.15,
+       "Ni": 0.15,
+       "Cu": 0.15
+      },
+      "hydrostatic_test_mpa": 3.0,
+      "od_meas_mm": 159.0,
+      "wt_meas_mm": 4.5,
+      "straight_meas_mm_m": 1.0
+     }
+    },
+    "cn_results": [
+     {
+      "standard": "GB/T 8163-2018",
+      "name_zh": "输送流体用无缝钢管",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8163.GRADE",
+        "indicator_zh": "牌号体系",
+        "category": "牌号体系",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          "10",
+          "20",
+          "Q345D",
+          "Q390D",
+          "Q420D",
+          "Q460D"
+         ]
+        },
+        "clause": "5.1 表3",
+        "test_method": "-",
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', 'Q345D', 'Q390D', 'Q420D', 'Q460D']"
+       },
+       {
+        "indicator_id": "8163.CHEM.C",
+        "indicator_zh": "碳含量（熔炼）",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.23
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.17,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.17 ≤ 0.23"
+       },
+       {
+        "indicator_id": "8163.CHEM.SI",
+        "indicator_zh": "硅含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.37
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.25,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.25 ≤ 0.37"
+       },
+       {
+        "indicator_id": "8163.CHEM.MN",
+        "indicator_zh": "锰含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.35,
+         "max": 0.65
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.45,
+        "verdict": "pass",
+        "detail": "0.35 ≤ 0.45 ≤ 0.65"
+       },
+       {
+        "indicator_id": "8163.CHEM.P",
+        "indicator_zh": "磷含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.025,
+        "verdict": "pass",
+        "detail": "0.025 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.CHEM.S",
+        "indicator_zh": "硫含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.02,
+        "verdict": "pass",
+        "detail": "0.02 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.Rm",
+        "indicator_zh": "抗拉强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 410,
+         "max": 550
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 450.0,
+        "verdict": "pass",
+        "detail": "410 ≤ 450.0 ≤ 550"
+       },
+       {
+        "indicator_id": "8163.ReL",
+        "indicator_zh": "下屈服强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 245
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 260.0,
+        "verdict": "pass",
+        "detail": "260.0 ≥ 245"
+       },
+       {
+        "indicator_id": "8163.A",
+        "indicator_zh": "断后伸长率",
+        "category": "力学性能",
+        "unit": "%",
+        "requirement": {
+         "min": 22
+        },
+        "clause": "5.4.1 表5（纵向，L0=5.65√S0）",
+        "test_method": "GB/T 228.1",
+        "product_value": 26.0,
+        "verdict": "pass",
+        "detail": "26.0 ≥ 22"
+       },
+       {
+        "indicator_id": "8163.KV2",
+        "indicator_zh": "冲击吸收能量（纵向）",
+        "category": "力学性能",
+        "unit": "J",
+        "requirement": {
+         "desc": "一般不作规定（或按协议）"
+        },
+        "clause": "5.4.2 表6",
+        "test_method": "GB/T 229",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "描述性要求：一般不作规定（或按协议）（需认证机构/LLM辅助判定）｜✋ 无法判定：产品未提供「冲击吸收能量（纵向）」的输入值（J）。📖 评价依据：5.4.2 表6。标准以文字描述要求（一般不作规定（或按协议）），且需按订货协议/工程校核。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.HYD",
+        "indicator_zh": "液压试验压力",
+        "category": "工艺试验",
+        "unit": "MPa",
+        "requirement": {
+         "min": 2.5
+        },
+        "clause": "5.6",
+        "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777",
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.5 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8163.NDT",
+        "indicator_zh": "无损检测",
+        "category": "无损检测",
+        "unit": "-",
+        "requirement": {
+         "desc": "液压与无损检测（涡流/超声/漏磁）任选或按订货"
+        },
+        "clause": "5.6/5.7",
+        "test_method": "GB/T 7735 / GB/T 5777 / GB/T 12606",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "✋ 可选/按协议项（非强制）：无损检测为可选/按协议项，未提供检测结果。📖 评价依据：5.6/5.7。标准以文字描述要求（液压与无损检测（涡流/超声/漏磁）任选或按订货），且需认证机构/人工判定。💡 参考：无损检测为可选/按协议项；未做即为可选未提供，不据此判不达标。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.DIM",
+        "indicator_zh": "尺寸与允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "desc": "尺寸与允许偏差（符合 外径±1%、壁厚−10%~+12.5%）"
+        },
+        "clause": "5.3",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径偏差 0.0%（限±1.0% → ✅）；壁厚偏差 0.0%（限−10~+12.5% → ✅）（实测）"
+       }
+      ]
+     },
+     {
+      "standard": "GB/T 17395-2024",
+      "name_zh": "钢管尺寸、外形、重量及允许偏差",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "17395.OD",
+        "indicator_zh": "外径系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "max": 1.0
+        },
+        "clause": "尺寸与偏差相关条款及表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径实测 159.0 mm vs 名义 159.0 mm，偏差 0.0% ≤ ±1.0% → ✅"
+       },
+       {
+        "indicator_id": "17395.WT",
+        "indicator_zh": "壁厚系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "min": -10.0,
+         "max": 12.5
+        },
+        "clause": "壁厚系列及允许偏差表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "壁厚实测 4.5 mm vs 名义 4.5 mm，偏差 0.0% 在 -10%/+12.5% 内 → ✅"
+       },
+       {
+        "indicator_id": "17395.LEN",
+        "indicator_zh": "长度及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "range": [
+          3.0,
+          12.0
+         ]
+        },
+        "clause": "长度允许偏差条款",
+        "test_method": "GB/T 2102",
+        "product_value": 6.0,
+        "verdict": "pass",
+        "detail": "3.0 ≤ 6.0 ≤ 12.0"
+       },
+       {
+        "indicator_id": "17395.STR",
+        "indicator_zh": "弯曲度（直线度）",
+        "category": "外形",
+        "unit": "mm/m",
+        "requirement": {
+         "max": 1.5
+        },
+        "clause": "外形条款",
+        "test_method": "GB/T 2102",
+        "product_value": 1.0,
+        "verdict": "pass",
+        "detail": "弯曲度实测 1.0 mm/m ≤ 1.5 → ✅"
+       },
+       {
+        "indicator_id": "17395.WGT",
+        "indicator_zh": "单位长度重量及允许偏差",
+        "category": "重量",
+        "unit": "kg/m",
+        "requirement": {
+         "min": 0
+        },
+        "clause": "重量及允许偏差条款",
+        "test_method": "称重/计算",
+        "product_value": 17.146,
+        "verdict": "pass",
+        "detail": "17.146 ≥ 0"
+       }
+      ]
+     }
+    ],
+    "ru_results": [
+     {
+      "standard": "ГОСТ 8731-87",
+      "name_zh": "无缝热变形钢管技术条件",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8731.GROUP",
+        "indicator_zh": "交货分组",
+        "category": "分类",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "А": "нормируются механические свойства",
+          "Б": "нормируется химический состав",
+          "В": "нормируются механические свойства и химсостав"
+         }
+        },
+        "clause": "п. 1.1",
+        "test_method": null,
+        "product_value": "В",
+        "verdict": "pass",
+        "detail": "交货分组 В（依 ГОСТ п. 1.1）：力学性能+化学成分 均保证。此分组决定本次验收范围，被排除的类别见对应项'该分组不保证'"
+       },
+       {
+        "indicator_id": "8731.STEEL",
+        "indicator_zh": "钢号",
+        "category": "化学成分",
+        "unit": "-",
+        "requirement": {
+         "series": [
+          "10",
+          "20",
+          "35",
+          "45",
+          "40Х",
+          "09Г2С",
+          "15ГС",
+          "17Г1С",
+          "30ХМА"
+         ]
+        },
+        "clause": "Таблица 1/2",
+        "test_method": null,
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', '35', '45', '40Х', '09Г2С', '15ГС', '17Г1С', '30ХМА']"
+       },
+       {
+        "indicator_id": "8731.MECH",
+        "indicator_zh": "力学性能（最小值）",
+        "category": "力学性能",
+        "unit": "МПа / % / Дж/см²",
+        "requirement": {
+         "table": [
+          {
+           "сталь": "10",
+           "σв": 333,
+           "σт": 206,
+           "δ5": 31,
+           "KCU": null
+          },
+          {
+           "сталь": "20",
+           "σв": 412,
+           "σт": 245,
+           "δ5": 25,
+           "KCU": 49
+          },
+          {
+           "сталь": "35",
+           "σв": 490,
+           "σт": 294,
+           "δ5": 19,
+           "KCU": null
+          },
+          {
+           "сталь": "45",
+           "σв": 588,
+           "σт": 343,
+           "δ5": 17,
+           "KCU": null
+          },
+          {
+           "сталь": "40Х",
+           "σв": 637,
+           "σт": 392,
+           "δ5": 15,
+           "KCU": null
+          },
+          {
+           "сталь": "09Г2С",
+           "σв": 470,
+           "σт": 314,
+           "δ5": 21,
+           "KCU": 49
+          }
+         ]
+        },
+        "clause": "Таблица 5",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "pass",
+        "detail": "σв=450.0 vs ≥412（✅）；σт=260.0 vs ≥245（✅）；δ5=26.0 vs ≥25（✅）（按钢号分档，逐属性比较）"
+       },
+       {
+        "indicator_id": "8731.HYDRO",
+        "indicator_zh": "水压试验",
+        "category": "检验",
+        "unit": "МПа",
+        "requirement": {
+         "min": 2.4
+        },
+        "clause": "п. 2.10",
+        "test_method": null,
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.4 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8731.TECH",
+        "indicator_zh": "工艺试验（压扁/扩口/卷边/弯曲）",
+        "category": "检验",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "сплющивание": "ГОСТ 8695",
+          "раздача": "ГОСТ 8694",
+          "отбортовка": "ГОСТ 8693",
+          "загиб": "ГОСТ 3728"
+         }
+        },
+        "clause": "п. 2.11–2.15",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "na",
+        "detail": "枚举型要求（如分组 А/Б/В），需按产品交付分组判定：{'сплющивание': 'ГОСТ 8695', 'раздача': 'ГОСТ 8694', 'отбортовка': 'ГОСТ 8693', 'загиб': 'ГОСТ 3728'}｜✋ 无法判定：产品未提供「工艺试验（压扁/扩口/卷边/弯曲）」的输入值（-）。📖 评价依据：п. 2.11–2.15。标准为枚举型分组（['сплющивание', 'раздача', 'отбортовка', 'загиб']），需按产品交付分组确认。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       }
+      ]
+     }
+    ],
+    "skipped_cn": [],
+    "skipped_ru": [],
+    "tr_cu_032": {
+     "in_scope": null,
+     "category": null,
+     "pdn": null,
+     "route": null,
+     "table": null,
+     "note": "缺少工作压力或公称通径，无法判定"
+    },
+    "tr_eaeu_043": {
+     "applies": false,
+     "route": null,
+     "note": "产品用途未涉及消防系统，ТР ЕАЭС 043/2017 不适用"
+    },
+    "index": {
+     "cn": {
+      "ci": 1.0,
+      "passed": 16,
+      "failed": 0,
+      "na": 2,
+      "coverage": 0.8888888888888888,
+      "grade": "A"
+     },
+     "ru": {
+      "ci": 1.0,
+      "passed": 4,
+      "failed": 0,
+      "na": 1,
+      "coverage": 0.8,
+      "grade": "A"
+     }
+    },
+    "overall": {
+     "cn_compliant": true,
+     "ru_compliant": true,
+     "tr_cu_032_route": null,
+     "tr_eaeu_043_route": "不适用",
+     "summary": "中国侧：合规（评级 A，可评 16 项中通过 16 项）；俄罗斯侧：合规（评级 A，可评 4 项中通过 4 项）；ТР ТС 032/2013：вне области；ТР ЕАЭС 043/2017：不适用"
+    }
+   },
+   "color": "pass",
+   "type_source": "explicit",
+   "note": null,
+   "elements": [
+    303,
+    320
+   ],
+   "evidence": {
+    "dn_mm": "150 mmø",
+    "od_mm": "0.159",
+    "id_mm": "0.15",
+    "wall_thickness_mm": "0.0045",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "material": "20",
+   "type_name": "管道类型:无缝钢管 DN150"
+  },
+  {
+   "key": "S05",
+   "signature": [
+    "无缝钢管",
+    "20",
+    "20",
+    200.0,
+    219.0,
+    6.0,
+    null,
+    false,
+    false
+   ],
+   "label": "20 DN200 Ø219×6",
+   "count": 2,
+   "kinds": [
+    "segment"
+   ],
+   "kind_group": "pipe",
+   "product": {
+    "type": "无缝钢管",
+    "dn_mm": 200.0,
+    "od_mm": 219.0,
+    "id_mm": 207.0,
+    "wall_thickness_mm": 6.0,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit",
+    "model": "20 DN200 Ø219×6",
+    "manufacturer": "",
+    "properties": {
+     "rm_mpa": 450.0,
+     "re_mpa": 260.0,
+     "a_pct": 26.0,
+     "chemical": {
+      "C": 0.17,
+      "Si": 0.25,
+      "Mn": 0.45,
+      "P": 0.025,
+      "S": 0.02,
+      "Cr": 0.15,
+      "Ni": 0.15,
+      "Cu": 0.15
+     },
+     "hydrostatic_test_mpa": 3.0,
+     "od_meas_mm": 219.0,
+     "wt_meas_mm": 6.0,
+     "straight_meas_mm_m": 1.0
+    }
+   },
+   "result": {
+    "product": {
+     "type": "无缝钢管",
+     "dn_mm": 200.0,
+     "od_mm": 219.0,
+     "id_mm": 207.0,
+     "wall_thickness_mm": 6.0,
+     "length_m": 6.0,
+     "working_pressure_mpa": null,
+     "material_grade_cn": "20",
+     "material_grade_ru": "20",
+     "galvanized": false,
+     "threaded": false,
+     "medium": null,
+     "intended_use": "给水系统",
+     "segment_spec": "无缝钢管 - default",
+     "connection_type": "焊接",
+     "delivery_group": "В",
+     "type_source": "explicit",
+     "model": "20 DN200 Ø219×6",
+     "manufacturer": "",
+     "properties": {
+      "rm_mpa": 450.0,
+      "re_mpa": 260.0,
+      "a_pct": 26.0,
+      "chemical": {
+       "C": 0.17,
+       "Si": 0.25,
+       "Mn": 0.45,
+       "P": 0.025,
+       "S": 0.02,
+       "Cr": 0.15,
+       "Ni": 0.15,
+       "Cu": 0.15
+      },
+      "hydrostatic_test_mpa": 3.0,
+      "od_meas_mm": 219.0,
+      "wt_meas_mm": 6.0,
+      "straight_meas_mm_m": 1.0
+     }
+    },
+    "cn_results": [
+     {
+      "standard": "GB/T 8163-2018",
+      "name_zh": "输送流体用无缝钢管",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8163.GRADE",
+        "indicator_zh": "牌号体系",
+        "category": "牌号体系",
+        "unit": "-",
+        "requirement": {
+         "set": [
+          "10",
+          "20",
+          "Q345D",
+          "Q390D",
+          "Q420D",
+          "Q460D"
+         ]
+        },
+        "clause": "5.1 表3",
+        "test_method": "-",
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', 'Q345D', 'Q390D', 'Q420D', 'Q460D']"
+       },
+       {
+        "indicator_id": "8163.CHEM.C",
+        "indicator_zh": "碳含量（熔炼）",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.23
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.17,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.17 ≤ 0.23"
+       },
+       {
+        "indicator_id": "8163.CHEM.SI",
+        "indicator_zh": "硅含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.17,
+         "max": 0.37
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.25,
+        "verdict": "pass",
+        "detail": "0.17 ≤ 0.25 ≤ 0.37"
+       },
+       {
+        "indicator_id": "8163.CHEM.MN",
+        "indicator_zh": "锰含量",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "min": 0.35,
+         "max": 0.65
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.45,
+        "verdict": "pass",
+        "detail": "0.35 ≤ 0.45 ≤ 0.65"
+       },
+       {
+        "indicator_id": "8163.CHEM.P",
+        "indicator_zh": "磷含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.025,
+        "verdict": "pass",
+        "detail": "0.025 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.CHEM.S",
+        "indicator_zh": "硫含量上限",
+        "category": "化学成分",
+        "unit": "%",
+        "requirement": {
+         "max": 0.03
+        },
+        "clause": "5.1 表3/表4",
+        "test_method": "GB/T 223 / GB/T 4336",
+        "product_value": 0.02,
+        "verdict": "pass",
+        "detail": "0.02 ≤ 0.03"
+       },
+       {
+        "indicator_id": "8163.Rm",
+        "indicator_zh": "抗拉强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 410,
+         "max": 550
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 450.0,
+        "verdict": "pass",
+        "detail": "410 ≤ 450.0 ≤ 550"
+       },
+       {
+        "indicator_id": "8163.ReL",
+        "indicator_zh": "下屈服强度",
+        "category": "力学性能",
+        "unit": "MPa",
+        "requirement": {
+         "min": 245
+        },
+        "clause": "5.4.1 表5（纵向）",
+        "test_method": "GB/T 228.1",
+        "product_value": 260.0,
+        "verdict": "pass",
+        "detail": "260.0 ≥ 245"
+       },
+       {
+        "indicator_id": "8163.A",
+        "indicator_zh": "断后伸长率",
+        "category": "力学性能",
+        "unit": "%",
+        "requirement": {
+         "min": 22
+        },
+        "clause": "5.4.1 表5（纵向，L0=5.65√S0）",
+        "test_method": "GB/T 228.1",
+        "product_value": 26.0,
+        "verdict": "pass",
+        "detail": "26.0 ≥ 22"
+       },
+       {
+        "indicator_id": "8163.KV2",
+        "indicator_zh": "冲击吸收能量（纵向）",
+        "category": "力学性能",
+        "unit": "J",
+        "requirement": {
+         "desc": "一般不作规定（或按协议）"
+        },
+        "clause": "5.4.2 表6",
+        "test_method": "GB/T 229",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "描述性要求：一般不作规定（或按协议）（需认证机构/LLM辅助判定）｜✋ 无法判定：产品未提供「冲击吸收能量（纵向）」的输入值（J）。📖 评价依据：5.4.2 表6。标准以文字描述要求（一般不作规定（或按协议）），且需按订货协议/工程校核。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.HYD",
+        "indicator_zh": "液压试验压力",
+        "category": "工艺试验",
+        "unit": "MPa",
+        "requirement": {
+         "min": 2.5
+        },
+        "clause": "5.6",
+        "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777",
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.5 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8163.NDT",
+        "indicator_zh": "无损检测",
+        "category": "无损检测",
+        "unit": "-",
+        "requirement": {
+         "desc": "液压与无损检测（涡流/超声/漏磁）任选或按订货"
+        },
+        "clause": "5.6/5.7",
+        "test_method": "GB/T 7735 / GB/T 5777 / GB/T 12606",
+        "product_value": null,
+        "verdict": "na",
+        "detail": "✋ 可选/按协议项（非强制）：无损检测为可选/按协议项，未提供检测结果。📖 评价依据：5.6/5.7。标准以文字描述要求（液压与无损检测（涡流/超声/漏磁）任选或按订货），且需认证机构/人工判定。💡 参考：无损检测为可选/按协议项；未做即为可选未提供，不据此判不达标。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       },
+       {
+        "indicator_id": "8163.DIM",
+        "indicator_zh": "尺寸与允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "desc": "尺寸与允许偏差（符合 外径±1%、壁厚−10%~+12.5%）"
+        },
+        "clause": "5.3",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径偏差 0.0%（限±1.0% → ✅）；壁厚偏差 0.0%（限−10~+12.5% → ✅）（实测）"
+       }
+      ]
+     },
+     {
+      "standard": "GB/T 17395-2024",
+      "name_zh": "钢管尺寸、外形、重量及允许偏差",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "17395.OD",
+        "indicator_zh": "外径系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "max": 1.0
+        },
+        "clause": "尺寸与偏差相关条款及表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "外径实测 219.0 mm vs 名义 219.0 mm，偏差 0.0% ≤ ±1.0% → ✅"
+       },
+       {
+        "indicator_id": "17395.WT",
+        "indicator_zh": "壁厚系列及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "min": -10.0,
+         "max": 12.5
+        },
+        "clause": "壁厚系列及允许偏差表",
+        "test_method": "GB/T 2102",
+        "product_value": 0.0,
+        "verdict": "pass",
+        "detail": "壁厚实测 6.0 mm vs 名义 6.0 mm，偏差 0.0% 在 -10%/+12.5% 内 → ✅"
+       },
+       {
+        "indicator_id": "17395.LEN",
+        "indicator_zh": "长度及允许偏差",
+        "category": "尺寸偏差",
+        "unit": "mm",
+        "requirement": {
+         "range": [
+          3.0,
+          12.0
+         ]
+        },
+        "clause": "长度允许偏差条款",
+        "test_method": "GB/T 2102",
+        "product_value": 6.0,
+        "verdict": "pass",
+        "detail": "3.0 ≤ 6.0 ≤ 12.0"
+       },
+       {
+        "indicator_id": "17395.STR",
+        "indicator_zh": "弯曲度（直线度）",
+        "category": "外形",
+        "unit": "mm/m",
+        "requirement": {
+         "max": 1.5
+        },
+        "clause": "外形条款",
+        "test_method": "GB/T 2102",
+        "product_value": 1.0,
+        "verdict": "pass",
+        "detail": "弯曲度实测 1.0 mm/m ≤ 1.5 → ✅"
+       },
+       {
+        "indicator_id": "17395.WGT",
+        "indicator_zh": "单位长度重量及允许偏差",
+        "category": "重量",
+        "unit": "kg/m",
+        "requirement": {
+         "min": 0
+        },
+        "clause": "重量及允许偏差条款",
+        "test_method": "称重/计算",
+        "product_value": 31.517,
+        "verdict": "pass",
+        "detail": "31.517 ≥ 0"
+       }
+      ]
+     }
+    ],
+    "ru_results": [
+     {
+      "standard": "ГОСТ 8731-87",
+      "name_zh": "无缝热变形钢管技术条件",
+      "applies": true,
+      "items": [
+       {
+        "indicator_id": "8731.GROUP",
+        "indicator_zh": "交货分组",
+        "category": "分类",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "А": "нормируются механические свойства",
+          "Б": "нормируется химический состав",
+          "В": "нормируются механические свойства и химсостав"
+         }
+        },
+        "clause": "п. 1.1",
+        "test_method": null,
+        "product_value": "В",
+        "verdict": "pass",
+        "detail": "交货分组 В（依 ГОСТ п. 1.1）：力学性能+化学成分 均保证。此分组决定本次验收范围，被排除的类别见对应项'该分组不保证'"
+       },
+       {
+        "indicator_id": "8731.STEEL",
+        "indicator_zh": "钢号",
+        "category": "化学成分",
+        "unit": "-",
+        "requirement": {
+         "series": [
+          "10",
+          "20",
+          "35",
+          "45",
+          "40Х",
+          "09Г2С",
+          "15ГС",
+          "17Г1С",
+          "30ХМА"
+         ]
+        },
+        "clause": "Таблица 1/2",
+        "test_method": null,
+        "product_value": "20",
+        "verdict": "pass",
+        "detail": "取值 20 ∈ ['10', '20', '35', '45', '40Х', '09Г2С', '15ГС', '17Г1С', '30ХМА']"
+       },
+       {
+        "indicator_id": "8731.MECH",
+        "indicator_zh": "力学性能（最小值）",
+        "category": "力学性能",
+        "unit": "МПа / % / Дж/см²",
+        "requirement": {
+         "table": [
+          {
+           "сталь": "10",
+           "σв": 333,
+           "σт": 206,
+           "δ5": 31,
+           "KCU": null
+          },
+          {
+           "сталь": "20",
+           "σв": 412,
+           "σт": 245,
+           "δ5": 25,
+           "KCU": 49
+          },
+          {
+           "сталь": "35",
+           "σв": 490,
+           "σт": 294,
+           "δ5": 19,
+           "KCU": null
+          },
+          {
+           "сталь": "45",
+           "σв": 588,
+           "σт": 343,
+           "δ5": 17,
+           "KCU": null
+          },
+          {
+           "сталь": "40Х",
+           "σв": 637,
+           "σт": 392,
+           "δ5": 15,
+           "KCU": null
+          },
+          {
+           "сталь": "09Г2С",
+           "σв": 470,
+           "σт": 314,
+           "δ5": 21,
+           "KCU": 49
+          }
+         ]
+        },
+        "clause": "Таблица 5",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "pass",
+        "detail": "σв=450.0 vs ≥412（✅）；σт=260.0 vs ≥245（✅）；δ5=26.0 vs ≥25（✅）（按钢号分档，逐属性比较）"
+       },
+       {
+        "indicator_id": "8731.HYDRO",
+        "indicator_zh": "水压试验",
+        "category": "检验",
+        "unit": "МПа",
+        "requirement": {
+         "min": 2.4
+        },
+        "clause": "п. 2.10",
+        "test_method": null,
+        "product_value": 3.0,
+        "verdict": "pass",
+        "detail": "按标准最小试验压力需≥2.4 MPa，产品=3.0 MPa → ✅"
+       },
+       {
+        "indicator_id": "8731.TECH",
+        "indicator_zh": "工艺试验（压扁/扩口/卷边/弯曲）",
+        "category": "检验",
+        "unit": "-",
+        "requirement": {
+         "map": {
+          "сплющивание": "ГОСТ 8695",
+          "раздача": "ГОСТ 8694",
+          "отбортовка": "ГОСТ 8693",
+          "загиб": "ГОСТ 3728"
+         }
+        },
+        "clause": "п. 2.11–2.15",
+        "test_method": null,
+        "product_value": null,
+        "verdict": "na",
+        "detail": "枚举型要求（如分组 А/Б/В），需按产品交付分组判定：{'сплющивание': 'ГОСТ 8695', 'раздача': 'ГОСТ 8694', 'отбортовка': 'ГОСТ 8693', 'загиб': 'ГОСТ 3728'}｜✋ 无法判定：产品未提供「工艺试验（压扁/扩口/卷边/弯曲）」的输入值（-）。📖 评价依据：п. 2.11–2.15。标准为枚举型分组（['сплющивание', 'раздача', 'отбортовка', 'загиб']），需按产品交付分组确认。💡 参考：补充对应实测数据或订货协议（如需，可由认证机构判定）。最终结论需认证机构/认可实验室（ГОСТ ISO/IEC 17025-2019）确认。"
+       }
+      ]
+     }
+    ],
+    "skipped_cn": [],
+    "skipped_ru": [],
+    "tr_cu_032": {
+     "in_scope": null,
+     "category": null,
+     "pdn": null,
+     "route": null,
+     "table": null,
+     "note": "缺少工作压力或公称通径，无法判定"
+    },
+    "tr_eaeu_043": {
+     "applies": false,
+     "route": null,
+     "note": "产品用途未涉及消防系统，ТР ЕАЭС 043/2017 不适用"
+    },
+    "index": {
+     "cn": {
+      "ci": 1.0,
+      "passed": 16,
+      "failed": 0,
+      "na": 2,
+      "coverage": 0.8888888888888888,
+      "grade": "A"
+     },
+     "ru": {
+      "ci": 1.0,
+      "passed": 4,
+      "failed": 0,
+      "na": 1,
+      "coverage": 0.8,
+      "grade": "A"
+     }
+    },
+    "overall": {
+     "cn_compliant": true,
+     "ru_compliant": true,
+     "tr_cu_032_route": null,
+     "tr_eaeu_043_route": "不适用",
+     "summary": "中国侧：合规（评级 A，可评 16 项中通过 16 项）；俄罗斯侧：合规（评级 A，可评 4 项中通过 4 项）；ТР ТС 032/2013：вне области；ТР ЕАЭС 043/2017：不适用"
+    }
+   },
+   "color": "pass",
+   "type_source": "explicit",
+   "note": null,
+   "elements": [
+    349,
+    366
+   ],
+   "evidence": {
+    "dn_mm": "200 mmø",
+    "od_mm": "0.219",
+    "id_mm": "0.207",
+    "wall_thickness_mm": "0.006",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "material": "20",
+   "type_name": "管道类型:无缝钢管 DN200"
+  }
+ ],
+ "elements": [
+  {
+   "id": 165,
+   "guid": "2$J74bBw11RPRaUC7iMTd2",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN50 立管1",
+   "object_type": null,
+   "tag": "DN50-1",
+   "type_id": 155,
+   "type_name": "管道类型:无缝钢管 DN50",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     0.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     0.0,
+     0.0,
+     6200.0
+    ],
+    "r": 28.5
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 50.0,
+    "od_mm": 57.0,
+    "id_mm": 50.0,
+    "wall_thickness_mm": 3.5,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.057,
+    "内径": 0.05,
+    "实测外径": 0.057,
+    "实测壁厚": 0.0035,
+    "尺寸": "50 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN50",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.05,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 57.0,
+    "wt_meas_mm": 3.5,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "50 mmø",
+    "od_mm": "0.057",
+    "id_mm": "0.05",
+    "wall_thickness_mm": "0.0035",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S01",
+   "color": "pass"
+  },
+  {
+   "id": 182,
+   "guid": "0V0B0JhSr4KhWWK6yBmUx3",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN50 立管2",
+   "object_type": null,
+   "tag": "DN50-2",
+   "type_id": 155,
+   "type_name": "管道类型:无缝钢管 DN50",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     600.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     600.0,
+     0.0,
+     6200.0
+    ],
+    "r": 28.5
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 50.0,
+    "od_mm": 57.0,
+    "id_mm": 50.0,
+    "wall_thickness_mm": 3.5,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.057,
+    "内径": 0.05,
+    "实测外径": 0.057,
+    "实测壁厚": 0.0035,
+    "尺寸": "50 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN50",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.05,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 57.0,
+    "wt_meas_mm": 3.5,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "50 mmø",
+    "od_mm": "0.057",
+    "id_mm": "0.05",
+    "wall_thickness_mm": "0.0035",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S01",
+   "color": "pass"
+  },
+  {
+   "id": 211,
+   "guid": "1HJumyNcjChPMGJL5nZr_D",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN80 立管1",
+   "object_type": null,
+   "tag": "DN80-1",
+   "type_id": 201,
+   "type_name": "管道类型:无缝钢管 DN80",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     1200.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     1200.0,
+     0.0,
+     6200.0
+    ],
+    "r": 44.5
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 80.0,
+    "od_mm": 89.0,
+    "id_mm": 81.0,
+    "wall_thickness_mm": 4.0,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.089,
+    "内径": 0.081,
+    "实测外径": 0.089,
+    "实测壁厚": 0.004,
+    "尺寸": "80 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN80",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.08,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 89.0,
+    "wt_meas_mm": 4.0,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "80 mmø",
+    "od_mm": "0.089",
+    "id_mm": "0.081",
+    "wall_thickness_mm": "0.004",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S02",
+   "color": "pass"
+  },
+  {
+   "id": 228,
+   "guid": "2oq8EcJi591eKbdzhQiboI",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN80 立管2",
+   "object_type": null,
+   "tag": "DN80-2",
+   "type_id": 201,
+   "type_name": "管道类型:无缝钢管 DN80",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     1800.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     1800.0,
+     0.0,
+     6200.0
+    ],
+    "r": 44.5
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 80.0,
+    "od_mm": 89.0,
+    "id_mm": 81.0,
+    "wall_thickness_mm": 4.0,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.089,
+    "内径": 0.081,
+    "实测外径": 0.089,
+    "实测壁厚": 0.004,
+    "尺寸": "80 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN80",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.08,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 89.0,
+    "wt_meas_mm": 4.0,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "80 mmø",
+    "od_mm": "0.089",
+    "id_mm": "0.081",
+    "wall_thickness_mm": "0.004",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S02",
+   "color": "pass"
+  },
+  {
+   "id": 257,
+   "guid": "08ziOifCbEbh7_IIwV9yj9",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN100 立管1",
+   "object_type": null,
+   "tag": "DN100-1",
+   "type_id": 247,
+   "type_name": "管道类型:无缝钢管 DN100",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     2400.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     2400.0,
+     0.0,
+     6200.0
+    ],
+    "r": 54.0
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 100.0,
+    "od_mm": 108.0,
+    "id_mm": 100.0,
+    "wall_thickness_mm": 4.0,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.108,
+    "内径": 0.1,
+    "实测外径": 0.108,
+    "实测壁厚": 0.004,
+    "尺寸": "100 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN100",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.1,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 108.0,
+    "wt_meas_mm": 4.0,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "100 mmø",
+    "od_mm": "0.108",
+    "id_mm": "0.1",
+    "wall_thickness_mm": "0.004",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S03",
+   "color": "pass"
+  },
+  {
+   "id": 274,
+   "guid": "05MVZ$clLB7g$RNXcL$l31",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN100 立管2",
+   "object_type": null,
+   "tag": "DN100-2",
+   "type_id": 247,
+   "type_name": "管道类型:无缝钢管 DN100",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     3000.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     3000.0,
+     0.0,
+     6200.0
+    ],
+    "r": 54.0
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 100.0,
+    "od_mm": 108.0,
+    "id_mm": 100.0,
+    "wall_thickness_mm": 4.0,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.108,
+    "内径": 0.1,
+    "实测外径": 0.108,
+    "实测壁厚": 0.004,
+    "尺寸": "100 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN100",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.1,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 108.0,
+    "wt_meas_mm": 4.0,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "100 mmø",
+    "od_mm": "0.108",
+    "id_mm": "0.1",
+    "wall_thickness_mm": "0.004",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S03",
+   "color": "pass"
+  },
+  {
+   "id": 303,
+   "guid": "0lhcsTZaT6cvZLig_jNxEK",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN150 立管1",
+   "object_type": null,
+   "tag": "DN150-1",
+   "type_id": 293,
+   "type_name": "管道类型:无缝钢管 DN150",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     3600.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     3600.0,
+     0.0,
+     6200.0
+    ],
+    "r": 79.5
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 150.0,
+    "od_mm": 159.0,
+    "id_mm": 150.0,
+    "wall_thickness_mm": 4.5,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.159,
+    "内径": 0.15,
+    "实测外径": 0.159,
+    "实测壁厚": 0.0045,
+    "尺寸": "150 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN150",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.15,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 159.0,
+    "wt_meas_mm": 4.5,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "150 mmø",
+    "od_mm": "0.159",
+    "id_mm": "0.15",
+    "wall_thickness_mm": "0.0045",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S04",
+   "color": "pass"
+  },
+  {
+   "id": 320,
+   "guid": "2JRTlyPmT7mhKZo1lXyssm",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN150 立管2",
+   "object_type": null,
+   "tag": "DN150-2",
+   "type_id": 293,
+   "type_name": "管道类型:无缝钢管 DN150",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     4200.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     4200.0,
+     0.0,
+     6200.0
+    ],
+    "r": 79.5
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 150.0,
+    "od_mm": 159.0,
+    "id_mm": 150.0,
+    "wall_thickness_mm": 4.5,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.159,
+    "内径": 0.15,
+    "实测外径": 0.159,
+    "实测壁厚": 0.0045,
+    "尺寸": "150 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN150",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.15,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 159.0,
+    "wt_meas_mm": 4.5,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "150 mmø",
+    "od_mm": "0.159",
+    "id_mm": "0.15",
+    "wall_thickness_mm": "0.0045",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S04",
+   "color": "pass"
+  },
+  {
+   "id": 349,
+   "guid": "1SWUAbS9T3mAK3c7M9QY9r",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN200 立管1",
+   "object_type": null,
+   "tag": "DN200-1",
+   "type_id": 339,
+   "type_name": "管道类型:无缝钢管 DN200",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     4800.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     4800.0,
+     0.0,
+     6200.0
+    ],
+    "r": 109.5
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 200.0,
+    "od_mm": 219.0,
+    "id_mm": 207.0,
+    "wall_thickness_mm": 6.0,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.219,
+    "内径": 0.207,
+    "实测外径": 0.219,
+    "实测壁厚": 0.006,
+    "尺寸": "200 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN200",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.2,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 219.0,
+    "wt_meas_mm": 6.0,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "200 mmø",
+    "od_mm": "0.219",
+    "id_mm": "0.207",
+    "wall_thickness_mm": "0.006",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S05",
+   "color": "pass"
+  },
+  {
+   "id": 366,
+   "guid": "3tqN5va8PAAP19pS4AROPn",
+   "ifc_type": "IFCPIPESEGMENT",
+   "kind": "segment",
+   "kind_zh": "管段",
+   "name": "无缝钢管 DN200 立管2",
+   "object_type": null,
+   "tag": "DN200-2",
+   "type_id": 339,
+   "type_name": "管道类型:无缝钢管 DN200",
+   "material": "20",
+   "storey": "管井层 F1",
+   "kind_basis": "type:IFCPIPESEGMENTTYPE",
+   "od_from_geom": false,
+   "wt_from_id": false,
+   "geom": {
+    "k": "cyl",
+    "p0": [
+     5400.0,
+     0.0,
+     200.0
+    ],
+    "p1": [
+     5400.0,
+     0.0,
+     6200.0
+    ],
+    "r": 109.5
+   },
+   "params": {
+    "type": "无缝钢管",
+    "dn_mm": 200.0,
+    "od_mm": 219.0,
+    "id_mm": 207.0,
+    "wall_thickness_mm": 6.0,
+    "length_m": 6.0,
+    "working_pressure_mpa": null,
+    "material_grade_cn": "20",
+    "material_grade_ru": "20",
+    "galvanized": false,
+    "threaded": false,
+    "medium": null,
+    "intended_use": "给水系统",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В",
+    "type_source": "explicit"
+   },
+   "props": {
+    "外径": 0.219,
+    "内径": 0.207,
+    "实测外径": 0.219,
+    "实测壁厚": 0.006,
+    "尺寸": "200 mmø",
+    "长度": 6.0,
+    "系统分类": "给水系统",
+    "系统类型": "JZ",
+    "系统名称": "无缝钢管 DN200",
+    "系统缩写": "给水管",
+    "管段": "无缝钢管 - default",
+    "直径": 0.2,
+    "连接类型": "焊接",
+    "抗拉强度": 450.0,
+    "下屈服强度": 260.0,
+    "断后伸长率": 26.0,
+    "冲击吸收能量": 49.0,
+    "碳含量": 0.17,
+    "硅含量": 0.25,
+    "锰含量": 0.45,
+    "磷含量": 0.025,
+    "硫含量": 0.02,
+    "铬含量": 0.15,
+    "镍含量": 0.15,
+    "铜含量": 0.15,
+    "水压试验压力": 3.0,
+    "材质牌号": "20",
+    "交货分组": "В",
+    "弯曲度": 1.0
+   },
+   "properties": {
+    "rm_mpa": 450.0,
+    "re_mpa": 260.0,
+    "a_pct": 26.0,
+    "chemical": {
+     "C": 0.17,
+     "Si": 0.25,
+     "Mn": 0.45,
+     "P": 0.025,
+     "S": 0.02,
+     "Cr": 0.15,
+     "Ni": 0.15,
+     "Cu": 0.15
+    },
+    "hydrostatic_test_mpa": 3.0,
+    "od_meas_mm": 219.0,
+    "wt_meas_mm": 6.0,
+    "straight_meas_mm_m": 1.0
+   },
+   "evidence": {
+    "dn_mm": "200 mmø",
+    "od_mm": "0.219",
+    "id_mm": "0.207",
+    "wall_thickness_mm": "0.006",
+    "material_grade_cn": "20",
+    "length_m": "6.0",
+    "intended_use": "给水系统",
+    "test_pressure_mpa": "3.0",
+    "segment_spec": "无缝钢管 - default",
+    "connection_type": "焊接",
+    "delivery_group": "В"
+   },
+   "spec": "S05",
+   "color": "pass"
+  }
+ ]
+}

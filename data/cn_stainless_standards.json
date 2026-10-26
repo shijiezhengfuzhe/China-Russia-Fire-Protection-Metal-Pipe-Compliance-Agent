@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title_zh": "中国不锈钢消防管材标准补充知识库（机读）",
+    "generated": "2025-06",
+    "purpose": "补充消防管材常用不锈钢标准：无缝（GB/T 14976）与焊接（GB/T 12771）",
+    "units_zh": "统一SI单位：MPa、mm、%、g/m²",
+    "merge_note": "本文件为标准数组，可直接并入 data/cn_standards_final.json 的 standards 数组；或运行 scripts/merge_stainless.py 自动合并。数值取自 GB/T 14976-2012 / GB/T 12771-2019 公开资料，标注[待核]项以正式文本为准。"
+  },
+  "standards": [
+    {
+      "id": "GB/T 14976-2012",
+      "name_zh": "流体输送用不锈钢无缝钢管",
+      "name_en": "Seamless stainless steel tubes for fluid transport",
+      "year": 2012,
+      "status": "现行",
+      "scope_zh": "流体输送用不锈钢无缝钢管（耐蚀钢，热处理/固溶态交货，外径6～830mm）。",
+      "applicability_note": "对消防管材：适用——消防给水/喷淋系统不锈钢无缝管常用（06Cr19Ni10=304、06Cr17Ni12Mo2=316 等），耐腐蚀免维护；判定逻辑与碳钢无缝管（GB/T 8163）一致，牌号与阈值不同。",
+      "indicators": [
+        {"id": "14976.GRADE", "name_zh": "牌号体系", "name_en": "Grade system", "unit": "-", "category": "牌号体系", "grade_conditioned": false, "values": {"set": ["06Cr19Ni10", "022Cr19Ni10", "06Cr17Ni12Mo2", "022Cr17Ni12Mo2", "06Cr18Ni11Ti"]}, "clause": "表1", "test_method": "-", "notes": "常用奥氏体牌号；完整牌号表以原文为准"},
+        {"id": "14976.CHEM.C", "name_zh": "碳含量上限（熔炼）", "name_en": "Carbon max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 0.08}, "022Cr19Ni10": {"max": 0.030}, "06Cr17Ni12Mo2": {"max": 0.08}, "022Cr17Ni12Mo2": {"max": 0.030}, "06Cr18Ni11Ti": {"max": 0.08}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "14976.CHEM.SI", "name_zh": "硅含量上限", "name_en": "Silicon max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 1.00}, "022Cr19Ni10": {"max": 1.00}, "06Cr17Ni12Mo2": {"max": 1.00}, "022Cr17Ni12Mo2": {"max": 1.00}, "06Cr18Ni11Ti": {"max": 1.00}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "14976.CHEM.MN", "name_zh": "锰含量上限", "name_en": "Manganese max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 2.00}, "022Cr19Ni10": {"max": 2.00}, "06Cr17Ni12Mo2": {"max": 2.00}, "022Cr17Ni12Mo2": {"max": 2.00}, "06Cr18Ni11Ti": {"max": 2.00}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "14976.CHEM.P", "name_zh": "磷含量上限", "name_en": "Phosphorus max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 0.035}, "022Cr19Ni10": {"max": 0.035}, "06Cr17Ni12Mo2": {"max": 0.035}, "022Cr17Ni12Mo2": {"max": 0.035}, "06Cr18Ni11Ti": {"max": 0.035}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "14976.CHEM.S", "name_zh": "硫含量上限", "name_en": "Sulfur max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 0.030}, "022Cr19Ni10": {"max": 0.030}, "06Cr17Ni12Mo2": {"max": 0.030}, "022Cr17Ni12Mo2": {"max": 0.030}, "06Cr18Ni11Ti": {"max": 0.030}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "14976.CHEM.CR", "name_zh": "铬含量", "name_en": "Chromium", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"min": 18.00, "max": 20.00}, "022Cr19Ni10": {"min": 18.00, "max": 20.00}, "06Cr17Ni12Mo2": {"min": 16.00, "max": 18.00}, "022Cr17Ni12Mo2": {"min": 16.00, "max": 18.00}, "06Cr18Ni11Ti": {"min": 17.00, "max": 19.00}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "14976.CHEM.NI", "name_zh": "镍含量", "name_en": "Nickel", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"min": 8.00, "max": 11.00}, "022Cr19Ni10": {"min": 8.00, "max": 12.00}, "06Cr17Ni12Mo2": {"min": 10.00, "max": 14.00}, "022Cr17Ni12Mo2": {"min": 10.00, "max": 14.00}, "06Cr18Ni11Ti": {"min": 9.00, "max": 12.00}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "14976.Rm", "name_zh": "抗拉强度", "name_en": "Tensile strength", "unit": "MPa", "category": "力学性能", "grade_conditioned": true, "values": {"06Cr19Ni10": {"min": 520}, "022Cr19Ni10": {"min": 480}, "06Cr17Ni12Mo2": {"min": 520}, "022Cr17Ni12Mo2": {"min": 480}, "06Cr18Ni11Ti": {"min": 520}}, "clause": "表5（纵向）", "test_method": "GB/T 228.1", "notes": "[待核]数值取自 GB/T 14976-2012 表5（固溶/热处理态），以原文为准"},
+        {"id": "14976.Rp02", "name_zh": "规定非比例延伸强度 Rp0.2", "name_en": "Proof strength Rp0.2", "unit": "MPa", "category": "力学性能", "grade_conditioned": true, "values": {"06Cr19Ni10": {"min": 205}, "022Cr19Ni10": {"min": 180}, "06Cr17Ni12Mo2": {"min": 205}, "022Cr17Ni12Mo2": {"min": 180}, "06Cr18Ni11Ti": {"min": 205}}, "clause": "表5（纵向）", "test_method": "GB/T 228.1", "notes": "[待核]以原文表5为准"},
+        {"id": "14976.A", "name_zh": "断后伸长率", "name_en": "Elongation A", "unit": "%", "category": "力学性能", "grade_conditioned": true, "values": {"06Cr19Ni10": {"min": 35}, "022Cr19Ni10": {"min": 40}, "06Cr17Ni12Mo2": {"min": 40}, "022Cr17Ni12Mo2": {"min": 40}, "06Cr18Ni11Ti": {"min": 40}}, "clause": "表5（纵向，L0=5.65√S0）", "test_method": "GB/T 228.1", "notes": "[待核]06Cr19Ni10 断后伸长率行业通行≥35%（部分规格≥40%），以原文表5为准"},
+        {"id": "14976.HYD", "name_zh": "液压试验压力", "name_en": "Hydrostatic test pressure", "unit": "MPa", "category": "工艺试验", "grade_conditioned": false, "values": {"desc": "P=2SR/D（S壁厚、R允许应力、D外径），或采用涡流/超声无损检测替代；保压≥5s无渗漏"}, "clause": "液压试验条款", "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777", "notes": "R取值（通常为规定屈服强度的60%）以原文为准"},
+        {"id": "14976.FLAT", "name_zh": "压扁试验", "name_en": "Flattening test", "unit": "-", "category": "工艺试验", "grade_conditioned": false, "values": {"set": ["pass"]}, "clause": "工艺性能条款", "test_method": "GB/T 246 / GB/T 242", "notes": "[待核]以原文为准"},
+        {"id": "14976.DIM", "name_zh": "尺寸与允许偏差", "name_en": "Dimensions and tolerances", "unit": "mm", "category": "尺寸偏差", "grade_conditioned": false, "values": {"desc": "外径6～830mm；外径/壁厚偏差按GB/T 17395（普通级/较高级/高级）"}, "clause": "尺寸条款", "test_method": "GB/T 2102", "notes": ""}
+      ]
+    },
+    {
+      "id": "GB/T 12771-2019",
+      "name_zh": "流体输送用不锈钢焊接钢管",
+      "name_en": "Welded stainless steel tubes for fluid transport",
+      "year": 2019,
+      "status": "现行",
+      "scope_zh": "流体输送用不锈钢焊接钢管（直缝，外径6～630mm，固溶处理态交货）。",
+      "applicability_note": "对消防管材：适用——消防喷淋/给水不锈钢焊管常用；与 GB/T 14976 牌号一致，判定逻辑同构，注意焊管另需焊缝相关检验。",
+      "indicators": [
+        {"id": "12771.GRADE", "name_zh": "牌号体系", "name_en": "Grade system", "unit": "-", "category": "牌号体系", "grade_conditioned": false, "values": {"set": ["06Cr19Ni10", "022Cr19Ni10", "06Cr17Ni12Mo2", "022Cr17Ni12Mo2", "06Cr18Ni11Ti"]}, "clause": "表1", "test_method": "-", "notes": ""},
+        {"id": "12771.CHEM.C", "name_zh": "碳含量上限（熔炼）", "name_en": "Carbon max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 0.08}, "022Cr19Ni10": {"max": 0.030}, "06Cr17Ni12Mo2": {"max": 0.08}, "022Cr17Ni12Mo2": {"max": 0.030}, "06Cr18Ni11Ti": {"max": 0.08}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "12771.CHEM.SI", "name_zh": "硅含量上限", "name_en": "Silicon max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 1.00}, "022Cr19Ni10": {"max": 1.00}, "06Cr17Ni12Mo2": {"max": 1.00}, "022Cr17Ni12Mo2": {"max": 1.00}, "06Cr18Ni11Ti": {"max": 1.00}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "12771.CHEM.MN", "name_zh": "锰含量上限", "name_en": "Manganese max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 2.00}, "022Cr19Ni10": {"max": 2.00}, "06Cr17Ni12Mo2": {"max": 2.00}, "022Cr17Ni12Mo2": {"max": 2.00}, "06Cr18Ni11Ti": {"max": 2.00}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "12771.CHEM.P", "name_zh": "磷含量上限", "name_en": "Phosphorus max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 0.035}, "022Cr19Ni10": {"max": 0.035}, "06Cr17Ni12Mo2": {"max": 0.035}, "022Cr17Ni12Mo2": {"max": 0.035}, "06Cr18Ni11Ti": {"max": 0.035}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "12771.CHEM.S", "name_zh": "硫含量上限", "name_en": "Sulfur max", "unit": "%", "category": "化学成分", "grade_conditioned": true, "values": {"06Cr19Ni10": {"max": 0.030}, "022Cr19Ni10": {"max": 0.030}, "06Cr17Ni12Mo2": {"max": 0.030}, "022Cr17Ni12Mo2": {"max": 0.030}, "06Cr18Ni11Ti": {"max": 0.030}}, "clause": "表1", "test_method": "GB/T 223 / GB/T 4336", "notes": ""},
+        {"id": "12771.Rm", "name_zh": "抗拉强度", "name_en": "Tensile strength", "unit": "MPa", "category": "力学性能", "grade_conditioned": true, "values": {"06Cr19Ni10": {"min": 520}, "022Cr19Ni10": {"min": 480}, "06Cr17Ni12Mo2": {"min": 520}, "022Cr17Ni12Mo2": {"min": 480}, "06Cr18Ni11Ti": {"min": 520}}, "clause": "表5（纵向）", "test_method": "GB/T 228.1", "notes": "[待核]取自 GB/T 12771-2019 表5，以原文为准"},
+        {"id": "12771.Rp02", "name_zh": "规定非比例延伸强度 Rp0.2", "name_en": "Proof strength Rp0.2", "unit": "MPa", "category": "力学性能", "grade_conditioned": true, "values": {"06Cr19Ni10": {"min": 205}, "022Cr19Ni10": {"min": 180}, "06Cr17Ni12Mo2": {"min": 205}, "022Cr17Ni12Mo2": {"min": 180}, "06Cr18Ni11Ti": {"min": 205}}, "clause": "表5（纵向）", "test_method": "GB/T 228.1", "notes": "[待核]以原文表5为准"},
+        {"id": "12771.A", "name_zh": "断后伸长率", "name_en": "Elongation A", "unit": "%", "category": "力学性能", "grade_conditioned": true, "values": {"06Cr19Ni10": {"min": 35}, "022Cr19Ni10": {"min": 40}, "06Cr17Ni12Mo2": {"min": 40}, "022Cr17Ni12Mo2": {"min": 40}, "06Cr18Ni11Ti": {"min": 40}}, "clause": "表5（纵向）", "test_method": "GB/T 228.1", "notes": "[待核]以原文为准"},
+        {"id": "12771.HYD", "name_zh": "液压试验压力", "name_en": "Hydrostatic test pressure", "unit": "MPa", "category": "工艺试验", "grade_conditioned": false, "values": {"desc": "P=2SR/D，或涡流/超声/液压检测替代；保压≥5s无渗漏；焊管可加做焊缝无损检测"}, "clause": "液压试验条款", "test_method": "GB/T 241 / GB/T 7735 / GB/T 5777", "notes": ""},
+        {"id": "12771.FLAT", "name_zh": "压扁/扩口试验", "name_en": "Flattening / expanding test", "unit": "-", "category": "工艺试验", "grade_conditioned": false, "values": {"set": ["pass"]}, "clause": "工艺性能条款", "test_method": "GB/T 246 / GB/T 242 / GB/T 245 / GB/T 232", "notes": "[待核]以原文为准"},
+        {"id": "12771.DIM", "name_zh": "尺寸与允许偏差", "name_en": "Dimensions and tolerances", "unit": "mm", "category": "尺寸偏差", "grade_conditioned": false, "values": {"desc": "外径6～630mm；外径/壁厚偏差按GB/T 17395分级"}, "clause": "尺寸条款", "test_method": "GB/T 2102", "notes": ""}
+      ]
+    }
+  ]
+}

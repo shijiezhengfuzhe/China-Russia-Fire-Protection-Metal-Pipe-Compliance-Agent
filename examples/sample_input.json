@@ -1,0 +1,41 @@
+{
+  "product": {
+    "model": "DN50 热浸镀锌焊接钢管（示例产品）",
+    "manufacturer": "示例钢管有限公司",
+    "type": "低压流体输送用焊接钢管(镀锌/黑管)",
+    "material_grade_cn": "Q235B",
+    "material_grade_ru": "Ст3сп",
+    "od_mm": 60.3,
+    "wall_thickness_mm": 3.8,
+    "dn_mm": 50,
+    "length_m": 6,
+    "threaded": true,
+    "galvanized": true,
+    "working_pressure_mpa": 1.6,
+    "design_pressure_mpa": 1.6,
+    "medium": "水(消防给水)",
+    "medium_group": 2,
+    "medium_phase": "liquid",
+    "intended_use": "室内消火栓系统/自动喷水灭火系统配水管道",
+    "properties": {
+      "rm_mpa": 415,
+      "re_mpa": 245,
+      "a_pct": 28,
+      "kv2_j": null,
+      "chemical": {
+        "C": 0.16, "Si": 0.3, "Mn": 0.6, "P": 0.025, "S": 0.02,
+        "Cr": 0.3, "Ni": 0.3, "Cu": 0.3
+      },
+      "hydrostatic_test_mpa": 3.0,
+      "flattening": "pass",
+      "bending": "pass",
+      "zinc_coat_g_m2": 320
+    },
+    "certificates": ["材质证明书", "水压试验报告", "镀锌层检测报告"],
+    "test_lab": {
+      "name": "示例检测中心",
+      "accreditation": "CNAS / ILAC-MRA",
+      "gost_17025": "未确认"
+    }
+  }
+}
